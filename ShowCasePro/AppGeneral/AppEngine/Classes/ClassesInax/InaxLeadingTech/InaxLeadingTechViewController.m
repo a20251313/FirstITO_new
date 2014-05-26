@@ -199,9 +199,19 @@ NSString *kCellID = @"cellID";
     NSMutableArray *arrayImg = [NSMutableArray arrayWithCapacity:count];
     for (int i =0; i< count; i++) {
         
-        NSString *imgString= [NSString stringWithFormat:[subString stringByAppendingString:@"%d.jpg"],i+1];
+        NSString *imgString= [NSString stringWithFormat:[subString stringByAppendingString:@"%d.png"],i+1];
         UIImage *img = [UIImage imageNamed:imgString];
-        [arrayImg addObject:img];
+        if (!img)
+        {
+            imgString = [NSString stringWithFormat:[subString stringByAppendingString:@"%d.jpg"],i+1];
+            img = [UIImage imageNamed:imgString];
+        }
+        
+        if (img)
+        {
+            [arrayImg addObject:img];
+        }
+ 
         
     }
     

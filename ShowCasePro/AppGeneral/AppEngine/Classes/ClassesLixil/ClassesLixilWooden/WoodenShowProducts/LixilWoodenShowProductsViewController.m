@@ -875,7 +875,7 @@ typedef enum
                 LixilBigDetailScrollView    *detailView = [[LixilBigDetailScrollView alloc] initWithFrame:CGRectMake(273, 85, self.view.frame.size.width-273, 629)];
                 detailView.orientationType = ScrollorientationTypeVertical;
                 detailView.imageArray = @[[UIImage imageNamed:@"kangfeili_peijian1.png"],[UIImage imageNamed:@"kangfeili_peijian2.png"]];
-                detailView.arrayRBottomImage = @[[UIImage imageNamed:@"inax_lt_page21.png"],[UIImage imageNamed:@"inax_lt_page22.png"]];
+                detailView.arrayRBottomImage = @[[UIImage imageNamed:@"woodlen_lt_page21.png"],[UIImage imageNamed:@"woodlen_lt_page22.png"]];
                 detailView.NeedDismiss = NO;
                 // [detailView setShowBigImage:[UIImage imageNamed:@"kangfeili_peijian.png"] orientation:ScrollorientationTypeVertical];
                 addView = detailView;
