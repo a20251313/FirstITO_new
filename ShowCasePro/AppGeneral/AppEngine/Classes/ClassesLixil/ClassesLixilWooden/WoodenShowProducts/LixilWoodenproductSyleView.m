@@ -38,7 +38,7 @@
 
 -(void)awakeFromNib
 {
-    [_scorllView setContentSize:CGSizeMake(self.frame.size.width*3, self.frame.size.height)];
+    [_scorllView setContentSize:CGSizeMake(self.frame.size.width, self.frame.size.height*3)];
 }
 -(IBAction)clickProduct:(UIButton*)sender
 {
