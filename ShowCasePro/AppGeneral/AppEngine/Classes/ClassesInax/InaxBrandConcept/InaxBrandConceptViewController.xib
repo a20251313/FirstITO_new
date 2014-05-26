@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InaxBrandConceptViewController">
+            <connections>
+                <outlet property="leftImage" destination="E9F-Of-IKY" id="hra-Nz-gPp"/>
+                <outlet property="middleImage" destination="PDC-Mf-uaU" id="8o8-M5-zFL"/>
+                <outlet property="rightImage" destination="JUa-0s-gOR" id="Fqk-4x-Y0u"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHv-Gc-2sL" userLabel="bkgBtn">
+                    <rect key="frame" x="0.0" y="85" width="1024" height="683"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="1"/>
+                    <state key="normal" image="inax_bc_bk.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="bkgBtn:" destination="-1" eventType="touchUpInside" id="q3R-eH-bOM"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inax_bc_happyitem.png" translatesAutoresizingMaskIntoConstraints="NO" id="PDC-Mf-uaU">
+                    <rect key="frame" x="441" y="231" width="256" height="142"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inax_bc_comfortableitem.png" translatesAutoresizingMaskIntoConstraints="NO" id="JUa-0s-gOR">
+                    <rect key="frame" x="474" y="355" width="256" height="142"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inax_bc_cleandes.png" translatesAutoresizingMaskIntoConstraints="NO" id="E9F-Of-IKY">
+                    <rect key="frame" x="334" y="427" width="256" height="142"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWs-e1-kkS">
+                    <rect key="frame" x="275" y="366" width="122" height="120"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="1"/>
+                    <state key="normal" image="inax_bc_clean.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="leftBtn:" destination="-1" eventType="touchUpInside" id="bfJ-Dh-ofs"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6J-1o-xXG">
+                    <rect key="frame" x="386" y="313" width="120" height="119"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="1"/>
+                    <state key="normal" image="inax_bc_happy.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="middleBtn:" destination="-1" eventType="touchUpInside" id="dlB-Mh-Ptk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sE5-0z-2TP">
+                    <rect key="frame" x="667" y="435" width="122" height="120"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="1"/>
+                    <state key="normal" image="inax_bc_comfortable.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="rightBtn:" destination="-1" eventType="touchUpInside" id="xEj-Mg-sCP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="inax_bc_bk.png" width="2048" height="1366"/>
+        <image name="inax_bc_clean.png" width="244" height="240"/>
+        <image name="inax_bc_cleandes.png" width="513" height="285"/>
+        <image name="inax_bc_comfortable.png" width="244" height="241"/>
+        <image name="inax_bc_comfortableitem.png" width="513" height="285"/>
+        <image name="inax_bc_happy.png" width="240" height="238"/>
+        <image name="inax_bc_happyitem.png" width="513" height="285"/>
+    </resources>
+</document>

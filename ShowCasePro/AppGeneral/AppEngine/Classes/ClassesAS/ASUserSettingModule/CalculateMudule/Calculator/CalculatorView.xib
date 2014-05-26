@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalculatorView">
+            <connections>
+                <outlet property="bgView" destination="hDr-st-baJ" id="z0R-Gm-jty"/>
+                <outlet property="recordView" destination="cCK-b5-DGu" id="pu2-Dg-B3q"/>
+                <outlet property="showLable" destination="wk0-g7-DC8" id="pSL-Uu-y65"/>
+                <outlet property="view" destination="tsw-J4-pdd" id="80C-zO-hVm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="tsw-J4-pdd">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="707"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cv_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="36a-Ex-xC3">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="707"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hDr-st-baJ">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="707"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <button opaque="NO" tag="17" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoo-bV-mYu">
+                            <rect key="frame" x="361" y="234" width="130" height="115"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                            <state key="normal" image="cv_n7.png">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="numberPressed:" destination="-1" eventType="touchUpInside" id="w9I-Qz-dIz"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gb7-EV-1z4">
+                            <rect key="frame" x="361" y="353" width="130" height="115"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                            <state key="normal" image="cv_n4.png">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="numberPressed:" destination="-1" eventType="touchUpInside" id="cIP-Tu-1gE"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vev-dV-Vz9">
+                            <rect key="frame" x="361" y="473" width="130" height="115"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                            <state key="normal" image="cv_n1.png">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="numberPressed:" destination="-1" eventType="touchUpInside" id="aNw-xa-3KM"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKZ-gp-Ngf">
+                            <rect key="frame" x="493" y="473" width="130" height="114"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                            <state key="normal" image="cv_n2.png">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="numberPressed:" destination="-1" eventType="touchUpInside" id="90R-4s-6d0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1j-pp-IRS">
+                            <rect key="frame" x="623" y="473" width="130" height="114"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                            <state key="normal" image="cv_n3.png">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="numberPressed:" destination="-1" eventType="touchUpInside" id="rsU-hX-DFW"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWM-Qh-Fv0">
+                            <rect key="frame" x="361" y="592" width="130" height="115"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                            <state key="normal" image="cv_n0.png">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="numberPressed:" destination="-1" eventType="touchUpInside" id="rGG-n6-dvp"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="35" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcQ-Ul-3Ps">
+                            <rect key="frame" x="756" y="592" width="130" height="115"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                            <state key="normal" image="cv_chu.png">
+                                <color key="titleColor" red="0.66666666666666663" green="0.54117647058823526" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="operaterPressed:" destination="-1" eventType="touchUpInside" id="I8u-JF-cDS"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="37" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QID-jf-3jP">
+                            <rect key="frame" x="890" y="473" width="131" height="231"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                            <state key="normal" image="cv_equal.png">
+                                <color key="titleColor" red="0.66666666666666663" green="0.54117647058823526" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="operaterPressed:" destination="-1" eventType="touchUpInside" id="LAN-Mt-8ps"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JE2-2K-CAp">
+                            <rect key="frame" x="493" y="353" width="130" height="115"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                            <state key="normal" image="cv_n5.png">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="numberPressed:" destination="-1" eventType="touchUpInside" id="FoL-3s-jb7"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoB-r4-fvH">
+                            <rect key="frame" x="623" y="353" width="130" height="115"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                            <state key="normal" image="cv_n6.png">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="numberPressed:" destination="-1" eventType="touchUpInside" id="a0q-9S-k7b"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="18" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pX-FR-P5A">
+                            <rect key="frame" x="493" y="234" width="130" height="115"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                            <state key="normal" image="cv_n8.png">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="numberPressed:" destination="-1" eventType="touchUpInside" id="T7r-9s-98X"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="19" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vw3-l4-5Ew">
+                            <rect key="frame" x="623" y="234" width="130" height="115"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                            <state key="normal" image="cv_n9.png">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="numberPressed:" destination="-1" eventType="touchUpInside" id="h6Q-ZR-gw9"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="31" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sp3-kv-vUu">
+                            <rect key="frame" x="623" y="592" width="130" height="115"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                            <state key="normal" image="cv_baifen.png">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="operaterPressed:" destination="-1" eventType="touchUpInside" id="iGw-b1-JDI"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="36" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqG-GI-j3K">
+                            <rect key="frame" x="888" y="234" width="130" height="231"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                            <state key="normal" image="cv_clean.png">
+                                <color key="titleColor" red="0.66666666666666663" green="0.54117647058823526" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="operaterPressed:" destination="-1" eventType="touchUpInside" id="Y4Q-Jx-LPG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="32" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tK5-R9-rL9">
+                            <rect key="frame" x="756" y="234" width="130" height="115"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="90"/>
+                            <state key="normal" image="cv_jia.png">
+                                <color key="titleColor" red="0.66666666666666663" green="0.54117647058823526" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="operaterPressed:" destination="-1" eventType="touchUpInside" id="aez-YJ-Znm"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="30" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNx-FY-XGC">
+                            <rect key="frame" x="493" y="592" width="130" height="115"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                            <state key="normal" image="cv_dian.png">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="numberPressed:" destination="-1" eventType="touchUpInside" id="ajS-sz-6sf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="34" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqt-dr-DaA">
+                            <rect key="frame" x="756" y="473" width="130" height="115"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                            <state key="normal" image="cv_cheng.png">
+                                <color key="titleColor" red="0.66666666666666663" green="0.54117647058823526" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="operaterPressed:" destination="-1" eventType="touchUpInside" id="fqP-UY-1ya"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="33" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fge-7e-X1c">
+                            <rect key="frame" x="756" y="353" width="130" height="115"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="55"/>
+                            <state key="normal" image="cv_jian.png">
+                                <color key="titleColor" red="0.66666666666666663" green="0.54117647058823526" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="operaterPressed:" destination="-1" eventType="touchUpInside" id="2eq-JS-vTh"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000149011612" translatesAutoresizingMaskIntoConstraints="NO" id="wk0-g7-DC8">
+                            <rect key="frame" x="361" y="51" width="624" height="139"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNa-Jz-DER">
+                            <rect key="frame" x="274" y="647" width="61" height="51"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="cleanDatabase:" destination="-1" eventType="touchUpInside" id="7uw-Hl-kQ4"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cCK-b5-DGu">
+                            <rect key="frame" x="20" y="89" width="315" height="540"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cv_baifen.png" width="261" height="230"/>
+        <image name="cv_bg.png" width="2048" height="1389"/>
+        <image name="cv_cheng.png" width="261" height="230"/>
+        <image name="cv_chu.png" width="261" height="230"/>
+        <image name="cv_clean.png" width="262" height="462"/>
+        <image name="cv_dian.png" width="261" height="230"/>
+        <image name="cv_equal.png" width="262" height="462"/>
+        <image name="cv_jia.png" width="261" height="230"/>
+        <image name="cv_jian.png" width="261" height="230"/>
+        <image name="cv_n0.png" width="261" height="230"/>
+        <image name="cv_n1.png" width="261" height="230"/>
+        <image name="cv_n2.png" width="261" height="230"/>
+        <image name="cv_n3.png" width="261" height="230"/>
+        <image name="cv_n4.png" width="261" height="230"/>
+        <image name="cv_n5.png" width="261" height="230"/>
+        <image name="cv_n6.png" width="261" height="230"/>
+        <image name="cv_n7.png" width="261" height="230"/>
+        <image name="cv_n8.png" width="261" height="230"/>
+        <image name="cv_n9.png" width="261" height="230"/>
+    </resources>
+</document>

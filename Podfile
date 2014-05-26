@@ -1,0 +1,12 @@
+platform :ios, '6.0'
+
+pod 'FMDB', '~> 2.2'
+pod 'ASIHTTPRequest', '~> 1.8.1'
+pod 'SBJson', '~> 3.2'
+pod 'ASDepthModal', '~> 1.0.0'
+pod 'MBProgressHUD', '~> 0.8'
+pod 'SYPaginator', '~> 1.0.0'
+pod 'ZBarSDK', '~> 1.3.1'
+pod 'libqrencode', '~> 3.4.2'
+pod 'REMenu', '~> 1.7.1'
+pod 'RNFrostedSidebar', '~> 0.2.0'

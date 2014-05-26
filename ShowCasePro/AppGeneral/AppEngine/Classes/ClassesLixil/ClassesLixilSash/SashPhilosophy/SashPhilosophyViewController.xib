@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SashPhilosophyViewController">
+            <connections>
+                <outlet property="bottomBlueImg" destination="5Jg-5m-fXr" id="aY8-kz-jRR"/>
+                <outlet property="bottomImage" destination="Owa-2M-ht6" id="o6i-ht-YbN"/>
+                <outlet property="middleBlueImg" destination="Dtr-0D-jUJ" id="ctT-Ef-XdV"/>
+                <outlet property="middleImage" destination="ZJ7-RB-blS" id="U8e-By-OHx"/>
+                <outlet property="refView" destination="NY8-DC-1ue" id="n6b-IL-gnV"/>
+                <outlet property="topView" destination="P01-0w-XSY" id="7yH-RG-35H"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sash_ph_do_bk.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ7-RB-blS" userLabel="middleImage">
+                    <rect key="frame" x="0.0" y="85" width="1024" height="683"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sash_ph_ov_bk.png" translatesAutoresizingMaskIntoConstraints="NO" id="Owa-2M-ht6" userLabel="bottomImage">
+                    <rect key="frame" x="0.0" y="85" width="1024" height="683"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NY8-DC-1ue" userLabel="refView">
+                    <rect key="frame" x="438" y="223" width="586" height="274"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sash_ph_do_des.png" translatesAutoresizingMaskIntoConstraints="NO" id="He7-W6-HKC">
+                            <rect key="frame" x="0.0" y="0.0" width="586" height="274"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="od9-ke-aTl">
+                    <rect key="frame" x="0.0" y="223" width="438" height="137"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button" image="sash_ph_do_item_gray.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="middleBtnPressed:" destination="-1" eventType="touchUpInside" id="zke-1w-FkU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Xj-C1-A8s">
+                    <rect key="frame" x="0.0" y="360" width="438" height="137"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button" image="sash_ph_ov_item_gray.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="bottomBtnPressed:" destination="-1" eventType="touchUpInside" id="MWL-mF-XDf"/>
+                    </connections>
+                </button>
+                <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P01-0w-XSY" userLabel="topView">
+                    <rect key="frame" x="832" y="178" width="192" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuF-AQ-dqh">
+                            <rect key="frame" x="0.0" y="0.0" width="48" height="45"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="sash_ph_add_btn.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmb-HC-ZnL">
+                            <rect key="frame" x="48" y="0.0" width="48" height="45"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="sash_ph_left_arrow.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVZ-2u-Kgb">
+                            <rect key="frame" x="96" y="0.0" width="48" height="45"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="sash_ph_right_arrow.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mE9-AB-rOS">
+                            <rect key="frame" x="144" y="0.0" width="48" height="45"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="sash_ph_clear_btn.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="closeBtnPressed:" destination="-1" eventType="touchUpInside" id="Adj-Ud-FcA"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sash_ph_do_item.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dtr-0D-jUJ">
+                    <rect key="frame" x="0.0" y="223" width="438" height="137"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sash_ph_ov_item.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Jg-5m-fXr">
+                    <rect key="frame" x="0.0" y="360" width="438" height="137"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+        </view>
+        <viewController id="2t8-oj-3yr">
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </viewController>
+    </objects>
+    <resources>
+        <image name="sash_ph_add_btn.png" width="96" height="90"/>
+        <image name="sash_ph_clear_btn.png" width="96" height="90"/>
+        <image name="sash_ph_do_bk.png" width="2048" height="1366"/>
+        <image name="sash_ph_do_des.png" width="1169" height="548"/>
+        <image name="sash_ph_do_item.png" width="877" height="275"/>
+        <image name="sash_ph_do_item_gray.png" width="877" height="275"/>
+        <image name="sash_ph_left_arrow.png" width="96" height="90"/>
+        <image name="sash_ph_ov_bk.png" width="2048" height="1366"/>
+        <image name="sash_ph_ov_item.png" width="877" height="275"/>
+        <image name="sash_ph_ov_item_gray.png" width="877" height="275"/>
+        <image name="sash_ph_right_arrow.png" width="96" height="90"/>
+    </resources>
+</document>

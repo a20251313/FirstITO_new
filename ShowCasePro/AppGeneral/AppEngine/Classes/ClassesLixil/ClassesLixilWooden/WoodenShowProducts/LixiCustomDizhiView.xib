@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LixiCustomDizhiView">
+            <rect key="frame" x="0.0" y="0.0" width="751" height="629"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="2PU-wt-FUE">
+                    <rect key="frame" x="0.0" y="0.0" width="751" height="629"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="Gas-nM-kky">
+                            <rect key="frame" x="0.0" y="0.0" width="751" height="629"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product_fangan_bg.png" id="RCo-o1-GzM">
+                                    <rect key="frame" x="0.0" y="0.0" width="751" height="629"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Yq4-Z2-lMv">
+                                    <rect key="frame" x="373" y="132" width="82" height="18"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Button" image="product_heye_btn.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="showHeyeAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="CFh-Uk-wL7"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JGY-8K-deu">
+                                    <rect key="frame" x="309" y="182" width="82" height="18"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Button" image="product_huanbaodengji_btn.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="ShowHuanbaoAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="A0R-vO-xXw"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MnQ-Ns-hGB">
+                                    <rect key="frame" x="273" y="269" width="82" height="18"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="product_dingzhibuzhou_btn.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="showDingzhiAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Qnc-Q1-l9S"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yBY-6z-vs2">
+                                    <rect key="frame" x="294" y="471" width="112" height="18"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="product_mengkuanhoudu_btn.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="showMengkuanAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="edM-mG-1na"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lWd-0h-XFw">
+                                    <rect key="frame" x="329" y="357" width="82" height="18"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="product_bashou_btn.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="showBashouAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="qbL-2L-9Dc"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="IYj-X8-FgW">
+                                    <rect key="frame" x="389" y="287" width="66" height="18"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="product_moxuan_btn.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="showMoxuanAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="2rn-kj-Hl0"/>
+                                    </connections>
+                                </button>
+                                <imageView hidden="YES" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product_moxuan.png" id="EYx-Ah-sSO">
+                                    <rect key="frame" x="406" y="192" width="245" height="125"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qzA-D9-MIw">
+                                    <rect key="frame" x="620" y="190" width="32" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="closeAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="RFi-TY-haL"/>
+                                    </connections>
+                                </button>
+                                <imageView hidden="YES" tag="200" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product_heye.png" id="DtC-sN-eN7">
+                                    <rect key="frame" x="390" y="150" width="240" height="128"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <button opaque="NO" tag="201" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zhK-Bt-r2G">
+                                    <rect key="frame" x="600" y="170" width="32" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="closeAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="bLG-9J-baU"/>
+                                    </connections>
+                                </button>
+                                <imageView hidden="YES" tag="300" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product_huanbaodengji.png" id="FRO-z7-eaV">
+                                    <rect key="frame" x="118" y="146" width="192" height="108"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <imageView hidden="YES" tag="400" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product_mengkuanhoudu.png" id="8Jg-3l-GYe">
+                                    <rect key="frame" x="55" y="425" width="240" height="128"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <button opaque="NO" tag="401" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qNb-3M-HxP">
+                                    <rect key="frame" x="176" y="425" width="32" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="closeAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="8qA-V7-Kgr"/>
+                                    </connections>
+                                </button>
+                                <imageView hidden="YES" tag="600" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product_dingzhibuzhou.png" id="Lj6-JW-yqI">
+                                    <rect key="frame" x="54" y="287" width="220" height="280"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <imageView hidden="YES" tag="500" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product_bashou.png" id="eJp-zT-QF7">
+                                    <rect key="frame" x="347" y="374" width="285" height="163"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <button opaque="NO" tag="501" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7ub-Vt-Ly3">
+                                    <rect key="frame" x="600" y="398" width="32" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="closeAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="BK2-6r-ahM"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="301" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="d5m-U9-a4b">
+                                    <rect key="frame" x="208" y="146" width="32" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="closeAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="gCM-NE-M4g"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="601" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="E08-L4-Xa3">
+                                    <rect key="frame" x="198" y="320" width="32" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="closeAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="g25-Ln-BRN"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wKi-lB-9bi">
+                                    <rect key="frame" x="590" y="245" width="53" height="15"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="xiangxi1Btn:" destination="iN0-l3-epB" eventType="touchUpInside" id="8UX-zj-Txj"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="ZLz-Yb-0gr">
+                                    <rect key="frame" x="590" y="268" width="53" height="15"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="xiangxi2Btn:" destination="iN0-l3-epB" eventType="touchUpInside" id="Zza-M5-53X"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Bo7-DI-KYR">
+                                    <rect key="frame" x="590" y="287" width="53" height="15"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="xiangxi3Btn:" destination="iN0-l3-epB" eventType="touchUpInside" id="owu-a3-v4s"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgView" destination="Gas-nM-kky" id="1hw-Js-tEf"/>
+                <outlet property="m_scrollView" destination="2PU-wt-FUE" id="DWF-dc-hNw"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="product_bashou.png" width="591" height="327"/>
+        <image name="product_bashou_btn.png" width="165" height="36"/>
+        <image name="product_dingzhibuzhou.png" width="439" height="559"/>
+        <image name="product_dingzhibuzhou_btn.png" width="163" height="36"/>
+        <image name="product_fangan_bg.png" width="1503" height="1260"/>
+        <image name="product_heye.png" width="565" height="300"/>
+        <image name="product_heye_btn.png" width="164" height="36"/>
+        <image name="product_huanbaodengji.png" width="384" height="217"/>
+        <image name="product_huanbaodengji_btn.png" width="164" height="36"/>
+        <image name="product_mengkuanhoudu.png" width="384" height="217"/>
+        <image name="product_mengkuanhoudu_btn.png" width="224" height="36"/>
+        <image name="product_moxuan.png" width="491" height="250"/>
+        <image name="product_moxuan_btn.png" width="133" height="36"/>
+    </resources>
+</document>

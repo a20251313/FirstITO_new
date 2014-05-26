@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EcocaratLeadingTechViewController">
+            <connections>
+                <outlet property="itemView1" destination="MbE-9Y-qgg" id="v95-du-7Pn"/>
+                <outlet property="itemView2" destination="pYW-Bt-iLH" id="FkB-yi-cnB"/>
+                <outlet property="itemView3" destination="AcF-bL-5l1" id="6qw-ky-YgY"/>
+                <outlet property="itemView4" destination="fxw-gj-l9R" id="Ren-As-2wa"/>
+                <outlet property="scrollViews" destination="eTT-2y-zgU" id="EWx-sP-E8N"/>
+                <outlet property="view" destination="1" id="3"/>
+                <outlet property="view2AfterImg" destination="Ybn-NX-hlw" id="eGZ-Sx-gwS"/>
+                <outlet property="view2Scroll" destination="dL2-lh-Bcc" id="SnZ-Ob-jwa"/>
+                <outlet property="view3Scroll" destination="sNl-yI-H81" id="qG2-1M-3DC"/>
+                <outlet property="viewDetail1" destination="JMd-A7-9lu" id="pBR-Vg-KVu"/>
+                <outlet property="viewDetail2" destination="5GS-1t-d5S" id="hZF-4R-cLU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" id="eTT-2y-zgU">
+                    <rect key="frame" x="0.0" y="85" width="1024" height="683"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="IKg-5R-Had">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="hId-TP-5Po"/>
+                        <outlet property="delegate" destination="-1" id="ysY-kc-gre"/>
+                    </connections>
+                </collectionView>
+                <view alpha="0.0" contentMode="scaleToFill" id="fxw-gj-l9R" userLabel="itemView4">
+                    <rect key="frame" x="0.0" y="85" width="1024" height="683"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ecocarat_lt_detail_item4-bg1.png" id="SK8-Jw-JMS">
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="683"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ecocarat_lt_detail_item4_bg3.png" id="JZJ-Ef-I89">
+                            <rect key="frame" x="250" y="57" width="422" height="128"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ecocarat_lt_detail_item4-bg2.png" id="4hD-nH-NB2">
+                            <rect key="frame" x="35" y="24" width="398" height="79"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="U02-Sg-dqO">
+                            <rect key="frame" x="174" y="178" width="289" height="172"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="ecocarat_lt_detail_item4_btn1.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="view4LeftBtnPressed:" destination="-1" eventType="touchUpInside" id="QHI-JQ-ira"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="GuJ-pf-ThF">
+                            <rect key="frame" x="647" y="235" width="260" height="156"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="ecocarat_lt_detail_item4_btn2.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="view4RightBtnPressed:" destination="-1" eventType="touchUpInside" id="fzG-sx-0fg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" alpha="0.0" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="LwO-n1-DGe" userLabel="close">
+                            <rect key="frame" x="830" y="123" width="24" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="ecocarat_lt_view2Close.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="view4CloseBtnPressed:" destination="-1" eventType="touchUpInside" id="j8a-Fv-Oxt"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <view alpha="0.0" contentMode="scaleToFill" id="AcF-bL-5l1" userLabel="itemView3">
+                    <rect key="frame" x="0.0" y="85" width="1024" height="683"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ecocarat_lt_detail_item3_bg1.png" id="Gdm-ZN-yFD">
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="683"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ecocarat_lt_detail_item3_bg2.png" id="zBd-Hl-bdP">
+                            <rect key="frame" x="35" y="24" width="398" height="79"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="sNl-yI-H81">
+                            <rect key="frame" x="162" y="114" width="700" height="387"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        </scrollView>
+                        <button opaque="NO" alpha="0.0" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="Rue-V1-R66">
+                            <rect key="frame" x="830" y="123" width="24" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="ecocarat_lt_view2Close.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="view3CloseBtn:" destination="-1" eventType="touchUpInside" id="Yog-md-kmT"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" alpha="0.0" tag="60" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="qat-Jb-K46" userLabel="view3lastbtn">
+                            <rect key="frame" x="723" y="123" width="24" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="ecocarat_lt_view2Close.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="view3LastBtn:" destination="-1" eventType="touchUpInside" id="IYx-gm-PJn"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="bQ6-n4-nxi">
+                            <rect key="frame" x="208" y="189" width="205" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="ecocarat_lt_detail_item3_btn2.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="view3LeftBtnPressed:" destination="-1" eventType="touchUpInside" id="DtL-JN-aPX"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="Fce-99-sH8">
+                            <rect key="frame" x="574" y="267" width="179" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="ecocarat_lt_detail_item3_btn1.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="view3MiddleBtnPressed:" destination="-1" eventType="touchUpInside" id="pGs-2q-23l"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="wdP-gp-7dM">
+                            <rect key="frame" x="649" y="147" width="118" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="Button" image="ecocarat_lt_detail_item3_btn3.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="view3RightBtnPressed:" destination="-1" eventType="touchUpInside" id="M8a-oK-1TJ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <view alpha="0.0" contentMode="scaleToFill" id="pYW-Bt-iLH" userLabel="itemView2">
+                    <rect key="frame" x="0.0" y="85" width="1024" height="683"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ecocarat_lt_detail_item2_bgbefore.png" id="AWV-P8-BGZ" userLabel="before">
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="683"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ecocarat_lt_detail_item2_bgafter.png" id="Ybn-NX-hlw" userLabel="after">
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="683"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ecocarat_lt_detail_item2_bg2.png" id="oFx-Wu-Sge">
+                            <rect key="frame" x="35" y="23" width="600" height="78"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="BH2-gk-j1E" userLabel="coverBtn1">
+                            <rect key="frame" x="35" y="46" width="380" height="58"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="coverBtn1Pressed:" destination="-1" eventType="touchUpInside" id="cMs-bu-yo7"/>
+                            </connections>
+                        </button>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="dL2-lh-Bcc">
+                            <rect key="frame" x="162" y="114" width="700" height="385"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ecocarat_lt_detail_item2_detail2.png" id="IYF-9o-Xfj" userLabel="img2">
+                                    <rect key="frame" x="700" y="0.0" width="700" height="385"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ecocarat_lt_detail_item2_detail1.png" id="JXe-ea-r4b" userLabel="img1">
+                                    <rect key="frame" x="0.0" y="0.0" width="700" height="385"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ecocarat_lt_detail_item2_detail3.png" id="0AD-la-GlW" userLabel="img3">
+                                    <rect key="frame" x="1400" y="0.0" width="700" height="385"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                            </subviews>
+                        </scrollView>
+                        <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="Ypx-fb-hk4" userLabel="rightBtn">
+                            <rect key="frame" x="835" y="293" width="16" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="ecocarat_lt_detail_item2_btnright.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="view2RIghtBtnPressed:" destination="-1" eventType="touchUpInside" id="06G-cG-fTa"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="kbA-TL-joa" userLabel="leftBtn">
+                            <rect key="frame" x="172" y="293" width="16" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="ecocarat_lt_detail_item2_btnleft.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="view2LeftBtnPressed:" destination="-1" eventType="touchUpInside" id="9GC-kV-Wqg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="jPN-D7-D48">
+                            <rect key="frame" x="830" y="123" width="24" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="ecocarat_lt_view2Close.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="view2BtnClose:" destination="-1" eventType="touchUpInside" id="oCA-5E-1fw"/>
+                            </connections>
+                        </button>
+                        <slider opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" id="JNS-QO-xMR">
+                            <rect key="frame" x="440" y="60" width="118" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="view2Slider:" destination="-1" eventType="valueChanged" id="84a-OT-TRg"/>
+                            </connections>
+                        </slider>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <view alpha="0.0" contentMode="scaleToFill" id="MbE-9Y-qgg" userLabel="itemView1">
+                    <rect key="frame" x="0.0" y="85" width="1024" height="683"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ecocarat_lt_detail_item1_bg1.png" id="5Rm-Pz-w5i">
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="683"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="sM9-qA-5Eh">
+                            <rect key="frame" x="421" y="373" width="107" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="Button" image="ecocarat_lt_detail_item1_btn1.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="view1Detail1BtnPressed:" destination="-1" eventType="touchUpInside" id="nSl-K8-LZf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="FBY-77-i9A">
+                            <rect key="frame" x="563" y="342" width="178" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="Button" image="ecocarat_lt_detail_item1_btn2.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="view1Detail2BtnPressed:" destination="-1" eventType="touchUpInside" id="uz3-Ht-NBU"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ecocarat_lt_detail_item1_detail1.png" id="JMd-A7-9lu">
+                            <rect key="frame" x="163" y="113" width="700" height="385"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ecocarat_lt_detail_item1_detail2.png" id="5GS-1t-d5S">
+                            <rect key="frame" x="163" y="113" width="700" height="385"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </imageView>
+                        <button opaque="NO" alpha="0.0" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="nmO-Lt-Iob" userLabel="closeBtn">
+                            <rect key="frame" x="829" y="123" width="24" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="ecocarat_lt_detail_item1_btnclose.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="view1CloseBtnPressed:" destination="-1" eventType="touchUpInside" id="dxc-FK-Svg"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+        </view>
+        <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" id="0pZ-fh-RrI">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uR9-il-Mey">
+                <size key="itemSize" width="50" height="50"/>
+                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            </collectionViewFlowLayout>
+            <cells/>
+        </collectionView>
+        <viewController id="nnW-UT-FoM">
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </viewController>
+        <viewController id="tLt-hM-K3r">
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </viewController>
+    </objects>
+    <resources>
+        <image name="ecocarat_lt_detail_item1_bg1.png" width="2048" height="1366"/>
+        <image name="ecocarat_lt_detail_item1_btn1.png" width="214" height="36"/>
+        <image name="ecocarat_lt_detail_item1_btn2.png" width="356" height="36"/>
+        <image name="ecocarat_lt_detail_item1_btnclose.png" width="48" height="48"/>
+        <image name="ecocarat_lt_detail_item1_detail1.png" width="1400" height="770"/>
+        <image name="ecocarat_lt_detail_item1_detail2.png" width="1400" height="770"/>
+        <image name="ecocarat_lt_detail_item2_bg2.png" width="1201" height="157"/>
+        <image name="ecocarat_lt_detail_item2_bgafter.png" width="2048" height="1366"/>
+        <image name="ecocarat_lt_detail_item2_bgbefore.png" width="2048" height="1366"/>
+        <image name="ecocarat_lt_detail_item2_btnleft.png" width="32" height="60"/>
+        <image name="ecocarat_lt_detail_item2_btnright.png" width="32" height="60"/>
+        <image name="ecocarat_lt_detail_item2_detail1.png" width="1400" height="770"/>
+        <image name="ecocarat_lt_detail_item2_detail2.png" width="1400" height="770"/>
+        <image name="ecocarat_lt_detail_item2_detail3.png" width="1400" height="770"/>
+        <image name="ecocarat_lt_detail_item3_bg1.png" width="2048" height="1366"/>
+        <image name="ecocarat_lt_detail_item3_bg2.png" width="797" height="158"/>
+        <image name="ecocarat_lt_detail_item3_btn1.png" width="178" height="18"/>
+        <image name="ecocarat_lt_detail_item3_btn2.png" width="202" height="18"/>
+        <image name="ecocarat_lt_detail_item3_btn3.png" width="119" height="18"/>
+        <image name="ecocarat_lt_detail_item4-bg1.png" width="2048" height="1366"/>
+        <image name="ecocarat_lt_detail_item4-bg2.png" width="945" height="157"/>
+        <image name="ecocarat_lt_detail_item4_bg3.png" width="845" height="257"/>
+        <image name="ecocarat_lt_detail_item4_btn1.png" width="579" height="344"/>
+        <image name="ecocarat_lt_detail_item4_btn2.png" width="521" height="313"/>
+        <image name="ecocarat_lt_view2Close.png" width="48" height="48"/>
+    </resources>
+</document>

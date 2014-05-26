@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LixilWoodenLeadingTechViewController">
+            <connections>
+                <outlet property="biMenQi" destination="014-fw-WYS" id="VRJ-ju-dZO"/>
+                <outlet property="boLi" destination="9Cb-a2-vzB" id="2Qq-Dl-NgH"/>
+                <outlet property="heYie" destination="r5d-a9-ehn" id="Dax-wR-24Y"/>
+                <outlet property="huaLun" destination="Lln-fG-MT8" id="b8Q-v0-73t"/>
+                <outlet property="huanBao" destination="rEi-sw-lib" id="tZh-J7-ld6"/>
+                <outlet property="huanChong" destination="lWZ-ly-ark" id="gD6-RU-qSi"/>
+                <outlet property="scrollViews" destination="G49-Ot-CZw" id="S13-Wp-6RV"/>
+                <outlet property="sheetScrollView" destination="Fe0-JY-GUg" id="B9K-tu-fnM"/>
+                <outlet property="shineiVIew" destination="hZY-BN-yAT" id="4ja-UM-toL"/>
+                <outlet property="shuZhi" destination="c1A-fY-0u8" id="ZHj-rs-lO7"/>
+                <outlet property="sixDao" destination="1V3-U3-Qhc" id="a5A-6Q-IX3"/>
+                <outlet property="view" destination="1" id="3"/>
+                <outlet property="xiaoYinSuo" destination="iOI-vd-u2o" id="Hd0-hL-dWb"/>
+                <outlet property="yanGe" destination="kep-cY-sf5" id="91m-MR-7oO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" id="G49-Ot-CZw">
+                    <rect key="frame" x="0.0" y="85" width="1024" height="683"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Dn9-ka-BA8">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="5SS-cx-T8e"/>
+                        <outlet property="delegate" destination="-1" id="3dc-4K-dhK"/>
+                    </connections>
+                </collectionView>
+                <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="RXb-HY-2LT" userLabel="leftBtn">
+                    <rect key="frame" x="15" y="425" width="29" height="51"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="inax_leading_leftarrow.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="eQL-Gh-RWL" userLabel="rightBtn">
+                    <rect key="frame" x="979" y="425" width="29" height="51"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="inax_leading_rightarrow.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <view alpha="0.0" contentMode="scaleToFill" id="hZY-BN-yAT" userLabel="shineiView">
+                    <rect key="frame" x="0.0" y="85" width="1024" height="683"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wooden_lt_shinei_bk.png" id="mmy-k1-1ui" userLabel="bk">
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="690"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="kvp-nX-4WF">
+                            <rect key="frame" x="600" y="109" width="18" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="Button" image="wooden_lt_shinei_huanmanbimenqiitem.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="biMenQiBtnPressed:" destination="-1" eventType="touchUpInside" id="vdb-bP-VkQ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="xfJ-hX-ZLk">
+                            <rect key="frame" x="593" y="142" width="18" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="Button" image="wooden_lt_shinei_heyieitem.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="heYieBtnPressed:" destination="-1" eventType="touchUpInside" id="4Rc-S6-5Od"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="RQ0-yp-Wq2">
+                            <rect key="frame" x="585" y="248" width="18" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="Button" image="wooden_lt_shinei_shuzhisheetitem.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="shuZhiBtnPressed:" destination="-1" eventType="touchUpInside" id="amz-bU-En0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="TXJ-bT-pcs">
+                            <rect key="frame" x="586" y="347" width="18" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="Button" image="wooden_lt_shinei_yangeliuchengitem.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="yanGeBtnPressed:" destination="-1" eventType="touchUpInside" id="ywY-1j-49i"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="Z5j-v7-gKn">
+                            <rect key="frame" x="585" y="439" width="18" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="Button" image="wooden_lt_shinei_huanbaoitem.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="huanBaoBtnPressed:" destination="-1" eventType="touchUpInside" id="IeI-OI-naq"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="WIV-i4-wpT">
+                            <rect key="frame" x="428" y="518" width="18" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="Button" image="wooden_lt_shinei_six_processesitem.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="sixBtnPressed:" destination="-1" eventType="touchUpInside" id="OWm-zg-Vbc"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="aFE-Dv-twX">
+                            <rect key="frame" x="508" y="473" width="18" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="Button" image="wooden_lt_shinei_boliitem.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="boLiBtnPressed:" destination="-1" eventType="touchUpInside" id="QQt-2H-gsz"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="ZpK-Rv-qme">
+                            <rect key="frame" x="577" y="531" width="18" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="Button" image="wooden_lt_shinei_caiyonghualunitem.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="huaLunBtnPressed:" destination="-1" eventType="touchUpInside" id="mCV-45-WAY"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="T3V-tk-ba0">
+                            <rect key="frame" x="411" y="346" width="18" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="Button" image="wooden_lt_shinei_xiaoyinsuoitem.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="xiaoYinSuoBtnPressed:" destination="-1" eventType="touchUpInside" id="nM9-VS-luY"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="JNe-EW-FqF">
+                            <rect key="frame" x="422" y="109" width="18" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="Button" image="wooden_lt_shinei_shuanghuanchongitem.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="huanChongQiBtnPressed:" destination="-1" eventType="touchUpInside" id="5Hi-pb-M4b"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wooden_lt_shinei_huanmanbimenqi_des.png" id="014-fw-WYS">
+                            <rect key="frame" x="605" y="69" width="272" height="272"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wooden_lt_shinei_heyie_des.png" id="r5d-a9-ehn">
+                            <rect key="frame" x="608" y="69" width="269" height="186"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wooden_lt_shinei_shuzhisheet_des.png" id="c1A-fY-0u8">
+                            <rect key="frame" x="600" y="116" width="312" height="195"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wooden_lt_shinei_yangeliucheng_des.png" id="kep-cY-sf5">
+                            <rect key="frame" x="600" y="219" width="312" height="188"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wooden_lt_shinei_huanbao_des.png" id="rEi-sw-lib">
+                            <rect key="frame" x="600" y="314" width="312" height="227"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wooden_lt_shinei_caiyonghualun_des.png" id="Lln-fG-MT8">
+                            <rect key="frame" x="594" y="343" width="318" height="204"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wooden_lt_shinei_boli_des.png" id="9Cb-a2-vzB">
+                            <rect key="frame" x="109" y="381" width="402" height="181"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wooden_lt_shinei_shuanghuanchong_des.png" id="lWZ-ly-ark">
+                            <rect key="frame" x="109" y="73" width="328" height="172"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wooden_lt_shinei_six_processes_des.png" id="1V3-U3-Qhc">
+                            <rect key="frame" x="109" y="292" width="322" height="233"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wooden_lt_shinei_xiaoyinsuo_des.png" id="iOI-vd-u2o">
+                            <rect key="frame" x="109" y="74" width="328" height="290"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gfX-PQ-Jbj">
+                            <rect key="frame" x="290" y="74" width="35" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="huanChongQiCloseBtn:" destination="-1" eventType="touchUpInside" id="zE1-aB-zhd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Cf5-B3-4xG">
+                            <rect key="frame" x="847" y="69" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="heYieCloseBtn:" destination="-1" eventType="touchUpInside" id="gZ2-g4-BWl"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Tvd-uh-vns">
+                            <rect key="frame" x="880" y="116" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="shuZhiCloseBtn:" destination="-1" eventType="touchUpInside" id="mkQ-YQ-NO0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="94y-iZ-TvF">
+                            <rect key="frame" x="857" y="219" width="53" height="41"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="yanGeCloseBtn:" destination="-1" eventType="touchUpInside" id="b7u-aX-Zfh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bas-sQ-9nR">
+                            <rect key="frame" x="880" y="349" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="huaLunCloseBtn:" destination="-1" eventType="touchUpInside" id="CMR-Rp-R5F"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="745-ni-02T">
+                            <rect key="frame" x="290" y="292" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="sixCloseBtn:" destination="-1" eventType="touchUpInside" id="g4W-QT-msV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QE8-5g-3Kh">
+                            <rect key="frame" x="290" y="381" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="boliCloseBtn:" destination="-1" eventType="touchUpInside" id="UkF-tr-Uet"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GOZ-BF-s7d">
+                            <rect key="frame" x="847" y="69" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="biMenQiCloseBtn:" destination="-1" eventType="touchUpInside" id="L1Y-Lx-N4R"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PPt-Ny-6qH">
+                            <rect key="frame" x="290" y="69" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="xiaoYinSuoCloseBtn:" destination="-1" eventType="touchUpInside" id="An8-nQ-7vM"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="C8u-Dc-doo" userLabel="sheetBtn">
+                            <rect key="frame" x="711" y="169" width="188" height="128"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="sheetBtnPressed:" destination="-1" eventType="touchUpInside" id="dbk-am-NFS"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="H9a-3F-WYh">
+                            <rect key="frame" x="880" y="311" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="huanBaoCloseBtn:" destination="-1" eventType="touchUpInside" id="3S5-XA-2uT"/>
+                            </connections>
+                        </button>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="Fe0-JY-GUg" userLabel="sheetScrollView">
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="683"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+        </view>
+        <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" id="Cz8-R1-0ne">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="O7j-oG-m0o">
+                <size key="itemSize" width="50" height="50"/>
+                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            </collectionViewFlowLayout>
+            <cells/>
+        </collectionView>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MZN-Fw-AXy">
+            <rect key="frame" x="0.0" y="0.0" width="73" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" title="Button">
+                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+            </state>
+        </button>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OtZ-8o-mZI">
+            <rect key="frame" x="0.0" y="0.0" width="73" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+            <state key="normal" title="Button">
+                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+            </state>
+        </button>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jOZ-jm-usO">
+            <rect key="frame" x="0.0" y="0.0" width="73" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+            <state key="normal" title="Button">
+                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+            </state>
+        </button>
+    </objects>
+    <resources>
+        <image name="inax_leading_leftarrow.png" width="57" height="101"/>
+        <image name="inax_leading_rightarrow.png" width="57" height="101"/>
+        <image name="wooden_lt_shinei_bk.png" width="2048" height="1379"/>
+        <image name="wooden_lt_shinei_boli_des.png" width="804" height="362"/>
+        <image name="wooden_lt_shinei_boliitem.png" width="36" height="36"/>
+        <image name="wooden_lt_shinei_caiyonghualun_des.png" width="636" height="408"/>
+        <image name="wooden_lt_shinei_caiyonghualunitem.png" width="36" height="36"/>
+        <image name="wooden_lt_shinei_heyie_des.png" width="538" height="373"/>
+        <image name="wooden_lt_shinei_heyieitem.png" width="36" height="36"/>
+        <image name="wooden_lt_shinei_huanbao_des.png" width="624" height="454"/>
+        <image name="wooden_lt_shinei_huanbaoitem.png" width="36" height="36"/>
+        <image name="wooden_lt_shinei_huanmanbimenqi_des.png" width="543" height="543"/>
+        <image name="wooden_lt_shinei_huanmanbimenqiitem.png" width="36" height="36"/>
+        <image name="wooden_lt_shinei_shuanghuanchong_des.png" width="657" height="345"/>
+        <image name="wooden_lt_shinei_shuanghuanchongitem.png" width="36" height="36"/>
+        <image name="wooden_lt_shinei_shuzhisheet_des.png" width="624" height="391"/>
+        <image name="wooden_lt_shinei_shuzhisheetitem.png" width="36" height="36"/>
+        <image name="wooden_lt_shinei_six_processes_des.png" width="644" height="466"/>
+        <image name="wooden_lt_shinei_six_processesitem.png" width="36" height="36"/>
+        <image name="wooden_lt_shinei_xiaoyinsuo_des.png" width="657" height="580"/>
+        <image name="wooden_lt_shinei_xiaoyinsuoitem.png" width="36" height="36"/>
+        <image name="wooden_lt_shinei_yangeliucheng_des.png" width="624" height="377"/>
+        <image name="wooden_lt_shinei_yangeliuchengitem.png" width="36" height="36"/>
+    </resources>
+</document>

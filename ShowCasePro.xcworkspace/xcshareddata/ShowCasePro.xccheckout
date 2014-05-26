@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A68CD73F-487C-4604-A049-0799C856A586</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ShowCasePro</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>88C2F9EC-C772-4277-9D7E-301BFDAD6E14</key>
+		<string>root@10.0.0.101:/opt/git/LixilGroup.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ShowCasePro.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>88C2F9EC-C772-4277-9D7E-301BFDAD6E14</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>root@10.0.0.101:/opt/git/LixilGroup.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>88C2F9EC-C772-4277-9D7E-301BFDAD6E14</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>88C2F9EC-C772-4277-9D7E-301BFDAD6E14</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LixilGroup</string>
+		</dict>
+	</array>
+</dict>
+</plist>

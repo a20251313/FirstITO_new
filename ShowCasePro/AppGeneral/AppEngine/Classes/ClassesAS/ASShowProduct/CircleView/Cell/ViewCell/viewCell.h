@@ -1,0 +1,22 @@
+//
+//  viewCell.h
+//  SCHCricleView
+//
+//  Created by 魏巍 on 12-11-11.
+//  Copyright (c) 2012年 sch. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "SCHCircleViewCell.h"
+#import "ProductType.h"
+
+@interface viewCell : SCHCircleViewCell
+{
+    UIImageView *_image_view;
+}
+
+@property (nonatomic,retain) IBOutlet UIImageView *image_view;
+
+@property (nonatomic,strong) ProductType *productType;
+
+@end

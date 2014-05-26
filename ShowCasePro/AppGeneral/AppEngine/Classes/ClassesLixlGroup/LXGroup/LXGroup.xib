@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LXGroup">
+            <connections>
+                <outlet property="chinaMap" destination="d5k-rA-GQB" id="s3G-CV-bd5"/>
+                <outlet property="eastMap" destination="Je1-q5-Zkm" id="dio-pd-NVm"/>
+                <outlet property="listView" destination="wfH-dn-qY7" id="KRZ-CR-4qv"/>
+                <outlet property="masterView" destination="VzV-gL-332" id="g54-da-98H"/>
+                <outlet property="middleEastMap" destination="HRK-QE-xw7" id="JFY-cZ-kiC"/>
+                <outlet property="middleMap" destination="SRR-pR-9fG" id="Ub7-Cy-pMj"/>
+                <outlet property="northEastMap" destination="Lua-ig-JC5" id="Pf8-gc-58M"/>
+                <outlet property="northMap" destination="an4-RD-VFZ" id="yXH-gH-oey"/>
+                <outlet property="northWestMap" destination="g40-ZD-d3Z" id="9nO-Ns-xYf"/>
+                <outlet property="pointChina1" destination="W0V-0p-ggL" id="2aP-Lz-2Yb"/>
+                <outlet property="pointChina2" destination="W3Y-4W-Maw" id="sxS-3n-TnZ"/>
+                <outlet property="pointChina3" destination="loX-nl-g2Q" id="3iB-q8-Z71"/>
+                <outlet property="pointChina4" destination="og6-E2-mb6" id="NxP-ea-pNg"/>
+                <outlet property="pointEast1" destination="STE-uP-VBR" id="i8j-Wf-1N6"/>
+                <outlet property="pointEast2" destination="9LO-Zs-tg4" id="3II-2a-ZdI"/>
+                <outlet property="pointMiddle1" destination="UJ2-l9-hBL" id="qnM-vA-TXx"/>
+                <outlet property="pointNorth1" destination="rX3-kc-cnj" id="Fkm-hi-cIb"/>
+                <outlet property="pointNorth2" destination="ti8-ty-ojd" id="SLg-hO-wTy"/>
+                <outlet property="pointNorth3" destination="aaY-Eb-CpY" id="qgP-cs-dFM"/>
+                <outlet property="pointNorthEast1" destination="EFN-sv-hed" id="nQG-LQ-HQo"/>
+                <outlet property="pointNorthEast2" destination="9Se-hl-Udl" id="EJ3-TS-iRs"/>
+                <outlet property="pointNorthWest1" destination="Rk5-dC-hxF" id="2SX-Wp-1yA"/>
+                <outlet property="pointSouth1" destination="Zll-tE-P2J" id="mvG-ke-kJk"/>
+                <outlet property="pointSouth2" destination="cRs-E0-sru" id="wQl-iA-twE"/>
+                <outlet property="pointSouth3" destination="Qmb-r1-DdX" id="rMZ-Tf-qH2"/>
+                <outlet property="pointSouth4" destination="AOh-OH-VqJ" id="dGt-3J-UE8"/>
+                <outlet property="pointUnuse1" destination="DUH-z2-Qe3" id="wSl-Gg-Xwb"/>
+                <outlet property="pointUnuse2" destination="rQU-13-ptR" id="aFG-HY-y7U"/>
+                <outlet property="pointWest1" destination="2o7-fZ-IME" id="usw-FB-zwC"/>
+                <outlet property="southMap" destination="TD3-DT-s55" id="gtP-6d-DrH"/>
+                <outlet property="view" destination="1" id="3"/>
+                <outlet property="westMap" destination="KBG-W1-ILf" id="VAe-hR-yYX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlG-um-Qir" userLabel="bgButton">
+                    <rect key="frame" x="0.0" y="85" width="1024" height="683"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="lx_group_bg.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="bgButtonEvent" destination="-1" eventType="touchUpInside" id="8DY-ZS-3Sb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdV-lr-kcF" userLabel="hideButton">
+                    <rect key="frame" x="53" y="138" width="30" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="lx_group_hidebutton.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="hideButtonEvent" destination="-1" eventType="touchUpInside" id="k2F-EO-skc"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VzV-gL-332" userLabel="masterView">
+                    <rect key="frame" x="53" y="181" width="350" height="587"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wfH-dn-qY7" userLabel="listView">
+                            <rect key="frame" x="0.0" y="0.0" width="201" height="480"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_list.png" translatesAutoresizingMaskIntoConstraints="NO" id="OVh-VS-pHw">
+                                    <rect key="frame" x="0.0" y="0.0" width="201" height="480"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L19-UD-YnQ">
+                                    <rect key="frame" x="0.0" y="8" width="201" height="43"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="chinaArea" destination="-1" eventType="touchUpInside" id="2xX-iR-pHf"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rn4-8r-TpB">
+                                    <rect key="frame" x="0.0" y="59" width="201" height="43"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="northArea" destination="-1" eventType="touchUpInside" id="B3q-lj-bjR"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLm-6g-tHG">
+                                    <rect key="frame" x="0.0" y="110" width="201" height="45"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="middleEastArea" destination="-1" eventType="touchUpInside" id="1HG-PF-HhO"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cm5-Ui-x6Q">
+                                    <rect key="frame" x="0.0" y="163" width="201" height="43"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="eastArea" destination="-1" eventType="touchUpInside" id="8Yy-WY-gxE"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2th-PB-Rf3">
+                                    <rect key="frame" x="0.0" y="218" width="201" height="43"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="northEastArea" destination="-1" eventType="touchUpInside" id="oEm-23-QhG"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDD-nH-u8d">
+                                    <rect key="frame" x="0.0" y="269" width="201" height="43"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="northWestArea" destination="-1" eventType="touchUpInside" id="oae-RR-jzD"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3WH-S8-Dfx">
+                                    <rect key="frame" x="0.0" y="320" width="201" height="43"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="middleArea" destination="-1" eventType="touchUpInside" id="wQW-ni-Why"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eim-4w-iKg">
+                                    <rect key="frame" x="0.0" y="371" width="201" height="43"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="westArea" destination="-1" eventType="touchUpInside" id="i66-Z4-VrT"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ar9-X1-CVH">
+                                    <rect key="frame" x="0.0" y="422" width="201" height="46"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="southArea" destination="-1" eventType="touchUpInside" id="j93-af-icd"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_china_map.png" translatesAutoresizingMaskIntoConstraints="NO" id="d5k-rA-GQB">
+                    <rect key="frame" x="694" y="457" width="75" height="77"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_china_map.png" translatesAutoresizingMaskIntoConstraints="NO" id="HRK-QE-xw7">
+                    <rect key="frame" x="694" y="457" width="75" height="77"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_south_map.png" translatesAutoresizingMaskIntoConstraints="NO" id="TD3-DT-s55">
+                    <rect key="frame" x="602" y="623" width="111" height="83"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_middle_map.png" translatesAutoresizingMaskIntoConstraints="NO" id="SRR-pR-9fG">
+                    <rect key="frame" x="587" y="495" width="106" height="66"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_west_map.png" translatesAutoresizingMaskIntoConstraints="NO" id="KBG-W1-ILf">
+                    <rect key="frame" x="439" y="475" width="174" height="135"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_north_west_map.png" translatesAutoresizingMaskIntoConstraints="NO" id="g40-ZD-d3Z">
+                    <rect key="frame" x="553" y="392" width="69" height="124"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_north_east_map.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lua-ig-JC5">
+                    <rect key="frame" x="716" y="317" width="82" height="74"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_east_map.png" translatesAutoresizingMaskIntoConstraints="NO" id="Je1-q5-Zkm">
+                    <rect key="frame" x="721" y="535" width="52" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_north_map.png" translatesAutoresizingMaskIntoConstraints="NO" id="an4-RD-VFZ">
+                    <rect key="frame" x="653" y="336" width="113" height="132"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lixilGroup_nav_bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wkk-Lc-grQ">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="85"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lp0-pb-V8l">
+                    <rect key="frame" x="1" y="45" width="81" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="lixilGroup_back.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="backButton:" destination="-1" eventType="touchUpInside" id="4cl-NG-wiH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0JK-Tg-x6f">
+                    <rect key="frame" x="926" y="14" width="78" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="lixilGroup_setting.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="settingButton:" destination="-1" eventType="touchUpInside" id="vRd-lm-dZ2"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="EFN-sv-hed">
+                    <rect key="frame" x="763" y="336" width="10" height="10"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="ti8-ty-ojd">
+                    <rect key="frame" x="683" y="393" width="10" height="10"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="rX3-kc-cnj">
+                    <rect key="frame" x="680" y="371" width="10" height="10"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Se-hl-Udl">
+                    <rect key="frame" x="752" y="369" width="10" height="10"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="aaY-Eb-CpY">
+                    <rect key="frame" x="730" y="433" width="10" height="10"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="W0V-0p-ggL">
+                    <rect key="frame" x="730" y="491" width="10" height="10"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="W3Y-4W-Maw">
+                    <rect key="frame" x="746" y="493" width="10" height="10"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="og6-E2-mb6">
+                    <rect key="frame" x="751" y="506" width="10" height="10"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="loX-nl-g2Q">
+                    <rect key="frame" x="732" y="508" width="10" height="10"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="UJ2-l9-hBL">
+                    <rect key="frame" x="656" y="530" width="10" height="10"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rk5-dC-hxF">
+                    <rect key="frame" x="582" y="477" width="10" height="10"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="2o7-fZ-IME">
+                    <rect key="frame" x="529" y="535" width="10" height="10"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="STE-uP-VBR">
+                    <rect key="frame" x="744" y="542" width="10" height="10"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="9LO-Zs-tg4">
+                    <rect key="frame" x="726" y="555" width="10" height="10"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="rQU-13-ptR">
+                    <rect key="frame" x="635" y="587" width="10" height="10"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zll-tE-P2J">
+                    <rect key="frame" x="643" y="644" width="10" height="10"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="cRs-E0-sru">
+                    <rect key="frame" x="664" y="646" width="10" height="10"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qmb-r1-DdX">
+                    <rect key="frame" x="647" y="665" width="10" height="10"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="AOh-OH-VqJ">
+                    <rect key="frame" x="676" y="655" width="10" height="10"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lx_group_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="DUH-z2-Qe3">
+                    <rect key="frame" x="773" y="608" width="10" height="10"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDw-nP-RXf">
+                    <rect key="frame" x="746" y="334" width="37" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="northEastArea" destination="-1" eventType="touchUpInside" id="IHt-Bc-L63"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EI9-3C-SCi">
+                    <rect key="frame" x="723" y="477" width="39" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="chinaArea" destination="-1" eventType="touchUpInside" id="wzU-Qx-Eht"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EK6-1S-qxU">
+                    <rect key="frame" x="722" y="537" width="39" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="eastArea" destination="-1" eventType="touchUpInside" id="Ki9-Ge-h0O"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNb-29-OPC">
+                    <rect key="frame" x="638" y="637" width="55" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="southArea" destination="-1" eventType="touchUpInside" id="4Oj-X5-yR1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0X-eU-Iff">
+                    <rect key="frame" x="515" y="520" width="39" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="westArea" destination="-1" eventType="touchUpInside" id="lLR-WY-y0Y"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cii-UC-nKs">
+                    <rect key="frame" x="568" y="458" width="39" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="northWestArea" destination="-1" eventType="touchUpInside" id="N2B-bY-ZNV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52Q-Wb-cix">
+                    <rect key="frame" x="638" y="508" width="39" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="middleArea" destination="-1" eventType="touchUpInside" id="ZMW-fL-iJa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQI-eq-LWw">
+                    <rect key="frame" x="674" y="369" width="70" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="northArea" destination="-1" eventType="touchUpInside" id="0BW-Go-0B9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="lixilGroup_back.png" width="81" height="33"/>
+        <image name="lixilGroup_nav_bar.png" width="2048" height="170"/>
+        <image name="lixilGroup_setting.png" width="78" height="80"/>
+        <image name="lx_group_bg.png" width="2048" height="1366"/>
+        <image name="lx_group_button.png" width="20" height="20"/>
+        <image name="lx_group_china_map.png" width="149" height="153"/>
+        <image name="lx_group_east_map.png" width="103" height="100"/>
+        <image name="lx_group_hidebutton.png" width="60" height="58"/>
+        <image name="lx_group_list.png" width="403" height="960"/>
+        <image name="lx_group_middle_map.png" width="211" height="131"/>
+        <image name="lx_group_north_east_map.png" width="164" height="153"/>
+        <image name="lx_group_north_map.png" width="225" height="264"/>
+        <image name="lx_group_north_west_map.png" width="138" height="248"/>
+        <image name="lx_group_south_map.png" width="222" height="166"/>
+        <image name="lx_group_west_map.png" width="347" height="269"/>
+    </resources>
+</document>
