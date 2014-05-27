@@ -18,25 +18,24 @@
 #define MenuItem9_Frame CGRectMake(670,540,310,215)
 */
 
-#define MenuItem1_Point CGPointMake(174,133)
+#define MenuItem1_Point CGPointMake(174,142)
 #define MenuItem2_Point CGPointMake(512,142)
 #define MenuItem3_Point CGPointMake(848,142)
 #define MenuItem4_Point CGPointMake(174,360)
 #define MenuItem5_Point CGPointMake(512,360)
 #define MenuItem6_Point CGPointMake(848,360)
-#define MenuItem7_Point CGPointMake(180,583)
+#define MenuItem7_Point CGPointMake(174,578)
 #define MenuItem8_Point CGPointMake(512,578)
 #define MenuItem9_Point CGPointMake(848,578)
 
 // 动态偏移后中心位置
-
-#define MenuItem1_OffSet_Point CGPointMake(164,123)
+#define MenuItem1_OffSet_Point CGPointMake(164,132)
 #define MenuItem2_OffSet_Point CGPointMake(512,132)
 #define MenuItem3_OffSet_Point CGPointMake(858,132)
 #define MenuItem4_OffSet_Point CGPointMake(164,360)
 #define MenuItem5_OffSet_Point CGPointMake(512,360)
 #define MenuItem6_OffSet_Point CGPointMake(858,360)
-#define MenuItem7_OffSet_Point CGPointMake(170,593)
+#define MenuItem7_OffSet_Point CGPointMake(164,588)
 #define MenuItem8_OffSet_Point CGPointMake(512,588)
 #define MenuItem9_OffSet_Point CGPointMake(858,588)
 
