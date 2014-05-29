@@ -857,6 +857,14 @@
 		84E3BBAA18B5F5F100B8F1BC /* GenericDao+Tcity.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E3BBA918B5F5F100B8F1BC /* GenericDao+Tcity.m */; };
 		84E3BBB018B7036000B8F1BC /* GenericDao+Twarehouse.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E3BBAF18B7036000B8F1BC /* GenericDao+Twarehouse.m */; };
 		84E6502C186AD67C00B6B7D9 /* NIDropDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E6502B186AD67C00B6B7D9 /* NIDropDown.m */; };
+		86111C85193776B900147844 /* Ecocarat_jiancebaogao1.png in Resources */ = {isa = PBXBuildFile; fileRef = 86111C7D193776B900147844 /* Ecocarat_jiancebaogao1.png */; };
+		86111C86193776B900147844 /* Ecocarat_jiancebaogao2.png in Resources */ = {isa = PBXBuildFile; fileRef = 86111C7E193776B900147844 /* Ecocarat_jiancebaogao2.png */; };
+		86111C87193776B900147844 /* Ecocarat_jiancebaogao3.png in Resources */ = {isa = PBXBuildFile; fileRef = 86111C7F193776B900147844 /* Ecocarat_jiancebaogao3.png */; };
+		86111C88193776B900147844 /* Ecocarat_jiancebaogao4.png in Resources */ = {isa = PBXBuildFile; fileRef = 86111C80193776B900147844 /* Ecocarat_jiancebaogao4.png */; };
+		86111C89193776B900147844 /* Ecocarat_jianyanbaogao1.png in Resources */ = {isa = PBXBuildFile; fileRef = 86111C81193776B900147844 /* Ecocarat_jianyanbaogao1.png */; };
+		86111C8A193776B900147844 /* Ecocarat_jianyanbaogao2.png in Resources */ = {isa = PBXBuildFile; fileRef = 86111C82193776B900147844 /* Ecocarat_jianyanbaogao2.png */; };
+		86111C8B193776B900147844 /* Ecocarat_jianyanbaogao3.png in Resources */ = {isa = PBXBuildFile; fileRef = 86111C83193776B900147844 /* Ecocarat_jianyanbaogao3.png */; };
+		86111C8C193776B900147844 /* Ecocarat_jianyanbaogao4.png in Resources */ = {isa = PBXBuildFile; fileRef = 86111C84193776B900147844 /* Ecocarat_jianyanbaogao4.png */; };
 		8623D1F619336E4500CAEDD6 /* inax_lt_page21.png in Resources */ = {isa = PBXBuildFile; fileRef = 8623D1F419336E4500CAEDD6 /* inax_lt_page21.png */; };
 		8623D1F719336E4500CAEDD6 /* inax_lt_page22.png in Resources */ = {isa = PBXBuildFile; fileRef = 8623D1F519336E4500CAEDD6 /* inax_lt_page22.png */; };
 		8627D0C11924D83F0033EE9C /* product_tedian.png in Resources */ = {isa = PBXBuildFile; fileRef = 8627D0961924D83F0033EE9C /* product_tedian.png */; };
@@ -3034,6 +3042,14 @@
 		84E3BBAF18B7036000B8F1BC /* GenericDao+Twarehouse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GenericDao+Twarehouse.m"; sourceTree = "<group>"; };
 		84E6502A186AD67C00B6B7D9 /* NIDropDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIDropDown.h; sourceTree = "<group>"; };
 		84E6502B186AD67C00B6B7D9 /* NIDropDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIDropDown.m; sourceTree = "<group>"; };
+		86111C7D193776B900147844 /* Ecocarat_jiancebaogao1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ecocarat_jiancebaogao1.png; sourceTree = "<group>"; };
+		86111C7E193776B900147844 /* Ecocarat_jiancebaogao2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ecocarat_jiancebaogao2.png; sourceTree = "<group>"; };
+		86111C7F193776B900147844 /* Ecocarat_jiancebaogao3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ecocarat_jiancebaogao3.png; sourceTree = "<group>"; };
+		86111C80193776B900147844 /* Ecocarat_jiancebaogao4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ecocarat_jiancebaogao4.png; sourceTree = "<group>"; };
+		86111C81193776B900147844 /* Ecocarat_jianyanbaogao1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ecocarat_jianyanbaogao1.png; sourceTree = "<group>"; };
+		86111C82193776B900147844 /* Ecocarat_jianyanbaogao2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ecocarat_jianyanbaogao2.png; sourceTree = "<group>"; };
+		86111C83193776B900147844 /* Ecocarat_jianyanbaogao3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ecocarat_jianyanbaogao3.png; sourceTree = "<group>"; };
+		86111C84193776B900147844 /* Ecocarat_jianyanbaogao4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ecocarat_jianyanbaogao4.png; sourceTree = "<group>"; };
 		8623D1F419336E4500CAEDD6 /* inax_lt_page21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inax_lt_page21.png; sourceTree = "<group>"; };
 		8623D1F519336E4500CAEDD6 /* inax_lt_page22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inax_lt_page22.png; sourceTree = "<group>"; };
 		8627D0961924D83F0033EE9C /* product_tedian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = product_tedian.png; sourceTree = "<group>"; };
@@ -3119,8 +3135,8 @@
 		8F1DF9D2192EFC020087A372 /* product_xilie_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = product_xilie_btn.png; sourceTree = "<group>"; };
 		8F1DF9D4192EFE120087A372 /* bottom_btn_wholebody_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottom_btn_wholebody_pressed.png; sourceTree = "<group>"; };
 		8F1DF9D5192EFE120087A372 /* bottom_btn_xilie_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottom_btn_xilie_pressed.png; sourceTree = "<group>"; };
-		8F225EE619373A5C004CB77F /* LixilShowCerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LixilShowCerScrollView.h; sourceTree = "<group>"; };
-		8F225EE719373A5C004CB77F /* LixilShowCerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LixilShowCerScrollView.m; sourceTree = "<group>"; };
+		8F225EE619373A5C004CB77F /* LixilShowCerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LixilShowCerScrollView.h; path = ../../LixilDetailView/LixilShowCerScrollView.h; sourceTree = "<group>"; };
+		8F225EE719373A5C004CB77F /* LixilShowCerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LixilShowCerScrollView.m; path = ../../LixilDetailView/LixilShowCerScrollView.m; sourceTree = "<group>"; };
 		8F5A190B192340EA00DB3F7B /* LixilBigDetailScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LixilBigDetailScrollView.h; sourceTree = "<group>"; };
 		8F5A190C192340EA00DB3F7B /* LixilBigDetailScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LixilBigDetailScrollView.m; sourceTree = "<group>"; };
 		8F85993E1934693600501D85 /* inax_lt_anmoyugang1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inax_lt_anmoyugang1.jpg; sourceTree = "<group>"; };
@@ -4668,11 +4684,14 @@
 		046CBC9D18EBECFC001C4FA7 /* EcocaratShowProducts */ = {
 			isa = PBXGroup;
 			children = (
-				B7B904B8190FB9D700A02258 /* EcocaratTipImage */,
+				86111C7C193776B900147844 /* Ecocarat_zhengshu */,
 				0455406318F5220200CF2CF0 /* EcocaratShowProductsImages */,
+				B7B904B8190FB9D700A02258 /* EcocaratTipImage */,
 				046CBCCE18EBEF9B001C4FA7 /* EcocaratShowProductsViewController.h */,
 				046CBCCF18EBEF9B001C4FA7 /* EcocaratShowProductsViewController.m */,
 				046CBCD018EBEF9B001C4FA7 /* EcocaratShowProductsViewController.xib */,
+				8F225EE619373A5C004CB77F /* LixilShowCerScrollView.h */,
+				8F225EE719373A5C004CB77F /* LixilShowCerScrollView.m */,
 			);
 			path = EcocaratShowProducts;
 			sourceTree = "<group>";
@@ -6431,8 +6450,6 @@
 				04C5312618EAC1DC00760694 /* LixilProductDetailView.xib */,
 				8F5A190B192340EA00DB3F7B /* LixilBigDetailScrollView.h */,
 				8F5A190C192340EA00DB3F7B /* LixilBigDetailScrollView.m */,
-				8F225EE619373A5C004CB77F /* LixilShowCerScrollView.h */,
-				8F225EE719373A5C004CB77F /* LixilShowCerScrollView.m */,
 			);
 			path = LixilDetailView;
 			sourceTree = "<group>";
@@ -6870,6 +6887,21 @@
 				84E6502B186AD67C00B6B7D9 /* NIDropDown.m */,
 			);
 			path = NIDropDown;
+			sourceTree = "<group>";
+		};
+		86111C7C193776B900147844 /* Ecocarat_zhengshu */ = {
+			isa = PBXGroup;
+			children = (
+				86111C7D193776B900147844 /* Ecocarat_jiancebaogao1.png */,
+				86111C7E193776B900147844 /* Ecocarat_jiancebaogao2.png */,
+				86111C7F193776B900147844 /* Ecocarat_jiancebaogao3.png */,
+				86111C80193776B900147844 /* Ecocarat_jiancebaogao4.png */,
+				86111C81193776B900147844 /* Ecocarat_jianyanbaogao1.png */,
+				86111C82193776B900147844 /* Ecocarat_jianyanbaogao2.png */,
+				86111C83193776B900147844 /* Ecocarat_jianyanbaogao3.png */,
+				86111C84193776B900147844 /* Ecocarat_jianyanbaogao4.png */,
+			);
+			path = Ecocarat_zhengshu;
 			sourceTree = "<group>";
 		};
 		8627D0951924D83F0033EE9C /* product_Custom_images */ = {
@@ -8906,6 +8938,7 @@
 				E9715EB318C887D700600393 /* sp_house_image2-retina.png in Resources */,
 				046CBC9318EBB10C001C4FA7 /* wooden_so_yantai.png in Resources */,
 				E9715ED018C887D700600393 /* sp_expo_backbutton.png in Resources */,
+				86111C8B193776B900147844 /* Ecocarat_jianyanbaogao3.png in Resources */,
 				B778E30418B99F5E0046E6E6 /* coverflow.png in Resources */,
 				B778E2E518B99F5E0046E6E6 /* udslavitadec.png in Resources */,
 				EBE8574C18FFA294009B4F29 /* sash_lt_page1.png in Resources */,
@@ -9533,11 +9566,13 @@
 				B7F062AE18FD3DE100701469 /* diy_folder.png in Resources */,
 				E9715F7F18C8881000600393 /* lt_hengwenjishu_icon.png in Resources */,
 				EBE0F13318E00A740018F186 /* InaxLeadingTechViewController.xib in Resources */,
+				86111C8C193776B900147844 /* Ecocarat_jianyanbaogao4.png in Resources */,
 				E9715E3418C8873000600393 /* sb_longtou-s.png in Resources */,
 				0B73FFDA18FE5FF100665B9D /* sash_sc_suite2.png in Resources */,
 				043F634718B4CD1000995F55 /* wodezhiding.png in Resources */,
 				E9715EEB18C887D700600393 /* sp_public_public_text.png in Resources */,
 				0484F63318DA8A8100CA2CC9 /* LixilGroupInfoViewController.xib in Resources */,
+				86111C8A193776B900147844 /* Ecocarat_jianyanbaogao2.png in Resources */,
 				0B235E4218FBB60900BE49AE /* EcocaratSalesOutletsViewController.xib in Resources */,
 				047BCEC818F3AC250094BE28 /* DimensionsViewController.xib in Resources */,
 				EB42EC2118E9731500E3F2CB /* wooden_ph_ov_item.png in Resources */,
@@ -9609,6 +9644,7 @@
 				E9715E3E18C8873000600393 /* sb_yushijiaju-s.png in Resources */,
 				B7CAB8A3190A6C2E00E67305 /* ecocarat_so_city_zhejiang_detail.png in Resources */,
 				8627D0E21924D83F0033EE9C /* product_tedian5.png in Resources */,
+				86111C88193776B900147844 /* Ecocarat_jiancebaogao4.png in Resources */,
 				EB09D50F18F548B2002CD41F /* ecocarat_lt_detail_item2_bgbefore.png in Resources */,
 				04145E0F18DFF10100A7D33E /* inax_sp_xiaobianqi_xiaobianchongxiqi.png in Resources */,
 				B778E31218B99F5E0046E6E6 /* home_Item_light.png in Resources */,
@@ -9882,6 +9918,7 @@
 				041E4FBE18DD27F600123E87 /* inax_so_map_shanxi.png in Resources */,
 				E9715EB018C887D700600393 /* sp_hotel_image3.png in Resources */,
 				0475C99018BF0A680078F17C /* AS_NewProItem3.png in Resources */,
+				86111C87193776B900147844 /* Ecocarat_jiancebaogao3.png in Resources */,
 				86A3141C192B9AFB00C718FB /* room_caiting1.png in Resources */,
 				B778E3E318B99F920046E6E6 /* AS_TJ_UDS_XinDian.png in Resources */,
 				04733CEC18E2CBEA00E18006 /* InaxProductDetailView.xib in Resources */,
@@ -9903,6 +9940,7 @@
 				0484F68118DA8A8100CA2CC9 /* lx_group_north_map.png in Resources */,
 				0484F65218DA8A8100CA2CC9 /* lc_earth_27.png in Resources */,
 				EB3A3B62190607C00073BE8F /* wooden_fi_wuxi_page3.png in Resources */,
+				86111C85193776B900147844 /* Ecocarat_jiancebaogao1.png in Resources */,
 				04145DF218DFF10100A7D33E /* inax_sp_longtou_danlenglongtou.png in Resources */,
 				0484F64118DA8A8100CA2CC9 /* lc_earth_11.png in Resources */,
 				E9715EC418C887D700600393 /* sp_public_business_image4-retina.png in Resources */,
@@ -10068,6 +10106,7 @@
 				04145DE518DFF10100A7D33E /* inax_sp_bianqi_quanzidongzuobianqi.png in Resources */,
 				04145DDB18DFF10100A7D33E /* inax_sp_peijian.png in Resources */,
 				E9715EB218C887D700600393 /* sp_house_image1.png in Resources */,
+				86111C86193776B900147844 /* Ecocarat_jiancebaogao2.png in Resources */,
 				046CBCC818EBEF7F001C4FA7 /* EcocaratBrandConceptViewController.xib in Resources */,
 				86AC39CD19322F4F00C7E786 /* LixilWoodenproductSyleView.xib in Resources */,
 				B778E3EA18B99F920046E6E6 /* AS_TJ_YiShang@2x.png in Resources */,
@@ -10142,6 +10181,7 @@
 				848B70E818D06EED00F79BC7 /* 2008-lishi.png in Resources */,
 				046CBC7C18EBB10C001C4FA7 /* wooden_so_dandong.png in Resources */,
 				04C5311318EAB13300760694 /* wooden_sp_diban.png in Resources */,
+				86111C89193776B900147844 /* Ecocarat_jianyanbaogao1.png in Resources */,
 				B778E31518B99F5E0046E6E6 /* home_item_Search_BG@2x.png in Resources */,
 				EBE0F11A18E0095B0018F186 /* inax_leading_strip14.png in Resources */,
 				0484F6D918DA8A8700CA2CC9 /* hp_inax_bg.png in Resources */,
@@ -10956,6 +10996,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D87AF59A7DB7451E94B93A85 /* Pods.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					armv7s,
+					armv7,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -10992,6 +11036,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D87AF59A7DB7451E94B93A85 /* Pods.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					armv7s,
+					armv7,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (

@@ -20,6 +20,8 @@
 
 @property(nonatomic,strong) NSString *productid;
 
+@property(nonatomic)BOOL    isShowCer;
+
 - (void) reloadData;
 
 @end

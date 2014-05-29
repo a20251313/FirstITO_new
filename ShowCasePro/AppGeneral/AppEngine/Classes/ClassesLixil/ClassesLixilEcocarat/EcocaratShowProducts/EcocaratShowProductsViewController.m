@@ -40,6 +40,7 @@
     
     LixilProductDetailView *lpdv = [LixilProductDetailView new];
     lpdv.productid = productID;
+    lpdv.isShowCer = YES;
     
     [self.navigationController pushViewController:lpdv animated:NO];
 }
@@ -100,7 +101,7 @@
     bgImageView.image = image;
 }
 
-#pragma mark - life cycle - 
+#pragma mark - life cycle -
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -139,7 +140,7 @@
                       [self listImageName:@"ecocarat_sp_zhumie"
                               bgImageName:@"ecocarat_sp_zhumie_bg"
                                 productID:@"1422"],                 //竹篾
-                                                               //岩石 1423
+                      //岩石 1423
                       nil];
     
     self.currentIndex = 0;  //默认选择雅岩呼吸砖

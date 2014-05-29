@@ -22,6 +22,7 @@
 #import "CustomIOS7AlertView.h"
 #import "Tdiyfolder.h"
 #import "LixilBigDetailScrollView.h"
+#import "LixilShowCerScrollView.h"
 
 #define kProductSizeTag             250
 #define kRoomSceneTag               500
@@ -206,7 +207,7 @@ typedef NS_ENUM(NSInteger, ProductImageViewKind){
     }
     
     ////////初始化数组  依次加入数组
-
+    
     rightViewContentHeight = 0;
     
     productImageView.image   = [UIImage imageWithContentsOfFile:[NSString stringWithFormat:@"%@/%@",kLibrary,self.tProduct.image1]];
@@ -227,7 +228,7 @@ typedef NS_ENUM(NSInteger, ProductImageViewKind){
     }
     
     NSString *code = [[self deleteSpaceString:self.tProduct.code] stringByReplacingOccurrencesOfString:@";" withString:@"\n"];
-//    [self deleteSpaceString:self.tProduct.code]
+    //    [self deleteSpaceString:self.tProduct.code]
     productModelnumber.text  = code;
     
     int modelLableHight = [self contentHightWithLable:productModelnumber];
@@ -270,43 +271,43 @@ typedef NS_ENUM(NSInteger, ProductImageViewKind){
         techButton.hidden = YES;
         techLable.hidden = YES;
         
-//        NSString *subText = [self deleteSpaceString:[[self.tProduct.param10 stringByReplacingOccurrencesOfString:@"\\n" withString:@"\n"] stringByReplacingOccurrencesOfString:@"\\r" withString:@""]];
-//        
-//        if (subText && subText.length)
-//        {
-//            UITextView *subTextview = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, 300, 100)];
-//            subTextview.backgroundColor = [UIColor clearColor];
-//            subTextview.textColor = [UIColor blackColor];
-//            subTextview.font = [UIFont systemFontOfSize:14];
-//            if ([subTextview respondsToSelector:@selector(setSelectable:)]) {
-//                subTextview.selectable = NO;
-//            }
-//            subTextview.editable = NO;
-//            subTextview.showsHorizontalScrollIndicator = NO;
-//            subTextview.bounces = NO;
-//            [rightScrollView addSubview:subTextview];
-//            
-//            
-//            /////赋值 调整高度
-//            subTextview.text = subText;
-//            subTextview.font = [UIFont systemFontOfSize:13];
-//            
-//            float contentHeight = [subTextview contentHeight];
-//            subTextview.frame  = CGRectMake(subTextview.frame.origin.x, subTextview.frame.origin.y, subTextview.frame.size.width, contentHeight);
-//
-//            rightViewContentHeight = [self layoutRightViews:subTextview orginY:rightViewContentHeight] + 5;
-//        }
-//        else
-//        {
-//            NSLog(@"伊康家副描述为空！");
-//        }
+        //        NSString *subText = [self deleteSpaceString:[[self.tProduct.param10 stringByReplacingOccurrencesOfString:@"\\n" withString:@"\n"] stringByReplacingOccurrencesOfString:@"\\r" withString:@""]];
+        //
+        //        if (subText && subText.length)
+        //        {
+        //            UITextView *subTextview = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, 300, 100)];
+        //            subTextview.backgroundColor = [UIColor clearColor];
+        //            subTextview.textColor = [UIColor blackColor];
+        //            subTextview.font = [UIFont systemFontOfSize:14];
+        //            if ([subTextview respondsToSelector:@selector(setSelectable:)]) {
+        //                subTextview.selectable = NO;
+        //            }
+        //            subTextview.editable = NO;
+        //            subTextview.showsHorizontalScrollIndicator = NO;
+        //            subTextview.bounces = NO;
+        //            [rightScrollView addSubview:subTextview];
+        //
+        //
+        //            /////赋值 调整高度
+        //            subTextview.text = subText;
+        //            subTextview.font = [UIFont systemFontOfSize:13];
+        //
+        //            float contentHeight = [subTextview contentHeight];
+        //            subTextview.frame  = CGRectMake(subTextview.frame.origin.x, subTextview.frame.origin.y, subTextview.frame.size.width, contentHeight);
+        //
+        //            rightViewContentHeight = [self layoutRightViews:subTextview orginY:rightViewContentHeight] + 5;
+        //        }
+        //        else
+        //        {
+        //            NSLog(@"伊康家副描述为空！");
+        //        }
     }
-
+    
     ////////////////////////////////////////////////
     
     //////包括型号标签
     rightViewContentHeight = [self layoutRightViews:includeModelLable orginY:rightViewContentHeight];
-   
+    
     NSString *standardImagePath = nil;
     
     if (![self.tProduct.type1 isEqualToString:@"45"])  //////如果当前为伊康家呼吸砖 直接不显示
@@ -324,7 +325,7 @@ typedef NS_ENUM(NSInteger, ProductImageViewKind){
             rightViewContentHeight = [self layoutRightViews:standardImageView orginY:rightViewContentHeight] + 5;
         }
     }
-
+    
     includeModel.text = [[self deleteSpaceString:self.tProduct.include_product] stringByReplacingOccurrencesOfString:@";" withString:@"\n"];
     
     //NSLog(@"包括型号:>>%@", [self deleteSpaceString:self.tProduct.include_product]);
@@ -735,7 +736,7 @@ typedef NS_ENUM(NSInteger, ProductImageViewKind){
     /////根据image5返回的字符串 以;为标志分割切成n个图片路径
     /////根据图片路径数组生成图片数组
     /////添加原始图像数组  根据选中的imageview 的tag从数组中获取高清图
-
+    
     if (!self.tProduct.image5 || ![self deleteSpaceString:self.tProduct.image5])
     {
         productSizeButton.hidden = YES;
@@ -1010,9 +1011,29 @@ typedef NS_ENUM(NSInteger, ProductImageViewKind){
 #pragma mark - user operate button -
 
 //荣誉
-- (IBAction)honour:(id)sender
+- (IBAction)honour:(UIButton*)sender
 {
     
+    
+    if (self.isShowCer)
+    {
+        //  self.view.userInteractionEnabled = NO;
+        CGRect original =  [self.view convertRect:sender.frame fromView:sender];
+        LixilShowCerScrollView  *view = [[LixilShowCerScrollView alloc] initWithFrame:original];
+        view.originFrame = original;
+        [self.view addSubview:view];
+        
+        view.arrayCerNames = @[@"Ecocarat_jiancebaogao1.png",@"Ecocarat_jiancebaogao2.png",@"Ecocarat_jiancebaogao3.png",@"Ecocarat_jiancebaogao4.png",@"Ecocarat_jianyanbaogao1.png",@"Ecocarat_jianyanbaogao2.png",@"Ecocarat_jianyanbaogao3.png",@"Ecocarat_jianyanbaogao4.png"];
+        
+        
+        [UIView animateWithDuration:0.7 animations:^{
+            
+            [view setFrame:CGRectMake(0, 0, 1024, 768)
+             ];
+            // view.center = self.view.center;
+        }];
+        
+    }
 }
 
 //播放产品视频信息
@@ -1120,7 +1141,7 @@ typedef NS_ENUM(NSInteger, ProductImageViewKind){
         imagearray = self.orginProductSizeImage;
         page =  self.selectedImageView.tag - kProductSizeTag;
         
-       // self.fullScreenImageView.image = [self.orginProductSizeImage objectAtIndex:(self.selectedImageView.tag - kProductSizeTag)];
+        // self.fullScreenImageView.image = [self.orginProductSizeImage objectAtIndex:(self.selectedImageView.tag - kProductSizeTag)];
     }
     else if ((self.selectedImageView.tag >= kRoomSceneTag) && (self.selectedImageView.tag < (kRoomSceneTag + 50)))
     {
@@ -1129,21 +1150,21 @@ typedef NS_ENUM(NSInteger, ProductImageViewKind){
         imagearray = self.orginRoomSceneImage;
         page =  self.selectedImageView.tag - kRoomSceneTag;
         
-      //  self.fullScreenImageView.image = [self.orginRoomSceneImage objectAtIndex:(self.selectedImageView.tag - kRoomSceneTag)];
+        //  self.fullScreenImageView.image = [self.orginRoomSceneImage objectAtIndex:(self.selectedImageView.tag - kRoomSceneTag)];
     }
     else if ((self.selectedImageView.tag >= kProductStandardTag) && (self.selectedImageView.tag< (kProductStandardTag + 50)))
     {
         
-       
-            imagearray = self.orginProductStandardImage;
-            page =  self.selectedImageView.tag - kProductStandardTag;
-            
+        
+        imagearray = self.orginProductStandardImage;
+        page =  self.selectedImageView.tag - kProductStandardTag;
+        
         
         //产品规格图
         
-      
         
-      //  self.fullScreenImageView.image = [self.orginProductStandardImage objectAtIndex:(self.selectedImageView.tag - kProductStandardTag)];
+        
+        //  self.fullScreenImageView.image = [self.orginProductStandardImage objectAtIndex:(self.selectedImageView.tag - kProductStandardTag)];
     }
     else
     {
@@ -1166,14 +1187,14 @@ typedef NS_ENUM(NSInteger, ProductImageViewKind){
                 if ([infoView isKindOfClass:[InaxProductIntroView class]])
                 {
                     UIImage *image = [infoView getProductImage];
-                   
+                    
                     if (image)
                     {
                         if ([self.productid isEqualToString:infoView.productid])
                         {
                             page = count;
                         }
-                      //  debugLog(@"self.productid:%@ infoView.productid:%@ page:%d",self.productid,infoView.productid,page);
+                        //  debugLog(@"self.productid:%@ infoView.productid:%@ page:%d",self.productid,infoView.productid,page);
                         
                         [arrayImage addObject:image];
                         count++;
@@ -1189,7 +1210,7 @@ typedef NS_ENUM(NSInteger, ProductImageViewKind){
             {
                 imagearray = @[self.selectedImageView.image];
             }
-           
+            
             
             
         }else
@@ -1198,9 +1219,9 @@ typedef NS_ENUM(NSInteger, ProductImageViewKind){
             page =  0;
             
         }
-     
+        
         //产品图片
-       // self.fullScreenImageView.image = self.selectedImageView.image;
+        // self.fullScreenImageView.image = self.selectedImageView.image;
     }
     
     
@@ -1401,11 +1422,11 @@ typedef NS_ENUM(NSInteger, ProductImageViewKind){
     
     
     // 同系列
-//    if ([[LibraryAPI sharedInstance].currentBrandID isEqualToString:@"1"]) {
-        matchProductButton = [self creatButtonWithTitle:@"同系列产品" andFrame:CGRectMake(0, 0, 105, 32)];
-//    } else {
-//        matchProductButton = [self creatButtonWithTitle:@"关联产品" andFrame:CGRectMake(0, 0, 92, 32)];
-//    }
+    //    if ([[LibraryAPI sharedInstance].currentBrandID isEqualToString:@"1"]) {
+    matchProductButton = [self creatButtonWithTitle:@"同系列产品" andFrame:CGRectMake(0, 0, 105, 32)];
+    //    } else {
+    //        matchProductButton = [self creatButtonWithTitle:@"关联产品" andFrame:CGRectMake(0, 0, 92, 32)];
+    //    }
     
     [matchProductButton addTarget:self action:@selector(matchProductButtonTouched) forControlEvents:UIControlEventTouchUpInside];
     
