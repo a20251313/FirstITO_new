@@ -10,4 +10,7 @@
 
 @interface LixilShowCerScrollView : UIView
 
+
+@property(nonatomic,strong)NSArray  *arrayCerNames;
+@property(nonatomic)CGRect  originFrame;    //for ani
 @end

@@ -938,6 +938,7 @@
 		8F1DF9D3192EFC020087A372 /* product_xilie_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F1DF9D2192EFC020087A372 /* product_xilie_btn.png */; };
 		8F1DF9D6192EFE120087A372 /* bottom_btn_wholebody_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F1DF9D4192EFE120087A372 /* bottom_btn_wholebody_pressed.png */; };
 		8F1DF9D7192EFE120087A372 /* bottom_btn_xilie_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F1DF9D5192EFE120087A372 /* bottom_btn_xilie_pressed.png */; };
+		8F225EE819373A5C004CB77F /* LixilShowCerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F225EE719373A5C004CB77F /* LixilShowCerScrollView.m */; };
 		8F5A190D192340EA00DB3F7B /* LixilBigDetailScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5A190C192340EA00DB3F7B /* LixilBigDetailScrollView.m */; };
 		8F85993F1934693600501D85 /* inax_lt_anmoyugang1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F85993E1934693600501D85 /* inax_lt_anmoyugang1.jpg */; };
 		8F8599411934694700501D85 /* inax_lt_cp1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F8599401934694700501D85 /* inax_lt_cp1.jpg */; };
@@ -3118,6 +3119,8 @@
 		8F1DF9D2192EFC020087A372 /* product_xilie_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = product_xilie_btn.png; sourceTree = "<group>"; };
 		8F1DF9D4192EFE120087A372 /* bottom_btn_wholebody_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottom_btn_wholebody_pressed.png; sourceTree = "<group>"; };
 		8F1DF9D5192EFE120087A372 /* bottom_btn_xilie_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottom_btn_xilie_pressed.png; sourceTree = "<group>"; };
+		8F225EE619373A5C004CB77F /* LixilShowCerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LixilShowCerScrollView.h; sourceTree = "<group>"; };
+		8F225EE719373A5C004CB77F /* LixilShowCerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LixilShowCerScrollView.m; sourceTree = "<group>"; };
 		8F5A190B192340EA00DB3F7B /* LixilBigDetailScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LixilBigDetailScrollView.h; sourceTree = "<group>"; };
 		8F5A190C192340EA00DB3F7B /* LixilBigDetailScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LixilBigDetailScrollView.m; sourceTree = "<group>"; };
 		8F85993E1934693600501D85 /* inax_lt_anmoyugang1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inax_lt_anmoyugang1.jpg; sourceTree = "<group>"; };
@@ -6428,6 +6431,8 @@
 				04C5312618EAC1DC00760694 /* LixilProductDetailView.xib */,
 				8F5A190B192340EA00DB3F7B /* LixilBigDetailScrollView.h */,
 				8F5A190C192340EA00DB3F7B /* LixilBigDetailScrollView.m */,
+				8F225EE619373A5C004CB77F /* LixilShowCerScrollView.h */,
+				8F225EE719373A5C004CB77F /* LixilShowCerScrollView.m */,
 			);
 			path = LixilDetailView;
 			sourceTree = "<group>";
@@ -10801,6 +10806,7 @@
 				04A585A518C5E249007290EA /* Tdiydetail.m in Sources */,
 				04A585A118C5E249007290EA /* Tbrand.m in Sources */,
 				047BCF1418F3AC250094BE28 /* Store.m in Sources */,
+				8F225EE819373A5C004CB77F /* LixilShowCerScrollView.m in Sources */,
 				B778E3C418B99F920046E6E6 /* UIViewController+CWPopup.m in Sources */,
 				84B1252C1845A22300F1BEB3 /* NSString+Regular.m in Sources */,
 				84058D3A187A966C00E8A7E9 /* DatabaseOption+Tmodule_setting.m in Sources */,

@@ -11,8 +11,6 @@ typedef enum
 {
     ScrollorientationTypeHorizontal,
     ScrollorientationTypeVertical
-    
-    
 }ScrollorientationType;
 @interface LixilBigDetailScrollView : UIImageView<UIScrollViewDelegate>
 
