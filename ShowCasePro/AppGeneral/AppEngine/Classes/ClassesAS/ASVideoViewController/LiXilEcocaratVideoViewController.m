@@ -1,20 +1,19 @@
 //
-//  LiXilEcocaratVideoViewController.m
+//  ASVideoViewController.m
 //  ShowCasePro
 //
-//  Created by joshon on 14-2-18.
+//  Created by lvpw on 14-2-18.
 //  Copyright (c) 2014年 yczx. All rights reserved.
 //
 
-#import "LiXilEcocaratVideoViewController.h"
+#import "ASVideoViewController.h"
 #import "Tvideo.h"
 #import <MediaPlayer/MediaPlayer.h>
 #import "LibraryAPI.h"
 
-@interface LiXilEcocaratVideoViewController ()<UIGestureRecognizerDelegate>
+@interface ASVideoViewController ()<UIGestureRecognizerDelegate>
 {
-    //__weak IBOutlet UIImageView *switchButtonImageView;
-    __weak IBOutlet UIView *switchButtonBgView;
+    __weak IBOutlet UIImageView *switchButtonImageView;
     
 }
 
@@ -27,7 +26,7 @@
 
 @end
 
-@implementation LiXilEcocaratVideoViewController
+@implementation ASVideoViewController
 
 #pragma mark - Util
 
@@ -40,7 +39,6 @@
     mpcontroller.scalingMode = MPMovieScalingModeAspectFit;
     mpcontroller.shouldAutoplay = YES;
     self.mpcontroller = mpcontroller;
-    [self.view bringSubviewToFront:mpcontroller.view];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(videoFinish:) name:MPMoviePlayerPlaybackDidFinishNotification object:nil];
     
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(videoStataChange:) name:MPMoviePlayerNowPlayingMovieDidChangeNotification object:nil];
@@ -72,8 +70,6 @@
 //        [self initVideoViewWithURL:url];
 //    }
     
-    
-    
     NSString *urlPath;
     
     if (_currentVideo)
@@ -86,37 +82,12 @@
         
     } else
     {
-        /*urlPath = [[NSBundle mainBundle] pathForResource:@"AS_neomodern" ofType:@"mp4"];
-        NSURL *url = [NSURL fileURLWithPath:urlPath];
-        [self initVideoViewWithURL:url];
-        return;*/
-        
-        [self playPathVideo:@"data/brandvideo/lixilgroup/yikangjiazhidao.mp4"];
-        [self.view bringSubviewToFront:self.mpcontroller.view];
-        return;
-       // urlPath = [[NSBundle mainBundle] pathForResource:@"AS_neomodern" ofType:@"mp4"];
+        urlPath = [[NSBundle mainBundle] pathForResource:@"AS_neomodern" ofType:@"mp4"];
     }
     
     if (urlPath)
     {
         NSURL *url = [NSURL fileURLWithPath:urlPath];
-        
-        [self initVideoViewWithURL:url];
-    }
-}
-
-
--(void)playPathVideo:(NSString*)videoPath
-{
-    
-    
-   // NSString *videoPath = @"data/brandvideo/lixil/yikangjiashipin.mp4";
-    NSString *url_client = [[LibraryAPI sharedInstance] downVideoByLink:videoPath
-                                                                 inView:[UIApplication sharedApplication].keyWindow.rootViewController.view];
-    
-    if (url_client)
-    {
-        NSURL *url = [NSURL fileURLWithPath:url_client];
         
         [self initVideoViewWithURL:url];
     }
@@ -148,26 +119,20 @@
     // Do any additional setup after loading the view from its nib.
 }
 
-
-- (IBAction)AnzhuangTouched:(id)sender
+- (IBAction)s15Touched:(id)sender
 {
-  //  switchButtonImageView.image = [UIImage imageNamed:@"av_15s"];
-    
-    self.btnYingyong.alpha = 0.5;
-    self.btnZhidao.alpha = 1;
+    switchButtonImageView.image = [UIImage imageNamed:@"av_15s"];
     
     Tvideo *video = [[Tvideo alloc] init];
-//    video.video1 = [[NSBundle mainBundle] pathForResource:@"AS_neomodern" ofType:@"mp4"];
-    video.video1 = [[LibraryAPI sharedInstance] downVideoByLink:@"data/brandvideo/lixilgroup/yikangjiazhidao.mp4"
-                                                         inView:[UIApplication sharedApplication].keyWindow.rootViewController.view];
-    video.tvideoid = @"21";
-    video.vname = @"伊康佳指导";
+    video.video1 = [[NSBundle mainBundle] pathForResource:@"AS_neomodern" ofType:@"mp4"];
+    video.tvideoid = @"19";
+    video.vname = @"骊住集团介绍";
     
     [self playAnimationWith:self.playBtn withAlpha:1];
     
     self.currentVideo = video;
     if (self.mpcontroller != nil) {
-        self.videoImage.image = [UIImage imageNamed:@"video_Bg_video"];
+        self.videoImage.image = [UIImage imageNamed:@"video_Bg"];
         [self.mpcontroller stop];
         [self.mpcontroller.view removeFromSuperview];
         self.mpcontroller = nil;
@@ -175,31 +140,27 @@
     }
 }
 
-- (IBAction)YingyongTouched:(id)sender
+- (IBAction)s30Touched:(id)sender
 {
-  //  switchButtonImageView.image = [UIImage imageNamed:@"av_30s"];
+    switchButtonImageView.image = [UIImage imageNamed:@"av_30s"];
     
-    
-    self.btnYingyong.alpha = 1;
-    self.btnZhidao.alpha = 0.5;
     Tvideo *video = [[Tvideo alloc] init];
-   // video.video1 = [[NSBundle mainBundle] pathForResource:@"AS_nobile-0820" ofType:@"mp4"];
-    video.video1 = [[LibraryAPI sharedInstance] downVideoByLink:@"data/brandvideo/lixilgroup/yikangjiayingyong.mp4"
-                                                         inView:[UIApplication sharedApplication].keyWindow.rootViewController.view];
-    video.tvideoid = @"22";
-    video.vname = @"伊康佳应用";
+    video.video1 = [[NSBundle mainBundle] pathForResource:@"AS_nobile-0820" ofType:@"mp4"];
+    video.tvideoid = @"19";
+    video.vname = @"骊住集团介绍";
     
     [self playAnimationWith:self.playBtn withAlpha:1];
     
     self.currentVideo = video;
     if (self.mpcontroller != nil) {
-        self.videoImage.image = [UIImage imageNamed:@"video_Bg_video"];
+        self.videoImage.image = [UIImage imageNamed:@"video_Bg"];
         [self.mpcontroller stop];
         [self.mpcontroller.view removeFromSuperview];
         self.mpcontroller = nil;
         [[NSNotificationCenter defaultCenter]removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:nil];
     }
 }
+
 
 
 -(void)playAnimationWith:(UIButton *)btn withAlpha:(CGFloat)value
@@ -278,11 +239,6 @@
     }];
     
     [[NSNotificationCenter defaultCenter]removeObserver:self name:MPMoviePlayerLoadStateDidChangeNotification object:nil];
-}
-
--(void)dealloc
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 

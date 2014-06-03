@@ -7,12 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LixilBaseViewController.h"
+#import "BaseViewController.h"
 
-@interface LiXilEcocaratVideoViewController : LixilBaseViewController
+@interface ASVideoViewController : BaseViewController
 @property (strong, nonatomic) IBOutlet UIView *videoView;
-@property (strong, nonatomic) IBOutlet UIButton *btnZhidao;
-@property (strong, nonatomic) IBOutlet UIButton *btnYingyong;
 @property (strong, nonatomic) IBOutlet UIImageView *videoImage;
 - (IBAction)playVideo:(id)sender;
 //- (IBAction)changeVideo:(id)sender;

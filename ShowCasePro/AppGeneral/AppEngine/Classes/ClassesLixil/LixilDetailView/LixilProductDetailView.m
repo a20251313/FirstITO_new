@@ -23,6 +23,7 @@
 #import "Tdiyfolder.h"
 #import "LixilBigDetailScrollView.h"
 #import "LixilShowCerScrollView.h"
+#import "LiXilEcocaratVideoViewController.h"
 
 #define kProductSizeTag             250
 #define kRoomSceneTag               500
@@ -1039,6 +1040,13 @@ typedef NS_ENUM(NSInteger, ProductImageViewKind){
 //播放产品视频信息
 - (IBAction)playAudio:(id)sender
 {
+    
+    if (!self.isShowCer)
+    {
+        return;
+    }
+    LiXilEcocaratVideoViewController    *controller =   [[LiXilEcocaratVideoViewController alloc] init];
+    [self.navigationController pushViewController:controller animated:NO];
     
 }
 

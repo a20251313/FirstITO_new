@@ -1,87 +1,91 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
     <dependencies>
         <deployment defaultVersion="1792" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ASVideoViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LiXilEcocaratVideoViewController">
             <connections>
-                <outlet property="playBtn" destination="Xlh-ek-fot" id="8uu-LU-dnx"/>
-                <outlet property="switchButtonImageView" destination="Wr5-l8-x51" id="DIc-zM-Ow4"/>
-                <outlet property="videoImage" destination="Tkx-R3-FYG" id="2Ak-vU-Fww"/>
-                <outlet property="videoView" destination="mTA-5Q-fJU" id="7G3-w7-95E"/>
-                <outlet property="view" destination="2" id="3"/>
+                <outlet property="btnYingyong" destination="o9N-Ye-doM" id="9cF-eb-6jS"/>
+                <outlet property="btnZhidao" destination="1IR-28-ZX4" id="5uA-zW-jb7"/>
+                <outlet property="playBtn" destination="Xlh-ek-fot" id="3eu-8I-JC4"/>
+                <outlet property="switchButtonBgView" destination="bbG-PC-c4N" id="Wra-3w-JtV"/>
+                <outlet property="videoView" destination="mTA-5Q-fJU" id="F2o-rk-y7u"/>
+                <outlet property="view" destination="2" id="Onv-Xv-rPc"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2">
-            <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="APPBJ" id="wgz-IE-U0f">
-                    <rect key="frame" x="0.0" y="0.0" width="1024" height="704"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video_Bg_video.png" id="wgz-IE-U0f">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <view contentMode="scaleToFill" id="mTA-5Q-fJU">
-                    <rect key="frame" x="0.0" y="0.0" width="1024" height="704"/>
+                    <rect key="frame" x="0.0" y="85" width="1024" height="683"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video_Bg.png" id="Tkx-R3-FYG">
-                            <rect key="frame" x="0.0" y="0.0" width="1024" height="704"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video_Bg_video.png" id="Tkx-R3-FYG">
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="683"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Xlh-ek-fot">
-                            <rect key="frame" x="459" y="266" width="106" height="106"/>
+                            <rect key="frame" x="459" y="320" width="106" height="106"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" backgroundImage="stopbtn.png">
+                            <state key="normal" backgroundImage="stopbtn_video.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <action selector="playVideo:" destination="-1" eventType="touchUpInside" id="sNL-KM-qHx"/>
+                                <action selector="playVideo:" destination="-1" eventType="touchUpInside" id="5zJ-Hu-Kiw"/>
                             </connections>
                         </button>
-                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="av_15s.png" id="Wr5-l8-x51">
-                            <rect key="frame" x="807" y="43" width="149" height="56"/>
+                        <view contentMode="scaleToFill" id="bbG-PC-c4N">
+                            <rect key="frame" x="704" y="79" width="300" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1IR-28-ZX4">
+                                    <rect key="frame" x="0.0" y="0.0" width="167" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="1" green="0.4827732911" blue="0.1939023704" alpha="1" colorSpace="calibratedRGB"/>
+                                    <state key="normal" title="伊康佳安装指导手册">
+                                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="AnzhuangTouched:" destination="-1" eventType="touchUpInside" id="D42-Fk-QUX"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="o9N-Ye-doM">
+                                    <rect key="frame" x="165" y="0.0" width="130" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="1" green="0.4827732911" blue="0.1939023704" alpha="1" colorSpace="calibratedRGB"/>
+                                    <state key="normal" title="伊康佳应用手册">
+                                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="YingyongTouched:" destination="-1" eventType="touchUpInside" id="dJX-oy-4he"/>
+                                    </connections>
+                                </button>
+                            </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        </imageView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Qsv-UU-rsF">
-                            <rect key="frame" x="814" y="49" width="57" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            <state key="normal">
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <connections>
-                                <action selector="s15Touched:" destination="-1" eventType="touchUpInside" id="Bk3-Re-dAk"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hJU-lj-AdX">
-                            <rect key="frame" x="880" y="50" width="57" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            <state key="normal">
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <connections>
-                                <action selector="s30Touched:" destination="-1" eventType="touchUpInside" id="edI-Yl-3HP"/>
-                            </connections>
-                        </button>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
     <resources>
-        <image name="APPBJ" width="1048" height="709"/>
-        <image name="av_15s.png" width="298" height="112"/>
-        <image name="stopbtn.png" width="211" height="211"/>
-        <image name="video_Bg.png" width="2048" height="1536"/>
+        <image name="stopbtn_video.png" width="211" height="211"/>
+        <image name="video_Bg_video.png" width="2048" height="1536"/>
     </resources>
 </document>
