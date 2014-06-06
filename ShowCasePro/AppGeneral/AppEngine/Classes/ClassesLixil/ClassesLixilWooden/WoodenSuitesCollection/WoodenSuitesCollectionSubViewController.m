@@ -28,6 +28,12 @@
     __weak IBOutlet UIImageView *bgImageView;
     __weak IBOutlet UITableView *categoryTableView;
     __weak IBOutlet UICollectionView *productsCollectionView;
+    
+    
+    UIScrollView *scrollView;
+    NSTimer *scrollTimer ;
+    int imageNum;
+    UIPageControl *pageControl;
 }
 
 @property (nonatomic , strong) DatabaseOption *dbo;
@@ -148,14 +154,199 @@
 {
     InaxSuiteCollection *isc = [self.dataArray objectAtIndex:indexPath.row];
     
-    [self changeTopSuiteImage:isc.bg_image];
+   // [self changeTopSuiteImage:isc.bg_image];
+    [self changeTopSuiteImagesByIndex:indexPath.row];
 
     [self selectProductsFromDBWithSuiteID:isc.suite_id];
 }
 
 
+
+
+
 #pragma mark - 更换上方套间图片 -
 
+- (void) changeTopSuiteImagesByIndex:(NSInteger)index
+{
+    
+    bgImageView.hidden = YES;
+    if (!scrollView)
+    {
+        scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(272, 85, 751, 274)];
+        scrollView.showsHorizontalScrollIndicator = NO;
+        scrollView.bounces = NO;
+        scrollView.pagingEnabled = YES;
+        [self.view insertSubview:scrollView belowSubview:categoryTableView];
+        
+        
+        
+    }
+    
+    
+    NSString *imagePath = nil;
+    NSMutableArray  *arrayImage = [NSMutableArray array];
+    NSString    *strPre = nil;
+    NSInteger   imageCount = 0;
+    switch (index)
+    {
+        case 0:
+        case 1:
+        case 2:
+        {
+            InaxSuiteCollection *isc = [self.dataArray objectAtIndex:index];
+            imagePath = isc.bg_image;
+            imageCount = 1;
+            //[self changeTopSuiteImage:isc.bg_image];
+        }
+          
+            break;
+        case 3:
+            strPre = @"kangfeiliSuitesCollection";
+            imageCount = 12;
+            break;
+        case 4:
+            strPre = @"linaierSuitesCollection";
+            imageCount = 4;
+            break;
+        default:
+            break;
+    }
+    
+    if (imagePath)
+    {
+      UIImage *imageTemp =  [UIImage imageWithContentsOfFile:[NSString stringWithFormat:@"%@/%@",kLibrary,imagePath]];
+        [arrayImage addObject:imageTemp];
+        
+      //  [arrayImage addObject:[UIImage imageNamed:imagePath]];
+    }else
+    {
+        for (int i = 0; i < imageCount; i++)
+        {
+            NSString    *strImageName = [NSString stringWithFormat:@"%@%d.png",strPre,i+1];
+            UIImage *image = [UIImage imageNamed:strImageName];
+            if (image)
+            {
+                [arrayImage addObject:image];
+            }
+            
+        }
+        
+    }
+    
+    
+    if (index < 3)
+    {
+        [scrollView setFrame:CGRectMake(0, 85, 1024, 274)];
+        [self stopScroll];
+        [pageControl setHidden:YES];
+        
+    }else
+    {
+        [scrollView setFrame:CGRectMake(272, 85, 751, 274)];
+        [self startScroll];
+        [pageControl setHidden:NO];
+    }
+   
+    
+    //begin tag is 1000
+    if (arrayImage.count)
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            UIView  *view = [scrollView viewWithTag:1000+i];
+            [view removeFromSuperview];
+        }
+        
+        
+        
+        for (int i = 0; i < arrayImage.count; i++)
+        {
+            CGFloat fxpoint = i*scrollView.frame.size.width;
+            UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(fxpoint, 0, scrollView.frame.size.width, scrollView.frame.size.height)];
+            imageView.image =  arrayImage[i];
+            imageView.tag = 1000+i;
+            [scrollView addSubview:imageView];
+            
+        }
+        
+        
+        [scrollView setContentSize:CGSizeMake(imageCount*scrollView.frame.size.width, scrollView.frame.size.height)];
+        [scrollView setDelegate:self];
+        scrollView.showsHorizontalScrollIndicator = NO;
+        [scrollView setContentOffset:CGPointMake(0, 0)];
+        //        [];
+        
+        [scrollView setBackgroundColor:[UIColor redColor]];
+        
+        imageNum = arrayImage.count;
+        
+        
+        if (!pageControl) {
+            pageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(CGRectGetMinX(scrollView.frame) + scrollView.center.x/2, 85+230, 100.0f, 20.0f)];
+        }
+        
+        pageControl.numberOfPages = arrayImage.count;
+        pageControl.currentPage = 0;
+        [pageControl setBackgroundColor:[UIColor clearColor]];
+        [self.view addSubview:pageControl];
+        
+        
+        
+        
+    }
+    else
+    {
+        NSLog(@"Error : EcocaratSuitesCollectionSubViewController : viewWillAppear :找不到图片.");
+    }
+    
+    if (index < 3)
+    {
+        [scrollView setFrame:CGRectMake(0, 85, 1024, 274)];
+        [self stopScroll];
+        [pageControl setHidden:YES];
+        
+    }else
+    {
+         [scrollView setFrame:CGRectMake(272, 85, 751, 274)];
+        [self startScroll];
+        [pageControl setHidden:NO];
+    }
+
+}
+
+
+-(void)stopScroll
+{
+    if ([scrollTimer isValid]) {
+        [scrollTimer invalidate];
+    }
+    
+}
+-(void)startScroll
+{
+    [self stopScroll];
+    scrollTimer = [NSTimer scheduledTimerWithTimeInterval:5
+                                                   target:self
+                                                 selector:@selector(scrollMethod)
+                                                 userInfo:nil
+                                                  repeats:YES];
+    [scrollTimer fire];
+}
+
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView1{
+    
+    
+    CGPoint section0_contentOffSet = scrollView.contentOffset;
+    
+    
+    int page = section0_contentOffSet.x/751;
+    
+    pageControl.currentPage = page;
+    
+    
+    NSLog(@"er");
+    
+}
 - (void) changeTopSuiteImage:(NSString *)imageName
 {
     UIImage *image = [UIImage imageWithContentsOfFile:[NSString stringWithFormat:@"%@/%@",kLibrary,imageName]];
@@ -169,6 +360,9 @@
         NSLog(@"Error : EcocaratSuitesCollectionSubViewController : viewWillAppear :找不到图片.");
     }
 }
+
+
+
 
 #pragma mark - 从数据库查询相应产品信息 -
 
@@ -225,6 +419,44 @@
     categoryTableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
     
     [productsCollectionView registerNib:[UINib nibWithNibName:@"InaxShowProductsCell" bundle:nil] forCellWithReuseIdentifier:CollectionView_Identifier];
+    
+    
+    
+}
+
+
+
+- (void) scrollMethod
+{
+    //    if(!isDetailView)
+    //    {
+    NSLog(@"time running");
+    CGPoint section0_contentOffSet = scrollView.contentOffset;
+    
+    section0_contentOffSet.x += 751;
+    
+    
+    [scrollView setContentOffset:section0_contentOffSet animated:YES];
+    
+    if(section0_contentOffSet.x >= 751 * imageNum )
+    {
+        section0_contentOffSet.x = 0;
+        
+        section0_contentOffSet.x = 751;
+        pageControl.currentPage = 0;
+        [scrollView setContentOffset: section0_contentOffSet animated:NO];
+        section0_contentOffSet.x = 0;
+        [scrollView setContentOffset:section0_contentOffSet animated:YES];
+        return;
+    }
+    
+    int page = section0_contentOffSet.x/751;
+    
+    
+    
+    pageControl.currentPage = page;
+    
+    
 }
 
 - (NSString *) deleteSpaceString:(NSString *)string
@@ -256,6 +488,15 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+-(void)dealloc{
+    
+    if ([scrollTimer isValid]) {
+        [scrollTimer invalidate];
+    }
+    
 }
 
 @end

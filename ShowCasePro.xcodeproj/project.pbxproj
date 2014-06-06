@@ -940,6 +940,22 @@
 		86AC39C4193229F900C7E786 /* woodlen_lt_page22.png in Resources */ = {isa = PBXBuildFile; fileRef = 86AC39C2193229F900C7E786 /* woodlen_lt_page22.png */; };
 		86AC39CC19322E2F00C7E786 /* LixilWoodenproductSyleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86AC39CB19322E2F00C7E786 /* LixilWoodenproductSyleView.m */; };
 		86AC39CD19322F4F00C7E786 /* LixilWoodenproductSyleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86AC39C819322B8600C7E786 /* LixilWoodenproductSyleView.xib */; };
+		86B22F64194096C8005E2BD0 /* kangfeiliSuitesCollection1.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B22F54194096C8005E2BD0 /* kangfeiliSuitesCollection1.png */; };
+		86B22F65194096C8005E2BD0 /* kangfeiliSuitesCollection10.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B22F55194096C8005E2BD0 /* kangfeiliSuitesCollection10.png */; };
+		86B22F66194096C8005E2BD0 /* kangfeiliSuitesCollection11.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B22F56194096C8005E2BD0 /* kangfeiliSuitesCollection11.png */; };
+		86B22F67194096C8005E2BD0 /* kangfeiliSuitesCollection12.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B22F57194096C8005E2BD0 /* kangfeiliSuitesCollection12.png */; };
+		86B22F68194096C8005E2BD0 /* kangfeiliSuitesCollection2.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B22F58194096C8005E2BD0 /* kangfeiliSuitesCollection2.png */; };
+		86B22F69194096C8005E2BD0 /* kangfeiliSuitesCollection3.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B22F59194096C8005E2BD0 /* kangfeiliSuitesCollection3.png */; };
+		86B22F6A194096C8005E2BD0 /* kangfeiliSuitesCollection4.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B22F5A194096C8005E2BD0 /* kangfeiliSuitesCollection4.png */; };
+		86B22F6B194096C8005E2BD0 /* kangfeiliSuitesCollection5.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B22F5B194096C8005E2BD0 /* kangfeiliSuitesCollection5.png */; };
+		86B22F6C194096C8005E2BD0 /* kangfeiliSuitesCollection6.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B22F5C194096C8005E2BD0 /* kangfeiliSuitesCollection6.png */; };
+		86B22F6D194096C8005E2BD0 /* kangfeiliSuitesCollection7.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B22F5D194096C8005E2BD0 /* kangfeiliSuitesCollection7.png */; };
+		86B22F6E194096C8005E2BD0 /* kangfeiliSuitesCollection8.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B22F5E194096C8005E2BD0 /* kangfeiliSuitesCollection8.png */; };
+		86B22F6F194096C8005E2BD0 /* kangfeiliSuitesCollection9.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B22F5F194096C8005E2BD0 /* kangfeiliSuitesCollection9.png */; };
+		86B22F70194096C8005E2BD0 /* linaierSuitesCollection1.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B22F60194096C8005E2BD0 /* linaierSuitesCollection1.png */; };
+		86B22F71194096C8005E2BD0 /* linaierSuitesCollection2.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B22F61194096C8005E2BD0 /* linaierSuitesCollection2.png */; };
+		86B22F72194096C8005E2BD0 /* linaierSuitesCollection3.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B22F62194096C8005E2BD0 /* linaierSuitesCollection3.png */; };
+		86B22F73194096C8005E2BD0 /* linaierSuitesCollection4.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B22F63194096C8005E2BD0 /* linaierSuitesCollection4.png */; };
 		86C2191819272970007386A9 /* LiXiWoodenWholeBodyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C2191719272970007386A9 /* LiXiWoodenWholeBodyView.m */; };
 		86C2191A19272A02007386A9 /* LiXiWoodenWholeBodyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86C2191919272A02007386A9 /* LiXiWoodenWholeBodyView.xib */; };
 		86C2191C19272A60007386A9 /* product_wholebody_first.png in Resources */ = {isa = PBXBuildFile; fileRef = 86C2191B19272A60007386A9 /* product_wholebody_first.png */; };
@@ -3132,6 +3148,22 @@
 		86AC39C819322B8600C7E786 /* LixilWoodenproductSyleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LixilWoodenproductSyleView.xib; sourceTree = "<group>"; };
 		86AC39CA19322E2F00C7E786 /* LixilWoodenproductSyleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LixilWoodenproductSyleView.h; sourceTree = "<group>"; };
 		86AC39CB19322E2F00C7E786 /* LixilWoodenproductSyleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LixilWoodenproductSyleView.m; sourceTree = "<group>"; };
+		86B22F54194096C8005E2BD0 /* kangfeiliSuitesCollection1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kangfeiliSuitesCollection1.png; sourceTree = "<group>"; };
+		86B22F55194096C8005E2BD0 /* kangfeiliSuitesCollection10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kangfeiliSuitesCollection10.png; sourceTree = "<group>"; };
+		86B22F56194096C8005E2BD0 /* kangfeiliSuitesCollection11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kangfeiliSuitesCollection11.png; sourceTree = "<group>"; };
+		86B22F57194096C8005E2BD0 /* kangfeiliSuitesCollection12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kangfeiliSuitesCollection12.png; sourceTree = "<group>"; };
+		86B22F58194096C8005E2BD0 /* kangfeiliSuitesCollection2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kangfeiliSuitesCollection2.png; sourceTree = "<group>"; };
+		86B22F59194096C8005E2BD0 /* kangfeiliSuitesCollection3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kangfeiliSuitesCollection3.png; sourceTree = "<group>"; };
+		86B22F5A194096C8005E2BD0 /* kangfeiliSuitesCollection4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kangfeiliSuitesCollection4.png; sourceTree = "<group>"; };
+		86B22F5B194096C8005E2BD0 /* kangfeiliSuitesCollection5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kangfeiliSuitesCollection5.png; sourceTree = "<group>"; };
+		86B22F5C194096C8005E2BD0 /* kangfeiliSuitesCollection6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kangfeiliSuitesCollection6.png; sourceTree = "<group>"; };
+		86B22F5D194096C8005E2BD0 /* kangfeiliSuitesCollection7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kangfeiliSuitesCollection7.png; sourceTree = "<group>"; };
+		86B22F5E194096C8005E2BD0 /* kangfeiliSuitesCollection8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kangfeiliSuitesCollection8.png; sourceTree = "<group>"; };
+		86B22F5F194096C8005E2BD0 /* kangfeiliSuitesCollection9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kangfeiliSuitesCollection9.png; sourceTree = "<group>"; };
+		86B22F60194096C8005E2BD0 /* linaierSuitesCollection1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linaierSuitesCollection1.png; sourceTree = "<group>"; };
+		86B22F61194096C8005E2BD0 /* linaierSuitesCollection2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linaierSuitesCollection2.png; sourceTree = "<group>"; };
+		86B22F62194096C8005E2BD0 /* linaierSuitesCollection3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linaierSuitesCollection3.png; sourceTree = "<group>"; };
+		86B22F63194096C8005E2BD0 /* linaierSuitesCollection4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linaierSuitesCollection4.png; sourceTree = "<group>"; };
 		86C2191619272970007386A9 /* LiXiWoodenWholeBodyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiXiWoodenWholeBodyView.h; sourceTree = "<group>"; };
 		86C2191719272970007386A9 /* LiXiWoodenWholeBodyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiXiWoodenWholeBodyView.m; sourceTree = "<group>"; };
 		86C2191919272A02007386A9 /* LiXiWoodenWholeBodyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiXiWoodenWholeBodyView.xib; sourceTree = "<group>"; };
@@ -6310,6 +6342,7 @@
 		04A5E99A18E41BE200477FC9 /* WoodenSuitesCollection */ = {
 			isa = PBXGroup;
 			children = (
+				86B22F53194096C8005E2BD0 /* WoodenSuitesCollectionImages */,
 				B7DFAFCC1900B72800D97305 /* WoodenSuitesCollectionSubViewController.h */,
 				B7DFAFCD1900B72800D97305 /* WoodenSuitesCollectionSubViewController.m */,
 				B7DFAFCE1900B72800D97305 /* WoodenSuitesCollectionSubViewController.xib */,
@@ -7024,6 +7057,29 @@
 				86A3141B192B9AFB00C718FB /* room_xuanguan3.png */,
 			);
 			path = EcocaratSuitesCollectionSubViewControllerImages;
+			sourceTree = "<group>";
+		};
+		86B22F53194096C8005E2BD0 /* WoodenSuitesCollectionImages */ = {
+			isa = PBXGroup;
+			children = (
+				86B22F54194096C8005E2BD0 /* kangfeiliSuitesCollection1.png */,
+				86B22F55194096C8005E2BD0 /* kangfeiliSuitesCollection10.png */,
+				86B22F56194096C8005E2BD0 /* kangfeiliSuitesCollection11.png */,
+				86B22F57194096C8005E2BD0 /* kangfeiliSuitesCollection12.png */,
+				86B22F58194096C8005E2BD0 /* kangfeiliSuitesCollection2.png */,
+				86B22F59194096C8005E2BD0 /* kangfeiliSuitesCollection3.png */,
+				86B22F5A194096C8005E2BD0 /* kangfeiliSuitesCollection4.png */,
+				86B22F5B194096C8005E2BD0 /* kangfeiliSuitesCollection5.png */,
+				86B22F5C194096C8005E2BD0 /* kangfeiliSuitesCollection6.png */,
+				86B22F5D194096C8005E2BD0 /* kangfeiliSuitesCollection7.png */,
+				86B22F5E194096C8005E2BD0 /* kangfeiliSuitesCollection8.png */,
+				86B22F5F194096C8005E2BD0 /* kangfeiliSuitesCollection9.png */,
+				86B22F60194096C8005E2BD0 /* linaierSuitesCollection1.png */,
+				86B22F61194096C8005E2BD0 /* linaierSuitesCollection2.png */,
+				86B22F62194096C8005E2BD0 /* linaierSuitesCollection3.png */,
+				86B22F63194096C8005E2BD0 /* linaierSuitesCollection4.png */,
+			);
+			path = WoodenSuitesCollectionImages;
 			sourceTree = "<group>";
 		};
 		8FFA565B192C4EAA003CE1BF /* wholeBodyAniImages */ = {
@@ -9084,6 +9140,7 @@
 				8FFA566D192C4EAA003CE1BF /* wholebody_animation7.png in Resources */,
 				848B710418D06F1500F79BC7 /* 1991-lishi-dec.png in Resources */,
 				EBE0F0FF18E0095B0018F186 /* inax_leading_Item13.png in Resources */,
+				86B22F65194096C8005E2BD0 /* kangfeiliSuitesCollection10.png in Resources */,
 				047BCEB118F3AC250094BE28 /* CalculateViewController.xib in Resources */,
 				0484F6D818DA8A8700CA2CC9 /* hp_as_cover.png in Resources */,
 				0484F69F18DA8A8100CA2CC9 /* oss1.png in Resources */,
@@ -9098,6 +9155,7 @@
 				04733CE518E2CBEA00E18006 /* inax_dv_left.png in Resources */,
 				E9715F7318C8881000600393 /* lt_gaoxiaochongshui_icon.png in Resources */,
 				EBE0F0BE18E0009D0018F186 /* inax_sp_rightbtn.png in Resources */,
+				86B22F72194096C8005E2BD0 /* linaierSuitesCollection3.png in Resources */,
 				EBD9EFF7190A0AF600EDC630 /* wooden_lt_zhineng_main_fangdao2.png in Resources */,
 				EB2B69FD18EAA7B80035D647 /* wooden_lt_shinei_boliitem.png in Resources */,
 				04C5310F18EAB13300760694 /* wooden_sp_xuanguanmen_gulilai.png in Resources */,
@@ -9345,6 +9403,7 @@
 				8627D0D11924D83F0033EE9C /* product_bottom_bg.png in Resources */,
 				B7F0628E18FD343D00701469 /* lixil_cv_n4.png in Resources */,
 				B7CAB884190A5BD800E67305 /* inax_so_nanning_detail.png in Resources */,
+				86B22F64194096C8005E2BD0 /* kangfeiliSuitesCollection1.png in Resources */,
 				E9715DAC18C821E700600393 /* 1872lishi.png in Resources */,
 				E9715EA718C887D700600393 /* sp_expo_image3-retina.png in Resources */,
 				EBE0F0FB18E0095B0018F186 /* inax_leading_Item1.png in Resources */,
@@ -9457,6 +9516,7 @@
 				EBE0F12A18E0095B0018F186 /* inax_leading_strip7.png in Resources */,
 				04BC900018CF3EA900AF41CB /* brand_space_3droom.png in Resources */,
 				EB2B69FF18EAA7B80035D647 /* wooden_lt_shinei_caiyonghualunitem.png in Resources */,
+				86B22F66194096C8005E2BD0 /* kangfeiliSuitesCollection11.png in Resources */,
 				EB186F9F190E2E1B00C258FC /* inax_lt_shumo3.jpg in Resources */,
 				04145E0818DFF10100A7D33E /* inax_sp_mianpen_xishoumianpen.png in Resources */,
 				8F85994A1934699100501D85 /* inax_lt_oufute2.jpg in Resources */,
@@ -9569,6 +9629,7 @@
 				EB16330618FE5F3F00B997A2 /* sash_lt_guke_item.png in Resources */,
 				0B73FFD818FE5FF100665B9D /* sash_sc_bottom_cover.png in Resources */,
 				04145DFE18DFF10100A7D33E /* inax_sp_longtou_saimu.png in Resources */,
+				86B22F6D194096C8005E2BD0 /* kangfeiliSuitesCollection7.png in Resources */,
 				B778E2F718B99F5E0046E6E6 /* townsquarename.png in Resources */,
 				043F633218B4CD0800995F55 /* ASMenuTableViewData.plist in Resources */,
 				0484F67D18DA8A8100CA2CC9 /* lx_group_middle_map.png in Resources */,
@@ -9656,6 +9717,7 @@
 				04A5E9CE18E41FAB00477FC9 /* LixilWoodenShowProductsViewController.xib in Resources */,
 				8627D0E61924D83F0033EE9C /* product_wujin2.png in Resources */,
 				04145DDC18DFF10100A7D33E /* inax_sp_xiaobianqi.png in Resources */,
+				86B22F69194096C8005E2BD0 /* kangfeiliSuitesCollection3.png in Resources */,
 				046CBC7318EBB10C001C4FA7 /* wooden_so_map_shanxi.png in Resources */,
 				E9715E3E18C8873000600393 /* sb_yushijiaju-s.png in Resources */,
 				B7CAB8A3190A6C2E00E67305 /* ecocarat_so_city_zhejiang_detail.png in Resources */,
@@ -9726,6 +9788,7 @@
 				0B235E3A18FB861F00BE49AE /* ecocarat_np_zhumie.png in Resources */,
 				EB186F20190E21E600C258FC /* wooden_lt_zhineng_main_fangdao_page5.png in Resources */,
 				8627D0E91924D83F0033EE9C /* 产品特点.png in Resources */,
+				86B22F6F194096C8005E2BD0 /* kangfeiliSuitesCollection9.png in Resources */,
 				B7D1F6E2190DFDB30094BF7B /* wooden_so_fujian_detail.png in Resources */,
 				EBE67C0E18E429DD003D9821 /* inax_lt_page2.png in Resources */,
 				EBF2813B191A446900561A9D /* inax_lt_harmo1.jpg in Resources */,
@@ -9804,6 +9867,7 @@
 				B7F0628C18FD343D00701469 /* lixil_cv_n2.png in Resources */,
 				0484F62918DA8A8100CA2CC9 /* lixilgroupinfoimage4.png in Resources */,
 				B7CAB887190A5BD800E67305 /* inax_so_yinchuan_detail.png in Resources */,
+				86B22F6A194096C8005E2BD0 /* kangfeiliSuitesCollection4.png in Resources */,
 				0484F6B318DA8A8100CA2CC9 /* ossscroll4.png in Resources */,
 				EBE0F0B718E0009D0018F186 /* inax_sp_houseitem.png in Resources */,
 				0484F64518DA8A8100CA2CC9 /* lc_earth_15.png in Resources */,
@@ -10082,6 +10146,7 @@
 				0B235E8318FBB9D900BE49AE /* ecocarat_so_city_yancheng.png in Resources */,
 				B7F0629518FD343D00701469 /* lixil_cv_cheng.png in Resources */,
 				EB2B6A0018EAA7B80035D647 /* wooden_lt_shinei_heyie_des.png in Resources */,
+				86B22F6E194096C8005E2BD0 /* kangfeiliSuitesCollection8.png in Resources */,
 				046CBCD718EBEFF4001C4FA7 /* EcocaratMainMenuModuleViewController.xib in Resources */,
 				EBE0F0BD18E0009D0018F186 /* inax_sp_publicitemgray.png in Resources */,
 				E9715F6B18C8881000600393 /* lt_ganyingjishu_intro1_detail.png in Resources */,
@@ -10165,6 +10230,7 @@
 				04145DE118DFF10100A7D33E /* inax_sp_bianqi_chongxifashizuobianqi.png in Resources */,
 				8FFA5666192C4EAA003CE1BF /* wholebody_animation1.png in Resources */,
 				8627D0D41924D83F0033EE9C /* bottom_btn_wujin_pressed.png in Resources */,
+				86B22F70194096C8005E2BD0 /* linaierSuitesCollection1.png in Resources */,
 				0484F6F918DA8AB200CA2CC9 /* lixilGroup_back@2x.png in Resources */,
 				B778E2FA18B99F5E0046E6E6 /* udsnobilename.png in Resources */,
 				0484F64E18DA8A8100CA2CC9 /* lc_earth_23.png in Resources */,
@@ -10263,6 +10329,7 @@
 				04A5843518C5C005007290EA /* us_user_icon.png in Resources */,
 				0455408018F5220200CF2CF0 /* ecocarat_sp_zhumie.png in Resources */,
 				E9715EEC18C887D700600393 /* sp_up.png in Resources */,
+				86B22F6C194096C8005E2BD0 /* kangfeiliSuitesCollection6.png in Resources */,
 				8F1DF9D7192EFE120087A372 /* bottom_btn_xilie_pressed.png in Resources */,
 				EBD9EFFF190A0AF600EDC630 /* wooden_lt_zhineng_main_shushi4.png in Resources */,
 				B778E30B18B99F5E0046E6E6 /* zia.png in Resources */,
@@ -10366,7 +10433,9 @@
 				04A5843318C5C005007290EA /* us_bg.png in Resources */,
 				B7F0624118FCD8C000701469 /* ul_login.png in Resources */,
 				8F1DF9D6192EFE120087A372 /* bottom_btn_wholebody_pressed.png in Resources */,
+				86B22F6B194096C8005E2BD0 /* kangfeiliSuitesCollection5.png in Resources */,
 				EBF28121191A38BD00561A9D /* inax_lt_lejing4.jpg in Resources */,
+				86B22F71194096C8005E2BD0 /* linaierSuitesCollection2.png in Resources */,
 				0B235E8918FBB9D900BE49AE /* ecocarat_so_map_ningxia.png in Resources */,
 				0484F57318DA8A7800CA2CC9 /* InaxShowProductsViewController.xib in Resources */,
 				B778E2D618B99F5E0046E6E6 /* ventuno-.png in Resources */,
@@ -10440,11 +10509,13 @@
 				848B70FD18D06F1500F79BC7 /* 1875-lishi-dec.png in Resources */,
 				EB186FD2190E61EE00C258FC /* inax_lt_page66.png in Resources */,
 				0484F69118DA8A8100CA2CC9 /* 17yizhanshi.png in Resources */,
+				86B22F67194096C8005E2BD0 /* kangfeiliSuitesCollection12.png in Resources */,
 				0484F6AB18DA8A8100CA2CC9 /* osscenter.png in Resources */,
 				E9715F7918C8881000600393 /* lt_gaoxiaochongshui_intro3_detail.png in Resources */,
 				E9715F8C18C8881000600393 /* lt_linyufang_intro3_detail.png in Resources */,
 				8FFA566C192C4EAA003CE1BF /* wholebody_animation6.png in Resources */,
 				B778E2E718B99F5E0046E6E6 /* ventunodec.png in Resources */,
+				86B22F73194096C8005E2BD0 /* linaierSuitesCollection4.png in Resources */,
 				EBE67C1418E429DD003D9821 /* inax_lt_page8.png in Resources */,
 				E9715F9318C8881000600393 /* lt_shuangchongchaoqiang_detail.png in Resources */,
 				B7DFB0001900FDEE00D97305 /* InaxCalculatorView.xib in Resources */,
@@ -10520,6 +10591,7 @@
 				EBF280A7191A057400561A9D /* inax_home_showproduct.png in Resources */,
 				EB054FE8191B4C7700D03084 /* DownMenuCell.xib in Resources */,
 				EBE0F04818DFD4070018F186 /* inax_bh_bk.png in Resources */,
+				86B22F68194096C8005E2BD0 /* kangfeiliSuitesCollection2.png in Resources */,
 				047BCEF118F3AC250094BE28 /* cartgroup.png in Resources */,
 				04145DEF18DFF10100A7D33E /* inax_sp_longtou_bxilielongtou.png in Resources */,
 				E9715E3218C8873000600393 /* sb_linyushebei-s.png in Resources */,
@@ -11020,7 +11092,7 @@
 				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: ZHANGN ZHONGHAO (4E44X26XS6)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: jingfu ran (6GB46632E3)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/admin/Desktop/lvpw,
@@ -11047,7 +11119,7 @@
 				GCC_PREFIX_HEADER = "ShowCasePro/ShowCasePro-Prefix.pch";
 				INFOPLIST_FILE = "ShowCasePro/ShowCasePro-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8040EC83-1715-4638-B9EC-2D5C42F1CEEF";
+				PROVISIONING_PROFILE = "F4CFA661-E10F-4800-AB1E-68A475FFC490";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -11088,7 +11160,7 @@
 				GCC_PREFIX_HEADER = "ShowCasePro/ShowCasePro-Prefix.pch";
 				INFOPLIST_FILE = "ShowCasePro/ShowCasePro-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8040EC83-1715-4638-B9EC-2D5C42F1CEEF";
+				PROVISIONING_PROFILE = "F4CFA661-E10F-4800-AB1E-68A475FFC490";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
