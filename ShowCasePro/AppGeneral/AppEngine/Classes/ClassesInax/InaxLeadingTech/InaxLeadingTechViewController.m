@@ -549,8 +549,8 @@ NSString *kCellID = @"cellID";
 
 - (void)didReceiveMemoryWarning
 {
-    
     [super didReceiveMemoryWarning];
+    debugLog(@"");
     // Dispose of any resources that can be recreated.
 }
 
