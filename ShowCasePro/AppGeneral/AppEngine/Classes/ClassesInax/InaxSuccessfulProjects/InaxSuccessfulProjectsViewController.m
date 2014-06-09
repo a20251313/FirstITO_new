@@ -72,19 +72,17 @@
     _preciousBlowImgView = nil;
     _preciousRefImgView = (UIImageView*)[self.view viewWithTag:4];
     
-      _changbaishanArrayImage = [NSMutableArray arrayWithCapacity:3];
-       for(int i = 1;i <4 ;i++){
-        NSString *imgName = [[NSString alloc]initWithFormat:@"ecocarat_ph_do_changbaishang%d.png" ,i];
+    
+    _changbaishanArrayImage = [NSMutableArray arrayWithCapacity:1];
+    for(int i = 1;i <2 ;i++){
+        NSString *imgName = @"inax_sp_changbaishan.png";
         UIImage *img = [UIImage imageNamed:imgName];
-       [_changbaishanArrayImage addObject:img];
+        [_changbaishanArrayImage addObject:img];
     }
     _shanghaishiboArrayImage = [NSMutableArray arrayWithCapacity:1];
-   
+    
     UIImage *imgShang = [UIImage imageNamed:@"inax_sp_shanghaishibo"];
     [_shanghaishiboArrayImage addObject:imgShang];
-
-    
-    
     
     [self.view viewWithTag:90].hidden = YES;
     [self.view viewWithTag:99].hidden = YES;

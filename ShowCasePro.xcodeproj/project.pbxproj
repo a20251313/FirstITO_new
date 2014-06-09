@@ -968,7 +968,6 @@
 		86AC39C4193229F900C7E786 /* woodlen_lt_page22.png in Resources */ = {isa = PBXBuildFile; fileRef = 86AC39C2193229F900C7E786 /* woodlen_lt_page22.png */; };
 		86AC39CC19322E2F00C7E786 /* LixilWoodenproductSyleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86AC39CB19322E2F00C7E786 /* LixilWoodenproductSyleView.m */; };
 		86AC39CD19322F4F00C7E786 /* LixilWoodenproductSyleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86AC39C819322B8600C7E786 /* LixilWoodenproductSyleView.xib */; };
-		86B22F64194096C8005E2BD0 /* kangfeiliSuitesCollection1.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B22F54194096C8005E2BD0 /* kangfeiliSuitesCollection1.png */; };
 		86B22F65194096C8005E2BD0 /* kangfeiliSuitesCollection10.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B22F55194096C8005E2BD0 /* kangfeiliSuitesCollection10.png */; };
 		86B22F66194096C8005E2BD0 /* kangfeiliSuitesCollection11.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B22F56194096C8005E2BD0 /* kangfeiliSuitesCollection11.png */; };
 		86B22F67194096C8005E2BD0 /* kangfeiliSuitesCollection12.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B22F57194096C8005E2BD0 /* kangfeiliSuitesCollection12.png */; };
@@ -995,6 +994,9 @@
 		8F1DF9D6192EFE120087A372 /* bottom_btn_wholebody_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F1DF9D4192EFE120087A372 /* bottom_btn_wholebody_pressed.png */; };
 		8F1DF9D7192EFE120087A372 /* bottom_btn_xilie_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F1DF9D5192EFE120087A372 /* bottom_btn_xilie_pressed.png */; };
 		8F225EE819373A5C004CB77F /* LixilShowCerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F225EE719373A5C004CB77F /* LixilShowCerScrollView.m */; };
+		8F2AD15E19458E9F0055ADAB /* kangfeiliSuitesCollection1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F2AD15D19458E9F0055ADAB /* kangfeiliSuitesCollection1.png */; };
+		8F2AD16019458EFA0055ADAB /* inax_sp_shanghaishibo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F2AD15F19458EFA0055ADAB /* inax_sp_shanghaishibo.png */; };
+		8F2AD16219458F270055ADAB /* inax_sp_changbaishan.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F2AD16119458F270055ADAB /* inax_sp_changbaishan.png */; };
 		8F5A190D192340EA00DB3F7B /* LixilBigDetailScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5A190C192340EA00DB3F7B /* LixilBigDetailScrollView.m */; };
 		8F85993F1934693600501D85 /* inax_lt_anmoyugang1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F85993E1934693600501D85 /* inax_lt_anmoyugang1.jpg */; };
 		8F8599411934694700501D85 /* inax_lt_cp1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F8599401934694700501D85 /* inax_lt_cp1.jpg */; };
@@ -1653,7 +1655,6 @@
 		EB09D52518F548B2002CD41F /* ecocarat_lt_detail_item4_detail1.png in Resources */ = {isa = PBXBuildFile; fileRef = EB09D4FC18F548B2002CD41F /* ecocarat_lt_detail_item4_detail1.png */; };
 		EB09D52618F548B2002CD41F /* ecocarat_ltdetail_item4_detail2.png in Resources */ = {isa = PBXBuildFile; fileRef = EB09D4FD18F548B2002CD41F /* ecocarat_ltdetail_item4_detail2.png */; };
 		EB13BF46190759BF00985055 /* inax_bh_history.png in Resources */ = {isa = PBXBuildFile; fileRef = EB13BF45190759BF00985055 /* inax_bh_history.png */; };
-		EB13BF481907CC1500985055 /* inax_sp_shanghaishibo.png in Resources */ = {isa = PBXBuildFile; fileRef = EB13BF471907CC1500985055 /* inax_sp_shanghaishibo.png */; };
 		EB1632CD18FE28D500B997A2 /* sash_ph_add_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = EB1632C018FE28D500B997A2 /* sash_ph_add_btn.png */; };
 		EB1632CE18FE28D500B997A2 /* sash_ph_clear_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = EB1632C118FE28D500B997A2 /* sash_ph_clear_btn.png */; };
 		EB1632CF18FE28D500B997A2 /* sash_ph_do_bk.png in Resources */ = {isa = PBXBuildFile; fileRef = EB1632C218FE28D500B997A2 /* sash_ph_do_bk.png */; };
@@ -3181,7 +3182,6 @@
 		86AC39C819322B8600C7E786 /* LixilWoodenproductSyleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LixilWoodenproductSyleView.xib; sourceTree = "<group>"; };
 		86AC39CA19322E2F00C7E786 /* LixilWoodenproductSyleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LixilWoodenproductSyleView.h; sourceTree = "<group>"; };
 		86AC39CB19322E2F00C7E786 /* LixilWoodenproductSyleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LixilWoodenproductSyleView.m; sourceTree = "<group>"; };
-		86B22F54194096C8005E2BD0 /* kangfeiliSuitesCollection1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kangfeiliSuitesCollection1.png; sourceTree = "<group>"; };
 		86B22F55194096C8005E2BD0 /* kangfeiliSuitesCollection10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kangfeiliSuitesCollection10.png; sourceTree = "<group>"; };
 		86B22F56194096C8005E2BD0 /* kangfeiliSuitesCollection11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kangfeiliSuitesCollection11.png; sourceTree = "<group>"; };
 		86B22F57194096C8005E2BD0 /* kangfeiliSuitesCollection12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kangfeiliSuitesCollection12.png; sourceTree = "<group>"; };
@@ -3211,6 +3211,9 @@
 		8F1DF9D5192EFE120087A372 /* bottom_btn_xilie_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottom_btn_xilie_pressed.png; sourceTree = "<group>"; };
 		8F225EE619373A5C004CB77F /* LixilShowCerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LixilShowCerScrollView.h; path = ../../LixilDetailView/LixilShowCerScrollView.h; sourceTree = "<group>"; };
 		8F225EE719373A5C004CB77F /* LixilShowCerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LixilShowCerScrollView.m; path = ../../LixilDetailView/LixilShowCerScrollView.m; sourceTree = "<group>"; };
+		8F2AD15D19458E9F0055ADAB /* kangfeiliSuitesCollection1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kangfeiliSuitesCollection1.png; sourceTree = "<group>"; };
+		8F2AD15F19458EFA0055ADAB /* inax_sp_shanghaishibo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inax_sp_shanghaishibo.png; sourceTree = "<group>"; };
+		8F2AD16119458F270055ADAB /* inax_sp_changbaishan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inax_sp_changbaishan.png; sourceTree = "<group>"; };
 		8F5A190B192340EA00DB3F7B /* LixilBigDetailScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LixilBigDetailScrollView.h; sourceTree = "<group>"; };
 		8F5A190C192340EA00DB3F7B /* LixilBigDetailScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LixilBigDetailScrollView.m; sourceTree = "<group>"; };
 		8F85993E1934693600501D85 /* inax_lt_anmoyugang1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inax_lt_anmoyugang1.jpg; sourceTree = "<group>"; };
@@ -3951,7 +3954,6 @@
 		EB09D4FC18F548B2002CD41F /* ecocarat_lt_detail_item4_detail1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ecocarat_lt_detail_item4_detail1.png; sourceTree = "<group>"; };
 		EB09D4FD18F548B2002CD41F /* ecocarat_ltdetail_item4_detail2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ecocarat_ltdetail_item4_detail2.png; sourceTree = "<group>"; };
 		EB13BF45190759BF00985055 /* inax_bh_history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inax_bh_history.png; sourceTree = "<group>"; };
-		EB13BF471907CC1500985055 /* inax_sp_shanghaishibo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inax_sp_shanghaishibo.png; sourceTree = "<group>"; };
 		EB1632C018FE28D500B997A2 /* sash_ph_add_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sash_ph_add_btn.png; sourceTree = "<group>"; };
 		EB1632C118FE28D500B997A2 /* sash_ph_clear_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sash_ph_clear_btn.png; sourceTree = "<group>"; };
 		EB1632C218FE28D500B997A2 /* sash_ph_do_bk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sash_ph_do_bk.png; sourceTree = "<group>"; };
@@ -7072,7 +7074,7 @@
 		86B22F53194096C8005E2BD0 /* WoodenSuitesCollectionImages */ = {
 			isa = PBXGroup;
 			children = (
-				86B22F54194096C8005E2BD0 /* kangfeiliSuitesCollection1.png */,
+				8F2AD15D19458E9F0055ADAB /* kangfeiliSuitesCollection1.png */,
 				86B22F55194096C8005E2BD0 /* kangfeiliSuitesCollection10.png */,
 				86B22F56194096C8005E2BD0 /* kangfeiliSuitesCollection11.png */,
 				86B22F57194096C8005E2BD0 /* kangfeiliSuitesCollection12.png */,
@@ -8683,7 +8685,8 @@
 		EBE0F09E18E0009D0018F186 /* InaxSuccessfulProjectsImages */ = {
 			isa = PBXGroup;
 			children = (
-				EB13BF471907CC1500985055 /* inax_sp_shanghaishibo.png */,
+				8F2AD16119458F270055ADAB /* inax_sp_changbaishan.png */,
+				8F2AD15F19458EFA0055ADAB /* inax_sp_shanghaishibo.png */,
 				EBE0F09F18E0009D0018F186 /* inax_sp_add_btn.png */,
 				EBE0F0A018E0009D0018F186 /* inax_sp_clear_btn.png */,
 				EBE0F0A118E0009D0018F186 /* inax_sp_hotel.png */,
@@ -9036,6 +9039,7 @@
 				0484F69318DA8A8100CA2CC9 /* 19yizhanshi.png in Resources */,
 				B778E3CC18B99F920046E6E6 /* AS_Ins_guangyunxiao@2x.png in Resources */,
 				B778E2E318B99F5E0046E6E6 /* townsquaredec.png in Resources */,
+				8F2AD16019458EFA0055ADAB /* inax_sp_shanghaishibo.png in Resources */,
 				EBE67C1318E429DD003D9821 /* inax_lt_page7.png in Resources */,
 				B7DFAFE61900F66D00D97305 /* InaxSearchViewController.xib in Resources */,
 				047BCEBB18F3AC250094BE28 /* cv_n6.png in Resources */,
@@ -9282,6 +9286,7 @@
 				86A31429192B9AFB00C718FB /* room_xuanguan3.png in Resources */,
 				EBD9EFFA190A0AF600EDC630 /* wooden_lt_zhineng_main_fangdao5.png in Resources */,
 				0484F62F18DA8A8100CA2CC9 /* lixilgroupinfopage4.png in Resources */,
+				8F2AD16219458F270055ADAB /* inax_sp_changbaishan.png in Resources */,
 				04BC8FF618CEACAE00AF41CB /* av_15s.png in Resources */,
 				EBF2813D191A449F00561A9D /* inax_lt_regio1.jpg in Resources */,
 				B778E2F018B99F5E0046E6E6 /* idsclearqingxinname.png in Resources */,
@@ -9416,7 +9421,6 @@
 				8627D0D11924D83F0033EE9C /* product_bottom_bg.png in Resources */,
 				B7F0628E18FD343D00701469 /* lixil_cv_n4.png in Resources */,
 				B7CAB884190A5BD800E67305 /* inax_so_nanning_detail.png in Resources */,
-				86B22F64194096C8005E2BD0 /* kangfeiliSuitesCollection1.png in Resources */,
 				E9715DAC18C821E700600393 /* 1872lishi.png in Resources */,
 				E9715EA718C887D700600393 /* sp_expo_image3-retina.png in Resources */,
 				EB09D4BC18F4EC6C002CD41F /* ecocarat_ph_do_changbaishang1.png in Resources */,
@@ -9709,6 +9713,7 @@
 				046CBC8F18EBB10C001C4FA7 /* wooden_so_taizhou_2.png in Resources */,
 				E9715FB818C8881000600393 /* lt_younengfaxin_intro1.png in Resources */,
 				EB42EC2218E9731500E3F2CB /* wooden_ph_ov_itemgray.png in Resources */,
+				8F2AD15E19458E9F0055ADAB /* kangfeiliSuitesCollection1.png in Resources */,
 				EB054FE6191B4C7700D03084 /* ASProductListViewController.xib in Resources */,
 				043F634218B4CD1000995F55 /* home_back_btn@2x.png in Resources */,
 				0444F9BB18C9AD47009A2AD1 /* stopbtn.png in Resources */,
@@ -10052,7 +10057,6 @@
 				04145E0218DFF10100A7D33E /* inax_sp_longtou_zidongganyinglongtou.png in Resources */,
 				0484F69518DA8A8100CA2CC9 /* 20yizhanshi.png in Resources */,
 				0475C98A18BF0A680078F17C /* AS_NewProIntroductDemo.png in Resources */,
-				EB13BF481907CC1500985055 /* inax_sp_shanghaishibo.png in Resources */,
 				86A313F9192B726000C718FB /* kang_li_xilie.png in Resources */,
 				04145DFC18DFF10100A7D33E /* inax_sp_longtou_qingpenzhilian.png in Resources */,
 				EBF28157191A4EB600561A9D /* sash_home_suitescollection.png in Resources */,
