@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InaxSuccessfulProjectsViewController">
             <connections>
                 <outlet property="bottomBlueImg" destination="dhS-8x-y1e" id="59u-0O-w0k"/>
                 <outlet property="bottomImage" destination="2sh-Nu-v6n" id="7br-6g-hWX"/>
-                <outlet property="bottomRefImage" destination="jwH-a0-wge" id="e1w-n6-Wft"/>
                 <outlet property="middleBlueImg" destination="pZ5-P0-H9B" id="Yns-Uu-qq8"/>
                 <outlet property="middleImage" destination="vTZ-rr-6Ib" id="SSa-Cd-wGe"/>
-                <outlet property="middleRefImage" destination="UIn-fP-OiK" id="xaF-S6-khz"/>
                 <outlet property="refView" destination="uu5-8A-ck3" id="yZw-Sa-kzc"/>
                 <outlet property="topBlueImg" destination="nzG-0a-hfV" id="jp6-h7-JFN"/>
                 <outlet property="topListView" destination="Lle-yB-phL" id="7ub-HL-6zx"/>
-                <outlet property="topRefImage" destination="2jt-mI-Bnj" id="m1n-aX-MO8"/>
                 <outlet property="topimage" destination="Tba-KR-km3" id="CBi-mA-5sC"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
@@ -25,37 +22,22 @@
             <rect key="frame" x="0.0" y="0.0" width="1024" height="683"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inax_sp_hotel.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tba-KR-km3" userLabel="topImage">
+                <imageView tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inax_sp_hotel.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tba-KR-km3" userLabel="topImage">
                     <rect key="frame" x="0.0" y="85" width="1024" height="683"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inax_sp_house.png" translatesAutoresizingMaskIntoConstraints="NO" id="vTZ-rr-6Ib" userLabel="middleImage">
+                <imageView alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inax_sp_house.png" translatesAutoresizingMaskIntoConstraints="NO" id="vTZ-rr-6Ib" userLabel="middleImage">
                     <rect key="frame" x="0.0" y="85" width="1024" height="683"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inax_sp_public.png" translatesAutoresizingMaskIntoConstraints="NO" id="2sh-Nu-v6n" userLabel="bottomImage">
+                <imageView alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inax_sp_public.png" translatesAutoresizingMaskIntoConstraints="NO" id="2sh-Nu-v6n" userLabel="bottomImage">
                     <rect key="frame" x="0.0" y="85" width="1024" height="683"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uu5-8A-ck3" userLabel="refView">
+                <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uu5-8A-ck3" userLabel="refView" customClass="UIScrollView">
                     <rect key="frame" x="293" y="175" width="582" height="275"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inax_sp_hoteldescribe.png" translatesAutoresizingMaskIntoConstraints="NO" id="2jt-mI-Bnj" userLabel="topRefImage">
-                            <rect key="frame" x="0.0" y="0.0" width="584" height="275"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        </imageView>
-                        <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inax_sp_house_describe.png" translatesAutoresizingMaskIntoConstraints="NO" id="UIn-fP-OiK" userLabel="middleRefImage">
-                            <rect key="frame" x="0.0" y="0.0" width="584" height="275"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        </imageView>
-                        <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inax_sp_public_describe.png" translatesAutoresizingMaskIntoConstraints="NO" id="jwH-a0-wge" userLabel="bottomRefImage">
-                            <rect key="frame" x="0.0" y="0.0" width="584" height="275"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        </imageView>
                         <button opaque="NO" tag="90" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zo0-d4-bQS" userLabel="changbaishanAdd">
                             <rect key="frame" x="557" y="27" width="18" height="18"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -171,9 +153,12 @@
                             <state key="normal" image="inax_sp_add_btn.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="clickAddMethod:" destination="-1" eventType="touchUpInside" id="qtp-hd-pko"/>
+                            </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.90980392156862744" green="0.98039215686274506" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
                 <imageView userInteractionEnabled="NO" alpha="0.0" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inax_sp_hotelitem.png" translatesAutoresizingMaskIntoConstraints="NO" id="nzG-0a-hfV">
                     <rect key="frame" x="0.0" y="174" width="293" height="138"/>
@@ -225,16 +210,13 @@
         <image name="inax_sp_add_btn.png" width="96" height="90"/>
         <image name="inax_sp_clear_btn.png" width="96" height="90"/>
         <image name="inax_sp_hotel.png" width="2048" height="1366"/>
-        <image name="inax_sp_hoteldescribe.png" width="1169" height="548"/>
         <image name="inax_sp_hotelitem.png" width="585" height="275"/>
         <image name="inax_sp_hotelitemgray.png" width="585" height="275"/>
         <image name="inax_sp_house.png" width="2048" height="1366"/>
-        <image name="inax_sp_house_describe.png" width="1169" height="548"/>
         <image name="inax_sp_houseitem.png" width="585" height="275"/>
         <image name="inax_sp_houseitemgray.png" width="585" height="275"/>
         <image name="inax_sp_left_btn.png" width="96" height="90"/>
         <image name="inax_sp_public.png" width="2048" height="1366"/>
-        <image name="inax_sp_public_describe.png" width="1169" height="548"/>
         <image name="inax_sp_publicitem.png" width="585" height="275"/>
         <image name="inax_sp_publicitemgray.png" width="585" height="275"/>
         <image name="inax_sp_rightbtn.png" width="96" height="90"/>

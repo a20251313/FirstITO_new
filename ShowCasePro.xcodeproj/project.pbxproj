@@ -964,6 +964,11 @@
 		86A31427192B9AFB00C718FB /* room_xuanguan1.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A31419192B9AFB00C718FB /* room_xuanguan1.png */; };
 		86A31428192B9AFB00C718FB /* room_xuanguan2.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A3141A192B9AFB00C718FB /* room_xuanguan2.png */; };
 		86A31429192B9AFB00C718FB /* room_xuanguan3.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A3141B192B9AFB00C718FB /* room_xuanguan3.png */; };
+		86AB03FA1955A39D00313A7E /* ecocarat_vedio_bkg.png in Resources */ = {isa = PBXBuildFile; fileRef = 86AB03F51955A39D00313A7E /* ecocarat_vedio_bkg.png */; };
+		86AB03FB1955A39D00313A7E /* ecocarat_zhenshu1.png in Resources */ = {isa = PBXBuildFile; fileRef = 86AB03F61955A39D00313A7E /* ecocarat_zhenshu1.png */; };
+		86AB03FC1955A39D00313A7E /* ecocarat_zhenshu2.png in Resources */ = {isa = PBXBuildFile; fileRef = 86AB03F71955A39D00313A7E /* ecocarat_zhenshu2.png */; };
+		86AB03FD1955A39D00313A7E /* ecocarat_zhenshu3.png in Resources */ = {isa = PBXBuildFile; fileRef = 86AB03F81955A39D00313A7E /* ecocarat_zhenshu3.png */; };
+		86AB03FE1955A39D00313A7E /* ecocarat_zhenshu4.png in Resources */ = {isa = PBXBuildFile; fileRef = 86AB03F91955A39D00313A7E /* ecocarat_zhenshu4.png */; };
 		86AC39C3193229F900C7E786 /* woodlen_lt_page21.png in Resources */ = {isa = PBXBuildFile; fileRef = 86AC39C1193229F900C7E786 /* woodlen_lt_page21.png */; };
 		86AC39C4193229F900C7E786 /* woodlen_lt_page22.png in Resources */ = {isa = PBXBuildFile; fileRef = 86AC39C2193229F900C7E786 /* woodlen_lt_page22.png */; };
 		86AC39CC19322E2F00C7E786 /* LixilWoodenproductSyleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86AC39CB19322E2F00C7E786 /* LixilWoodenproductSyleView.m */; };
@@ -3177,6 +3182,11 @@
 		86A31419192B9AFB00C718FB /* room_xuanguan1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = room_xuanguan1.png; sourceTree = "<group>"; };
 		86A3141A192B9AFB00C718FB /* room_xuanguan2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = room_xuanguan2.png; sourceTree = "<group>"; };
 		86A3141B192B9AFB00C718FB /* room_xuanguan3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = room_xuanguan3.png; sourceTree = "<group>"; };
+		86AB03F51955A39D00313A7E /* ecocarat_vedio_bkg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ecocarat_vedio_bkg.png; sourceTree = "<group>"; };
+		86AB03F61955A39D00313A7E /* ecocarat_zhenshu1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ecocarat_zhenshu1.png; sourceTree = "<group>"; };
+		86AB03F71955A39D00313A7E /* ecocarat_zhenshu2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ecocarat_zhenshu2.png; sourceTree = "<group>"; };
+		86AB03F81955A39D00313A7E /* ecocarat_zhenshu3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ecocarat_zhenshu3.png; sourceTree = "<group>"; };
+		86AB03F91955A39D00313A7E /* ecocarat_zhenshu4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ecocarat_zhenshu4.png; sourceTree = "<group>"; };
 		86AC39C1193229F900C7E786 /* woodlen_lt_page21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = woodlen_lt_page21.png; path = ../../../../ClassesInax/InaxLeadingTech/InaxLeadingTechImages/woodlen_lt_page21.png; sourceTree = "<group>"; };
 		86AC39C2193229F900C7E786 /* woodlen_lt_page22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = woodlen_lt_page22.png; path = ../../../../ClassesInax/InaxLeadingTech/InaxLeadingTechImages/woodlen_lt_page22.png; sourceTree = "<group>"; };
 		86AC39C819322B8600C7E786 /* LixilWoodenproductSyleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LixilWoodenproductSyleView.xib; sourceTree = "<group>"; };
@@ -7071,6 +7081,18 @@
 			path = EcocaratSuitesCollectionSubViewControllerImages;
 			sourceTree = "<group>";
 		};
+		86AB03F41955A39D00313A7E /* ecocarat_vedio_images */ = {
+			isa = PBXGroup;
+			children = (
+				86AB03F51955A39D00313A7E /* ecocarat_vedio_bkg.png */,
+				86AB03F61955A39D00313A7E /* ecocarat_zhenshu1.png */,
+				86AB03F71955A39D00313A7E /* ecocarat_zhenshu2.png */,
+				86AB03F81955A39D00313A7E /* ecocarat_zhenshu3.png */,
+				86AB03F91955A39D00313A7E /* ecocarat_zhenshu4.png */,
+			);
+			path = ecocarat_vedio_images;
+			sourceTree = "<group>";
+		};
 		86B22F53194096C8005E2BD0 /* WoodenSuitesCollectionImages */ = {
 			isa = PBXGroup;
 			children = (
@@ -7464,6 +7486,7 @@
 		B778E29C18B99F5E0046E6E6 /* ASVideoViewController */ = {
 			isa = PBXGroup;
 			children = (
+				86AB03F41955A39D00313A7E /* ecocarat_vedio_images */,
 				045E779618D2B58D00782686 /* AS_neomodern.mp4 */,
 				045E779718D2B58D00782686 /* AS_nobile-0820.mp4 */,
 				B778E29D18B99F5E0046E6E6 /* ASVideoViewController.h */,
@@ -9802,6 +9825,7 @@
 				0484F69D18DA8A8100CA2CC9 /* 8yizhanshi.png in Resources */,
 				EB16330918FE5F3F00B997A2 /* sash_lt_shizuo_item.png in Resources */,
 				0B235E7F18FBB9D900BE49AE /* ecocarat_so_city_weihai.png in Resources */,
+				86AB03FA1955A39D00313A7E /* ecocarat_vedio_bkg.png in Resources */,
 				0484F66818DA8A8100CA2CC9 /* lc_page_2.png in Resources */,
 				0484F56418DA8A7800CA2CC9 /* Inax3DRoomViewController.xib in Resources */,
 				0484F68D18DA8A8100CA2CC9 /* 13yizhanshi.png in Resources */,
@@ -9924,6 +9948,7 @@
 				E9715F6D18C8881000600393 /* lt_ganyingjishu_intro2_detail.png in Resources */,
 				B7DFAFFE1900FDEE00D97305 /* inax_cv_equal.png in Resources */,
 				04A5E97818E3D88600477FC9 /* lixil_nav_back.png in Resources */,
+				86AB03FD1955A39D00313A7E /* ecocarat_zhenshu3.png in Resources */,
 				86A313F6192B726000C718FB /* kang_li_bottom_bg.png in Resources */,
 				B778E2CA18B99F5E0046E6E6 /* cygnet-.png in Resources */,
 				0484F69918DA8A8100CA2CC9 /* 4yizhanshi.png in Resources */,
@@ -10157,6 +10182,7 @@
 				EB09D51118F548B2002CD41F /* ecocarat_lt_detail_item2_btnright.png in Resources */,
 				EBF2812F191A3FE000561A9D /* inax_lt_asteo4.jpg in Resources */,
 				0484F63A18DA8A8100CA2CC9 /* LixilHistoryViewController.xib in Resources */,
+				86AB03FB1955A39D00313A7E /* ecocarat_zhenshu1.png in Resources */,
 				B778E2E918B99F5E0046E6E6 /* idsdynamic.png in Resources */,
 				B7DFB00E190116FF00D97305 /* inax_us_logout.png in Resources */,
 				047BCF1018F3AC250094BE28 /* dropdown_bg@2x.png in Resources */,
@@ -10228,6 +10254,7 @@
 				04145E1018DFF10100A7D33E /* inax_sp_xiaobianqi_xiaobianqi.png in Resources */,
 				86A31428192B9AFB00C718FB /* room_xuanguan2.png in Resources */,
 				8627D0E51924D83F0033EE9C /* product_wujin1.png in Resources */,
+				86AB03FC1955A39D00313A7E /* ecocarat_zhenshu2.png in Resources */,
 				8627D0DA1924D83F0033EE9C /* bottom_btn_fangan_pressed.png in Resources */,
 				E9715FB518C8881000600393 /* lt_taocifaxin.png in Resources */,
 				E9715ECE18C887D700600393 /* sp_bottomimage.png in Resources */,
@@ -10420,6 +10447,7 @@
 				EBF2817F191A52AA00561A9D /* lixil_home_leadingtech.png in Resources */,
 				047BCEAA18F3AC250094BE28 /* dv_shipin.png in Resources */,
 				0484F66E18DA8A8100CA2CC9 /* LixilTetra.xib in Resources */,
+				86AB03FE1955A39D00313A7E /* ecocarat_zhenshu4.png in Resources */,
 				862776911944AEDC00792FE9 /* inax_leading_strip24.png in Resources */,
 				862776781944AED200792FE9 /* inax_leading_Item1.png in Resources */,
 				0484F67C18DA8A8100CA2CC9 /* lx_group_middle_east_map.png in Resources */,

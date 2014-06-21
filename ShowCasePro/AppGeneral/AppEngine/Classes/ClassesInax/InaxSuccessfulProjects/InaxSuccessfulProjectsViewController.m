@@ -24,7 +24,7 @@
    
     __weak IBOutlet UIView *topListView;
     
-    __weak IBOutlet UIView *refView;
+    __weak IBOutlet UIScrollView *refView;
     
     __weak IBOutlet UIImageView *topBlueImg;
     
@@ -33,8 +33,16 @@
     __weak IBOutlet UIImageView *bottomBlueImg;
     UIScrollView *changbaishanScrollView;
     
-      UIScrollView *shanghaishiboScrollView;
+    UIScrollView *shanghaishiboScrollView;
     
+    
+  
+    UIButton  *btnMakeSure;
+    UITextField  *textInput;
+    int             m_iclickChangeBtn;  //1 top 2 middle 3 bottom
+    NSMutableArray  *m_arrayTopData;
+    NSMutableArray  *m_arrayBottomData;
+    NSMutableArray  *m_arrayMiddleData;
     
 }
 
@@ -46,6 +54,12 @@
 @property(nonatomic,strong)NSMutableArray *shanghaishiboArrayImage;
 @end
 
+
+
+
+#define INAXHOTELARRAY      @"INAXHOTELARRAY"
+#define INAXHOUSEARRAY      @"INAXHOUSEARRAY"
+#define INAXPUBLICARRAY     @"INAXPUBLICARRAY"
 @implementation InaxSuccessfulProjectsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -57,9 +71,197 @@
     return self;
 }
 
+-(void)setInputViewHidden:(BOOL)bHide
+{
+    
+    
+    CGFloat fXpoint = 293;
+    CGFloat fwidth = 683+48-fXpoint;
+    CGFloat fypoint = 150;
+    CGFloat fheight = 45;
+    //  293 683+48
+    UIView  *bgView = [self.view viewWithTag:1234567];
+    if (!bgView && !bHide)
+    {
+        bgView = [[UIView alloc] initWithFrame:CGRectMake(fXpoint, fypoint, fwidth, fheight)];
+        bgView.tag = 1234567;
+        textInput = [[UITextField alloc] initWithFrame:CGRectMake(5, 2, fwidth-48-5, 40)];
+        [bgView addSubview:textInput];
+        btnMakeSure = [[UIButton alloc] initWithFrame:CGRectMake(fwidth-60, 5, 60, 35)];
+        [btnMakeSure setTitle:@"确定" forState:UIControlStateNormal];
+        [btnMakeSure setBackgroundColor:[UIColor clearColor]];
+        [bgView addSubview:btnMakeSure];
+        [btnMakeSure addTarget:self action:@selector(makeSureAdd:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:bgView];
+        [bgView setBackgroundColor:[UIColor colorWithRed:36.0/255.0 green:139.0/255.0 blue:218.0/255.0 alpha:1]];
+        
+        
+    }
+    
+    fypoint = topListView.frame.origin.y;
+    [bgView setFrame:CGRectMake(fXpoint, fypoint, fwidth, fheight)];
+    bgView.hidden = bHide;
+    
+}
+
+-(IBAction)clickAddMethod:(id)sender
+{
+    [self setInputViewHidden:NO];
+}
+
+-(void)addArrayData
+{
+    
+    
+    if (!m_arrayTopData)
+    {
+        m_arrayTopData = [[NSMutableArray alloc] init];
+    }
+    if (!m_arrayMiddleData)
+    {
+        m_arrayMiddleData = [[NSMutableArray alloc] init];
+    }
+    if (!m_arrayBottomData)
+    {
+        m_arrayBottomData = [[NSMutableArray alloc] init];
+    }
+    NSArray *arrayHotel = @[@"无锡希尔顿酒店",@"苏州香格里拉酒店",@"苏州新城花园二期",@"靖江滨江花园酒店",@"济南东海顺丰大酒店",@"济南枣庄清御园大酒店",@"山东广饶东营国际大酒店",@"上海衡山至尊酒店",@"南京双门楼酒店",@"杭州灵隐九里松酒店",@"长沙远大T30酒店",@"长沙中通戴斯酒店",@"西安中兴和泰酒店",@"南昌宾馆",@"北京长白山国际酒店"];
+    NSArray *arrayHouse = @[@"杭州绿城花园",@"海南华润石梅湾公寓",@"哈尔滨盛合天下",@"长沙达美精装公寓",@"大连绿城深蓝中心",@"大连柏丽柏悦国际公寓",@"上海金桥碧云公寓",@"宁波恒元悦府",@"杭州绿城花园",@"沈阳华润万象城"];
+    
+    NSArray *arrayPublic = @[@"上海世博会",@"上海仲盛商业广场",@"长沙珠江花城",@"哈尔滨盛合天下",@"长沙达美精装公寓",@"大连柏丽柏悦国际公寓",@"上海金桥碧云公寓",@"宁波恒元悦府",@"杭州绿城花园",@"沈阳华润万象城",@"长沙中通戴斯酒店",@"西安中兴和泰酒店",@"南昌宾馆"];
+    
+   // [m_arrayTopData addObjectsFromArray:arrayHotel];
+  //  [m_arrayMiddleData addObjectsFromArray:arrayHouse];
+  //  [m_arrayBottomData addObjectsFromArray:arrayPublic];
+    NSArray *arrayData = [[NSUserDefaults standardUserDefaults] valueForKey:INAXHOTELARRAY];
+    
+    if (arrayData.count)
+    {
+        [m_arrayTopData addObjectsFromArray:arrayData];
+    }else
+    {
+        [m_arrayTopData addObjectsFromArray:arrayHotel];
+        
+    }
+    arrayData = [[NSUserDefaults standardUserDefaults] valueForKey:INAXHOUSEARRAY];
+    
+    if (arrayData.count)
+    {
+        [m_arrayMiddleData addObjectsFromArray:arrayData];
+    }else
+    {
+        [m_arrayMiddleData addObjectsFromArray:arrayHouse];
+    }
+   arrayData = [[NSUserDefaults standardUserDefaults] valueForKey:INAXPUBLICARRAY];
+    
+    if (arrayData.count)
+    {
+        [m_arrayBottomData addObjectsFromArray:arrayData];
+    }else
+    {
+        [m_arrayBottomData addObjectsFromArray:arrayPublic];
+    }
+ 
+}
+
+-(void)reloadDataWithScrollerView:(UIView*)scrollView
+{
+    [self setInputViewHidden:YES];
+    
+    for (UILabel *label in scrollView.subviews)
+    {
+        if ([label isKindOfClass:[UILabel class]])
+        {
+            [label removeFromSuperview];
+        }
+    }
+    
+    NSMutableArray *arrayData = nil;
+    switch (m_iclickChangeBtn)
+    {
+        case 1:
+            arrayData = m_arrayTopData;
+            break;
+        case 2:
+            arrayData = m_arrayMiddleData;
+            break;
+        case 3:
+            arrayData = m_arrayBottomData;
+            break;
+            
+        default:
+            break;
+    }
+    CGFloat   fsep = 10;
+    CGFloat   fwidth = (scrollView.frame.size.width-10*3)/3;
+    CGFloat   fxpoint = 10;
+    CGFloat   fypoint = 10;
+    CGFloat   fysep = 20;
+    CGFloat   fheight = 30;
+    for (int i = 0; i < arrayData.count;i++ )
+    {
+        fxpoint = (i%3)*(fsep+fwidth)+fsep;
+        fypoint = (i/3)*fheight+fysep;
+        
+        UILabel *labelText = [[UILabel alloc] initWithFrame:CGRectMake(fxpoint, fypoint, fwidth, fheight)];
+        [labelText setBackgroundColor:[UIColor clearColor]];
+        [labelText setTextColor:[UIColor blackColor]];
+        [labelText setFont:[UIFont systemFontOfSize:13]];
+        [refView addSubview:labelText];
+        [labelText setText:arrayData[i]];
+        
+    }
+    
+    
+    [refView setContentSize:CGSizeMake(refView.frame.size.width, fypoint+fheight)];
+    [refView setBackgroundColor:[UIColor colorWithRed:232.0/255.0 green:250.0/255.0 blue:254.0/255.0 alpha:1]];
+    refView.clipsToBounds = YES;
+    refView.showsHorizontalScrollIndicator = NO;
+    refView.showsVerticalScrollIndicator = NO;
+    
+}
+
+-(void)makeSureAdd:(id)sender
+{
+    [self setInputViewHidden:YES];
+    [self.view endEditing:YES];
+    
+    if ([textInput.text length])
+    {
+        switch (m_iclickChangeBtn)
+        {
+            case 1:
+                [m_arrayTopData addObject:textInput.text];
+                [[NSUserDefaults standardUserDefaults] setObject:m_arrayTopData forKey:INAXHOTELARRAY];
+                
+                break;
+            case 2:
+                [m_arrayMiddleData addObject:textInput.text];
+                 [[NSUserDefaults standardUserDefaults] setObject:m_arrayMiddleData forKey:INAXHOUSEARRAY];
+                break;
+            case 3:
+                [m_arrayBottomData addObject:textInput.text];
+                 [[NSUserDefaults standardUserDefaults] setObject:m_arrayBottomData forKey:INAXPUBLICARRAY];
+                break;
+                
+            default:
+                break;
+        }
+        
+        
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        
+        [self reloadDataWithScrollerView:refView];
+        
+    }
+  
+    
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self addArrayData];
     // Do any additional setup after loading the view from its nib.
     
     middleImage.alpha = 0;
@@ -92,6 +294,7 @@
 #pragma mark - button method -
 
 - (IBAction)topBtnPressed:(UIButton *)sender {
+    m_iclickChangeBtn = 1;
     if(_preciousBlowImgView != topimage)
     {
         [self.view viewWithTag:99].hidden = YES;
@@ -131,11 +334,14 @@
         
         
     }
+    
+    [self reloadDataWithScrollerView:refView];
 
     
 }
 - (IBAction)middleBtnPressed:(UIButton *)sender {
    
+      m_iclickChangeBtn = 2;
     if(_preciousBlowImgView != middleImage)
     {
         changbaishanScrollView.hidden = YES;
@@ -175,9 +381,11 @@
         
     }
   
+      [self reloadDataWithScrollerView:refView];
 }
 - (IBAction)bottomBtnPressed:(UIButton *)sender {
     
+      m_iclickChangeBtn = 3;
     if(_preciousBlowImgView != bottomImage)
     {
          shanghaishiboScrollView.hidden = YES;
@@ -217,6 +425,8 @@
         
         
     }
+    
+      [self reloadDataWithScrollerView:refView];
 
 }
 - (IBAction)clearBtn:(UIButton *)sender {

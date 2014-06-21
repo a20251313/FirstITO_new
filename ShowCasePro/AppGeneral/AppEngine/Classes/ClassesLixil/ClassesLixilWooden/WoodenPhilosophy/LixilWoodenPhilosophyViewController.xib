@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LixilWoodenPhilosophyViewController">
@@ -31,21 +31,21 @@
                     <rect key="frame" x="0.0" y="85" width="1024" height="683"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <view contentMode="scaleToFill" id="pv7-zs-6Ga" userLabel="refView">
+                <view contentMode="scaleToFill" id="pv7-zs-6Ga" userLabel="refView" customClass="UIScrollView">
                     <rect key="frame" x="438" y="223" width="586" height="274"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wooden_ph__bai_bottom.png" id="puj-dB-DtB">
+                        <imageView hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wooden_ph__bai_bottom.png" id="puj-dB-DtB">
                             <rect key="frame" x="0.0" y="0.0" width="586" height="274"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </imageView>
-                        <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wooden_ph_do_des.png" id="cwn-7k-481" userLabel="middleRefImage">
+                        <imageView hidden="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wooden_ph_do_des.png" id="cwn-7k-481" userLabel="middleRefImage">
                             <rect key="frame" x="15" y="31" width="533" height="211"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </imageView>
-                        <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wooden_ph_ov_des.png" id="vxd-ur-8YM" userLabel="bottomRefImage">
+                        <imageView hidden="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wooden_ph_ov_des.png" id="vxd-ur-8YM" userLabel="bottomRefImage">
                             <rect key="frame" x="15" y="31" width="533" height="211"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -73,7 +73,7 @@
                         <action selector="bottomBtnPressed:" destination="-1" eventType="touchUpInside" id="1Ww-kU-Ski"/>
                     </connections>
                 </button>
-                <view contentMode="scaleToFill" id="yop-fe-p0Q" userLabel="topView">
+                <view contentMode="scaleToFill" id="yop-fe-p0Q" userLabel="topView" customClass="UIScrollView">
                     <rect key="frame" x="832" y="178" width="192" height="45"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
@@ -83,6 +83,9 @@
                             <state key="normal" image="wooden_ph_add_btn.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="clickAddMethod:" destination="-1" eventType="touchUpInside" id="Lc4-yo-Z30"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="qcS-7B-yeu">
                             <rect key="frame" x="48" y="0.0" width="48" height="45"/>
@@ -146,7 +149,7 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </scrollView>
                 <button opaque="NO" tag="99" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="Dyv-Dy-ItW" userLabel="lzhyBtn">
-                    <rect key="frame" x="670" y="250" width="18" height="18"/>
+                    <rect key="frame" x="610" y="250" width="18" height="18"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <state key="normal" image="wooden_ph_scroll_addBrtn.png">
