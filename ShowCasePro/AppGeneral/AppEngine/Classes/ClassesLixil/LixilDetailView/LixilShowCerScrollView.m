@@ -92,7 +92,7 @@
                 
                 if (j == m_iRowCount-1)
                 {
-                    NSString *strName = [NSString stringWithFormat:@"inax_lt_page4%d.png",i+1];
+                    NSString *strName = [NSString stringWithFormat:@"ecocarat_zhenshu%d.png",i+1];
                     UIImage *image = [UIImage imageNamed:strName];
                     
                     if (image)

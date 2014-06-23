@@ -92,6 +92,19 @@
 
 
 #pragma mark   add actions
+
+-(void)setNameLabelHidden:(BOOL)bhide
+{
+    for (UILabel *label in refView.subviews)
+    {
+        if ([label isKindOfClass:[UILabel class]])
+        {
+            label.hidden = bhide;
+        }
+        
+    }
+}
+
 -(void)setInputViewHidden:(BOOL)bHide
 {
     
@@ -370,6 +383,9 @@
     
 }
 - (IBAction)clearBtn:(UIButton *)sender {
+    
+    
+    [self setNameLabelHidden:NO];
     if(middleImage.alpha ==1){
         [self.view viewWithTag:99].hidden = YES;
          [self.view viewWithTag:95].hidden = YES;
@@ -396,11 +412,13 @@
 - (IBAction)lzhyBtnPressed:(UIButton *)sender {
     if(middleImage.alpha ==1)
 {
+    
+    [self setNameLabelHidden:YES];
     _preciousRefImgView.alpha = 0;
     lzhyScrollView.hidden = NO;
     lzhyScrollView.alpha = 1;
- [self.view viewWithTag:99].hidden = YES;
- [self.view viewWithTag:95].hidden = NO;
+    [self.view viewWithTag:99].hidden = YES;
+    [self.view viewWithTag:95].hidden = NO;
 }
    //    for(int i = 0; i<3;i++)
 //    {
@@ -411,6 +429,9 @@
 }
 - (IBAction)bacToMain:(id)sender {
     
+    
+    
+    [self setNameLabelHidden:NO];
     lzhyScrollView.hidden = YES;
     middleRefImage.alpha = 1;
     [self.view viewWithTag:95].hidden = YES;

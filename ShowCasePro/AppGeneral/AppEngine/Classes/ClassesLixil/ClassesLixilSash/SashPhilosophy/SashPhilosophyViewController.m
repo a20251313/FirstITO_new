@@ -90,6 +90,19 @@
     
 }
 
+
+-(void)setNameLabelHidden:(BOOL)bhide
+{
+    for (UILabel *label in refView.subviews)
+    {
+        if ([label isKindOfClass:[UILabel class]])
+        {
+            label.hidden = bhide;
+        }
+        
+    }
+}
+
 -(IBAction)clickAddMethod:(id)sender
 {
     [self setInputViewHidden:NO];
@@ -295,6 +308,7 @@
 }
 - (IBAction)closeBtnPressed:(UIButton *)sender {
     
+
     if(middleBlueImg.alpha ==1)
     {
         middleBlueImg.alpha = 0;

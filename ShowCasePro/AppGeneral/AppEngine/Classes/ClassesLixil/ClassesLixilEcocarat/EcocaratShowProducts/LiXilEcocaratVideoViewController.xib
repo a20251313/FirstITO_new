@@ -20,7 +20,7 @@
             <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video_Bg_video.png" id="wgz-IE-U0f">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ecocarat_vedio_bkg.png" id="wgz-IE-U0f">
                     <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
@@ -28,12 +28,12 @@
                     <rect key="frame" x="0.0" y="85" width="1024" height="683"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video_Bg_video.png" id="Tkx-R3-FYG">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ecocarat_vedio_bkg.png" id="Tkx-R3-FYG">
                             <rect key="frame" x="0.0" y="0.0" width="1024" height="683"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Xlh-ek-fot">
-                            <rect key="frame" x="459" y="320" width="106" height="106"/>
+                            <rect key="frame" x="459" y="200" width="106" height="106"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" backgroundImage="stopbtn_video.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -43,14 +43,14 @@
                             </connections>
                         </button>
                         <view contentMode="scaleToFill" id="bbG-PC-c4N">
-                            <rect key="frame" x="704" y="79" width="300" height="30"/>
+                            <rect key="frame" x="670" y="20" width="300" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1IR-28-ZX4">
                                     <rect key="frame" x="0.0" y="0.0" width="167" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" red="1" green="0.4827732911" blue="0.1939023704" alpha="1" colorSpace="calibratedRGB"/>
-                                    <state key="normal" title="伊康佳安装指导手册">
+                                    <state key="normal" title="伊康家安装指导手册">
                                         <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
@@ -62,7 +62,7 @@
                                     <rect key="frame" x="165" y="0.0" width="130" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" red="1" green="0.4827732911" blue="0.1939023704" alpha="1" colorSpace="calibratedRGB"/>
-                                    <state key="normal" title="伊康佳应用手册">
+                                    <state key="normal" title="伊康家应用手册">
                                         <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
@@ -85,7 +85,7 @@
         </view>
     </objects>
     <resources>
+        <image name="ecocarat_vedio_bkg.png" width="2048" height="1536"/>
         <image name="stopbtn_video.png" width="211" height="211"/>
-        <image name="video_Bg_video.png" width="2048" height="1536"/>
     </resources>
 </document>

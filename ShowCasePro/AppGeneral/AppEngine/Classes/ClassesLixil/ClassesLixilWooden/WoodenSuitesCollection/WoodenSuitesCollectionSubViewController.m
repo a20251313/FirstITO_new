@@ -288,6 +288,7 @@
         pageControl.numberOfPages = arrayImage.count;
         pageControl.currentPage = 0;
         [pageControl setBackgroundColor:[UIColor clearColor]];
+        [pageControl setFrame:CGRectMake(CGRectGetMinX(scrollView.frame) + scrollView.center.x/2, 85+230, 100.0f, 20.0f)];
         [self.view addSubview:pageControl];
         
         

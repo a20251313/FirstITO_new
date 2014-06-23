@@ -221,6 +221,21 @@
     
 }
 
+-(void)setNameLabelHidden:(BOOL)bhide
+{
+    for (UILabel *label in refView.subviews)
+    {
+        if ([label isKindOfClass:[UILabel class]])
+        {
+            label.hidden = bhide;
+        }
+      
+    }
+    
+    [refView setBackgroundColor:[UIColor colorWithRed:232.0/255.0 green:250.0/255.0 blue:254.0/255.0 alpha:1]];
+}
+
+
 -(void)makeSureAdd:(id)sender
 {
     [self setInputViewHidden:YES];
@@ -461,6 +476,7 @@
 }
 - (IBAction)topCloseBtn:(id)sender {
     
+    [self setNameLabelHidden:NO];
    if(topimage.alpha == 1){
     if(changbaishanScrollView !=nil){
     changbaishanScrollView.hidden = YES;
@@ -482,6 +498,7 @@
 
 - (IBAction)changbaishangAddBtn:(id)sender {
     
+     [self setNameLabelHidden:YES];
     if(shanghaishiboScrollView != nil){
     [shanghaishiboScrollView removeFromSuperview];
     shanghaishiboScrollView = nil;
@@ -500,6 +517,8 @@
     [self.view viewWithTag:90].hidden = YES;
 }
 - (IBAction)shanghaishiboAddBtn:(id)sender {
+    
+     [self setNameLabelHidden:YES];
      if(changbaishanScrollView !=nil){
     [changbaishanScrollView removeFromSuperview];
     changbaishanScrollView =nil;
@@ -548,6 +567,8 @@
         [scrollView addSubview:imgView];
         
     }
+    
+    //[scrollView setBackgroundColor:[UIColor colorWithRed:232.0/255.0 green:250.0/255.0 blue:254.0/255.0 alpha:1]];
     
     return scrollView;
 }
