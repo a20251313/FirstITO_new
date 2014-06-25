@@ -78,17 +78,41 @@
         
         // scale image in background
         
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-            
-            UIImage *endImage = [[LibraryAPI sharedInstance] getImageFromPath:product.image1 scale:4];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                productImg.image = endImage;
-            });
-        });
         
-        UILabel *productCode = (UILabel *)[cell viewWithTag:Collection_Cell_Lable_Tag];
-
-        productCode.text  = [self deleteSpaceString:product.code];
+        if([product.type3 isEqualToString:@"19"]||[product.type3 isEqualToString:@"20"]||[product.type3 isEqualToString:@"22"]||[product.type3 isEqualToString:@"24"]||[product.type3 isEqualToString:@"26"])
+        {
+            
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                
+                UIImage *endImage = [[LibraryAPI sharedInstance] getImageFromPath:product.image2 scale:4];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    productImg.image = endImage;
+                });
+            });
+            
+            UILabel *productCode = (UILabel *)[cell viewWithTag:Collection_Cell_Lable_Tag];
+            
+            productCode.text  = [self deleteSpaceString:product.code];
+            
+            
+        }
+        else
+        {
+            
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                
+                UIImage *endImage = [[LibraryAPI sharedInstance] getImageFromPath:product.image1 scale:4];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    productImg.image = endImage;
+                });
+            });
+            
+            UILabel *productCode = (UILabel *)[cell viewWithTag:Collection_Cell_Lable_Tag];
+            
+            productCode.text  = [self deleteSpaceString:product.code];
+            
+            
+        }
         
     } else
     {
