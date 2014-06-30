@@ -101,6 +101,10 @@
     fypoint = topListView.frame.origin.y;
     [bgView setFrame:CGRectMake(fXpoint, fypoint, fwidth, fheight)];
     bgView.hidden = bHide;
+    if (!bHide)
+    {
+        [textInput becomeFirstResponder];
+    }
     
 }
 
