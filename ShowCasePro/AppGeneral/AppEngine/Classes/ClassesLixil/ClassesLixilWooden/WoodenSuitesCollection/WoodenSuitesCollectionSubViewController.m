@@ -69,7 +69,12 @@
             });
         });
         
+
         UILabel *productCode = (UILabel *)[cell viewWithTag:Collection_Cell_Lable_Tag];
+      /*  CGRect  frame =  productCode.frame;
+        frame.origin.y = 200;
+        productCode.frame = frame;*/
+        productCode.adjustsFontSizeToFitWidth = YES;
         
         productCode.text  = [self deleteSpaceString:product.code];
         
@@ -161,6 +166,22 @@
 }
 
 
+
+-(void)selectDefaultIndex:(int)index
+{
+    
+    if (index > self.dataArray.count)
+    {
+        return;
+    }
+    InaxSuiteCollection *isc = [self.dataArray objectAtIndex:index];
+    
+    // [self changeTopSuiteImage:isc.bg_image];
+    [self changeTopSuiteImagesByIndex:index];
+    
+    [self selectProductsFromDBWithSuiteID:isc.suite_id];
+    
+}
 
 
 
@@ -308,7 +329,7 @@
         
     }else
     {
-         [scrollView setFrame:CGRectMake(272, 85, 751, 274)];
+        [scrollView setFrame:CGRectMake(272, 85, 751, 274)];
         [self startScroll];
         [pageControl setHidden:NO];
     }
@@ -326,12 +347,16 @@
 -(void)startScroll
 {
     [self stopScroll];
-    scrollTimer = [NSTimer scheduledTimerWithTimeInterval:5
+    
+    [scrollView setContentOffset:CGPointMake(0, 0)];
+   // [self scrollMethod];
+    
+    scrollTimer = [NSTimer scheduledTimerWithTimeInterval:2
                                                    target:self
                                                  selector:@selector(scrollMethod)
                                                  userInfo:nil
                                                   repeats:YES];
-    [scrollTimer fire];
+    [scrollTimer setFireDate:[NSDate dateWithTimeIntervalSinceNow:2]];
 }
 
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView1{
@@ -387,8 +412,9 @@
     if (self.dataArray && (self.selectedIndex < self.dataArray.count))
     {
         InaxSuiteCollection *isc = [self.dataArray objectAtIndex:self.selectedIndex];
-        
         [self changeTopSuiteImage:isc.bg_image];
+        [self changeTopSuiteImagesByIndex:self.selectedIndex];
+        [self selectProductsFromDBWithSuiteID:isc.suite_id];
     }
     else
     {
@@ -415,7 +441,7 @@
     NSString *suiteID = ((InaxSuiteCollection *)[self.dataArray objectAtIndex:self.selectedIndex]).suite_id;
     [self selectProductsFromDBWithSuiteID:suiteID];
     
-    
+  
     categoryTableView.tableFooterView = [UIView new];
     categoryTableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
     
