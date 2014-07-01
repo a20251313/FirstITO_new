@@ -60,31 +60,55 @@
         productImg.image = nil;
         
         // scale image in background
-        
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-            
-            UIImage *endImage = [[LibraryAPI sharedInstance] getImageFromPath:product.image1 scale:4];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                productImg.image = endImage;
+        if([product.type3 isEqualToString:@"131"]||[product.type3 isEqualToString:@"130"]||[product.type3 isEqualToString:@"132"]||[product.productid isEqualToString:@"1102"]||[product.productid isEqualToString:@"1104"]||[product.productid isEqualToString:@"1105"]||[product.productid isEqualToString:@"1106"])
+        {
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                UIImage *endImage = [[LibraryAPI sharedInstance] getImageFromPath:product.image2 scale:4];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    productImg.image = endImage;
+                });
             });
-        });
+            
+            
+            UILabel *productCode = (UILabel *)[cell viewWithTag:Collection_Cell_Lable_Tag];
+            
+            CGRect  frame =  productCode.frame;
+            frame.origin.y = 175;
+            productCode.frame = frame;
+            
+            
+            productCode.adjustsFontSizeToFitWidth = YES;
+            productCode.text  = [self deleteSpaceString:product.code];
+            
+        }
+        else
+        {
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                
+                UIImage *endImage = [[LibraryAPI sharedInstance] getImageFromPath:product.image1 scale:4];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    productImg.image = endImage;
+                });
+            });
+            
+            
+            UILabel *productCode = (UILabel *)[cell viewWithTag:Collection_Cell_Lable_Tag];
+            CGRect  frame =  productCode.frame;
+            frame.origin.y =  175;
+            productCode.frame = frame;
+            productCode.adjustsFontSizeToFitWidth = YES;
+            
+            productCode.text  = [self deleteSpaceString:product.code];        }
         
-
-        UILabel *productCode = (UILabel *)[cell viewWithTag:Collection_Cell_Lable_Tag];
-      /*  CGRect  frame =  productCode.frame;
-        frame.origin.y = 200;
-        productCode.frame = frame;*/
-        productCode.adjustsFontSizeToFitWidth = YES;
-        
-        productCode.text  = [self deleteSpaceString:product.code];
-        
-    } else
+    }
+    else
     {
         cell.hidden = YES;
     }
     
     return cell;
 }
+
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
