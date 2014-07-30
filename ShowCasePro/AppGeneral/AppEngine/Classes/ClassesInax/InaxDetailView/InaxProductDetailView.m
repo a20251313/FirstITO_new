@@ -996,11 +996,21 @@ typedef NS_ENUM(NSInteger, ProductImageViewKind){
             InaxVideoViewController *controller = [[InaxVideoViewController alloc] init];
             controller.videpType = InaxVideoTypeLejing_tech;
             [self.navigationController pushViewController:controller animated:NO];
-        }else if ([self.tProduct.feature rangeOfString:@"超级杜菌"].location != NSNotFound)
+        }else if ([self.tProduct.feature rangeOfString:@"ECO"].location != NSNotFound)
+        {
+            InaxVideoViewController *controller = [[InaxVideoViewController alloc] init];
+            controller.videpType = InaxVideoTypeEco_tech;
+            [self.navigationController pushViewController:controller animated:NO];
+        }else if ([self.tProduct.feature rangeOfString:@"职能手机操控"].location != NSNotFound)
         {
         InaxVideoViewController *controller = [[InaxVideoViewController alloc] init];
-        controller.videpType = InaxVideoTypeEco_tech;
+            controller.videpType = InaxVideoTypeMobileControl_tech;
         [self.navigationController pushViewController:controller animated:NO];
+        }else if ([self.tProduct.feature rangeOfString:@"水和空气的力量"].location != NSNotFound)
+        {
+            InaxVideoViewController *controller = [[InaxVideoViewController alloc] init];
+            controller.videpType = InaxVideoTypeAirPush_tech;
+            [self.navigationController pushViewController:controller animated:NO];
         }
     }
   
