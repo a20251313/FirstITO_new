@@ -24,6 +24,7 @@
 #import "LixilBigDetailScrollView.h"
 #import "LixilShowCerScrollView.h"
 #import "LiXilEcocaratVideoViewController.h"
+#import "LiXilWoodlenVideoViewController.h"
 
 #define kProductSizeTag             250
 #define kRoomSceneTag               500
@@ -1041,12 +1042,16 @@ typedef NS_ENUM(NSInteger, ProductImageViewKind){
 - (IBAction)playAudio:(id)sender
 {
     
-    if (!self.isShowCer)
+    if (self.isShowCer)
     {
-        return;
+        LiXilEcocaratVideoViewController    *controller =   [[LiXilEcocaratVideoViewController alloc] init];
+        [self.navigationController pushViewController:controller animated:NO];
+    }else if (self.isLixiWoodlen)
+    {
+        LiXilWoodlenVideoViewController    *controller =   [[LiXilWoodlenVideoViewController alloc] init];
+        [self.navigationController pushViewController:controller animated:NO];
     }
-    LiXilEcocaratVideoViewController    *controller =   [[LiXilEcocaratVideoViewController alloc] init];
-    [self.navigationController pushViewController:controller animated:NO];
+
     
 }
 

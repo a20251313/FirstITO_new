@@ -21,6 +21,7 @@
 #import "Cart.h"
 #import "CustomIOS7AlertView.h"
 #import "Tdiyfolder.h"
+#import "InaxVideoViewController.h"
 
 #define kProductSizeTag         250
 #define kRoomSceneTag           500
@@ -980,6 +981,29 @@ typedef NS_ENUM(NSInteger, ProductImageViewKind){
 //播放产品视频信息
 - (IBAction)playAudio:(id)sender
 {
+    
+    if ([self.tProduct.code isEqualToString:@"SBCA2000YFSTD(L)(附溢水口)"]||
+        [self.tProduct.code isEqualToString:@"SBCA2000YF(L)-K(附溢水口、且含龙头开孔)"])
+    {
+        InaxVideoViewController *controller = [[InaxVideoViewController alloc] init];
+        controller.videpType = InaxVideoTypeShumoyugang;
+        [self.navigationController pushViewController:controller animated:NO];
+        
+    }else
+    {
+        if ([self.tProduct.feature rangeOfString:@"乐净"].location != NSNotFound)
+        {
+            InaxVideoViewController *controller = [[InaxVideoViewController alloc] init];
+            controller.videpType = InaxVideoTypeLejing_tech;
+            [self.navigationController pushViewController:controller animated:NO];
+        }else if ([self.tProduct.feature rangeOfString:@"超级杜菌"].location != NSNotFound)
+        {
+        InaxVideoViewController *controller = [[InaxVideoViewController alloc] init];
+        controller.videpType = InaxVideoTypeEco_tech;
+        [self.navigationController pushViewController:controller animated:NO];
+        }
+    }
+  
     
 }
 

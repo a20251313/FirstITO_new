@@ -988,6 +988,16 @@
 		86B22F71194096C8005E2BD0 /* linaierSuitesCollection2.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B22F61194096C8005E2BD0 /* linaierSuitesCollection2.png */; };
 		86B22F72194096C8005E2BD0 /* linaierSuitesCollection3.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B22F62194096C8005E2BD0 /* linaierSuitesCollection3.png */; };
 		86B22F73194096C8005E2BD0 /* linaierSuitesCollection4.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B22F63194096C8005E2BD0 /* linaierSuitesCollection4.png */; };
+		86B4B8431989192C0033C615 /* LiXilWoodlenVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B4B8411989192C0033C615 /* LiXilWoodlenVideoViewController.m */; };
+		86B4B8441989192C0033C615 /* LiXilWoodlenVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86B4B8421989192C0033C615 /* LiXilWoodlenVideoViewController.xib */; };
+		86B4B84619891A360033C615 /* lixiwoodlen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 86B4B84519891A360033C615 /* lixiwoodlen.mp4 */; };
+		86B4B84A1989210A0033C615 /* InaxVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B4B8481989210A0033C615 /* InaxVideoViewController.m */; };
+		86B4B84B1989210A0033C615 /* InaxVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86B4B8491989210A0033C615 /* InaxVideoViewController.xib */; };
+		86B4B853198921CC0033C615 /* InaxEco-tech.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 86B4B84D198921CC0033C615 /* InaxEco-tech.mp4 */; };
+		86B4B854198921CC0033C615 /* Inaxlejing-tech.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 86B4B84E198921CC0033C615 /* Inaxlejing-tech.mp4 */; };
+		86B4B855198921CC0033C615 /* Inaxairpush-tech.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 86B4B84F198921CC0033C615 /* Inaxairpush-tech.mp4 */; };
+		86B4B856198921CC0033C615 /* InaxShumoyugang.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 86B4B850198921CC0033C615 /* InaxShumoyugang.mp4 */; };
+		86B4B857198921CC0033C615 /* Inaxmobilecontrol-tech.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 86B4B851198921CC0033C615 /* Inaxmobilecontrol-tech.mp4 */; };
 		86C2191819272970007386A9 /* LiXiWoodenWholeBodyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C2191719272970007386A9 /* LiXiWoodenWholeBodyView.m */; };
 		86C2191A19272A02007386A9 /* LiXiWoodenWholeBodyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86C2191919272A02007386A9 /* LiXiWoodenWholeBodyView.xib */; };
 		86C2191C19272A60007386A9 /* product_wholebody_first.png in Resources */ = {isa = PBXBuildFile; fileRef = 86C2191B19272A60007386A9 /* product_wholebody_first.png */; };
@@ -3210,6 +3220,18 @@
 		86B22F61194096C8005E2BD0 /* linaierSuitesCollection2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linaierSuitesCollection2.png; sourceTree = "<group>"; };
 		86B22F62194096C8005E2BD0 /* linaierSuitesCollection3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linaierSuitesCollection3.png; sourceTree = "<group>"; };
 		86B22F63194096C8005E2BD0 /* linaierSuitesCollection4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linaierSuitesCollection4.png; sourceTree = "<group>"; };
+		86B4B8401989192C0033C615 /* LiXilWoodlenVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiXilWoodlenVideoViewController.h; sourceTree = "<group>"; };
+		86B4B8411989192C0033C615 /* LiXilWoodlenVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiXilWoodlenVideoViewController.m; sourceTree = "<group>"; };
+		86B4B8421989192C0033C615 /* LiXilWoodlenVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiXilWoodlenVideoViewController.xib; sourceTree = "<group>"; };
+		86B4B84519891A360033C615 /* lixiwoodlen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = lixiwoodlen.mp4; sourceTree = "<group>"; };
+		86B4B8471989210A0033C615 /* InaxVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InaxVideoViewController.h; sourceTree = "<group>"; };
+		86B4B8481989210A0033C615 /* InaxVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InaxVideoViewController.m; sourceTree = "<group>"; };
+		86B4B8491989210A0033C615 /* InaxVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InaxVideoViewController.xib; sourceTree = "<group>"; };
+		86B4B84D198921CC0033C615 /* InaxEco-tech.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InaxEco-tech.mp4"; sourceTree = "<group>"; };
+		86B4B84E198921CC0033C615 /* Inaxlejing-tech.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inaxlejing-tech.mp4"; sourceTree = "<group>"; };
+		86B4B84F198921CC0033C615 /* Inaxairpush-tech.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inaxairpush-tech.mp4"; sourceTree = "<group>"; };
+		86B4B850198921CC0033C615 /* InaxShumoyugang.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = InaxShumoyugang.mp4; sourceTree = "<group>"; };
+		86B4B851198921CC0033C615 /* Inaxmobilecontrol-tech.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inaxmobilecontrol-tech.mp4"; sourceTree = "<group>"; };
 		86C2191619272970007386A9 /* LiXiWoodenWholeBodyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiXiWoodenWholeBodyView.h; sourceTree = "<group>"; };
 		86C2191719272970007386A9 /* LiXiWoodenWholeBodyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiXiWoodenWholeBodyView.m; sourceTree = "<group>"; };
 		86C2191919272A02007386A9 /* LiXiWoodenWholeBodyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiXiWoodenWholeBodyView.xib; sourceTree = "<group>"; };
@@ -4892,6 +4914,10 @@
 				04733CDE18E2CBEA00E18006 /* InaxProductDetailView.xib */,
 				04733CDF18E2CBEA00E18006 /* InaxProductIntroView.h */,
 				04733CE018E2CBEA00E18006 /* InaxProductIntroView.m */,
+				86B4B8471989210A0033C615 /* InaxVideoViewController.h */,
+				86B4B8481989210A0033C615 /* InaxVideoViewController.m */,
+				86B4B8491989210A0033C615 /* InaxVideoViewController.xib */,
+				86B4B84C198921CC0033C615 /* video */,
 			);
 			path = InaxDetailView;
 			sourceTree = "<group>";
@@ -6348,7 +6374,6 @@
 		04A5E99918E41BC900477FC9 /* WoodenShowProducts */ = {
 			isa = PBXGroup;
 			children = (
-				8627D0951924D83F0033EE9C /* product_Custom_images */,
 				04C530F718EAB13300760694 /* WoodenShowProductsImages */,
 				04A5E9CA18E41FAB00477FC9 /* LixilWoodenShowProductsViewController.h */,
 				04A5E9CB18E41FAB00477FC9 /* LixilWoodenShowProductsViewController.m */,
@@ -6414,6 +6439,7 @@
 		04A5E99D18E41C4000477FC9 /* WoodenBrandConcept */ = {
 			isa = PBXGroup;
 			children = (
+				8627D0951924D83F0033EE9C /* product_Custom_images */,
 				EBE85D7718EBB4F300A0F267 /* WoodenBrandConceptImages */,
 				04A5E9B618E41F5600477FC9 /* LixilWoodenBrandConceptViewController.h */,
 				04A5E9B718E41F5600477FC9 /* LixilWoodenBrandConceptViewController.m */,
@@ -6528,6 +6554,10 @@
 				04C5312618EAC1DC00760694 /* LixilProductDetailView.xib */,
 				8F5A190B192340EA00DB3F7B /* LixilBigDetailScrollView.h */,
 				8F5A190C192340EA00DB3F7B /* LixilBigDetailScrollView.m */,
+				86B4B8401989192C0033C615 /* LiXilWoodlenVideoViewController.h */,
+				86B4B8411989192C0033C615 /* LiXilWoodlenVideoViewController.m */,
+				86B4B8421989192C0033C615 /* LiXilWoodlenVideoViewController.xib */,
+				86B4B84519891A360033C615 /* lixiwoodlen.mp4 */,
 			);
 			path = LixilDetailView;
 			sourceTree = "<group>";
@@ -7047,7 +7077,7 @@
 				8627D0BE1924D83F0033EE9C /* 参考 */,
 			);
 			name = product_Custom_images;
-			path = product_Custom;
+			path = ../WoodenShowProducts/product_Custom;
 			sourceTree = "<group>";
 		};
 		8627D0BE1924D83F0033EE9C /* 参考 */ = {
@@ -7123,6 +7153,19 @@
 				86B22F63194096C8005E2BD0 /* linaierSuitesCollection4.png */,
 			);
 			path = WoodenSuitesCollectionImages;
+			sourceTree = "<group>";
+		};
+		86B4B84C198921CC0033C615 /* video */ = {
+			isa = PBXGroup;
+			children = (
+				86B4B84D198921CC0033C615 /* InaxEco-tech.mp4 */,
+				86B4B84E198921CC0033C615 /* Inaxlejing-tech.mp4 */,
+				86B4B84F198921CC0033C615 /* Inaxairpush-tech.mp4 */,
+				86B4B850198921CC0033C615 /* InaxShumoyugang.mp4 */,
+				86B4B851198921CC0033C615 /* Inaxmobilecontrol-tech.mp4 */,
+			);
+			name = video;
+			path = "视频";
 			sourceTree = "<group>";
 		};
 		8FFA565B192C4EAA003CE1BF /* wholeBodyAniImages */ = {
@@ -9202,6 +9245,7 @@
 				B7F062BF18FD4D1300701469 /* lixil_cycle_orange.png in Resources */,
 				04733CE518E2CBEA00E18006 /* inax_dv_left.png in Resources */,
 				E9715F7318C8881000600393 /* lt_gaoxiaochongshui_icon.png in Resources */,
+				86B4B853198921CC0033C615 /* InaxEco-tech.mp4 in Resources */,
 				EBE0F0BE18E0009D0018F186 /* inax_sp_rightbtn.png in Resources */,
 				86B22F72194096C8005E2BD0 /* linaierSuitesCollection3.png in Resources */,
 				EBD9EFF7190A0AF600EDC630 /* wooden_lt_zhineng_main_fangdao2.png in Resources */,
@@ -9261,6 +9305,7 @@
 				04A71F7218E963E700E8CB99 /* home_menu_Collection.png in Resources */,
 				0484F62E18DA8A8100CA2CC9 /* lixilgroupinfopage3.png in Resources */,
 				B778E2ED18B99F5E0046E6E6 /* activeactivaname.png in Resources */,
+				86B4B8441989192C0033C615 /* LiXilWoodlenVideoViewController.xib in Resources */,
 				EB2B6A1718EAB6050035D647 /* wooden_lt_shinei_yangeliuchengitem.png in Resources */,
 				E9715EE018C887D700600393 /* sp_olympic_intro.png in Resources */,
 				0484F6DB18DA8A8700CA2CC9 /* hp_lixil_bg1.png in Resources */,
@@ -9374,6 +9419,7 @@
 				E9715DAF18C821E700600393 /* lishitu.png in Resources */,
 				B7D1F712190E13400094BF7B /* inax_so_xian.png in Resources */,
 				E9715E4218C8873000600393 /* sb_zuobianqi-s.png in Resources */,
+				86B4B854198921CC0033C615 /* Inaxlejing-tech.mp4 in Resources */,
 				EB09D4C518F4EC6C002CD41F /* ecocarat_ph_ov_3.png in Resources */,
 				0475C99418BF0A680078F17C /* AS_NewProItem7.png in Resources */,
 				0484F66018DA8A8100CA2CC9 /* lc_core_ball.png in Resources */,
@@ -9403,6 +9449,7 @@
 				04A5E9C918E41F9800477FC9 /* LixilWoodenSuitesCollectionViewController.xib in Resources */,
 				8F1066031938701400E5A33E /* LiXilEcocaratVideoViewController.xib in Resources */,
 				EB2B6A0C18EAA7B80035D647 /* wooden_lt_shinei_six_processesitem.png in Resources */,
+				86B4B857198921CC0033C615 /* Inaxmobilecontrol-tech.mp4 in Resources */,
 				B7CAB8A0190A6C2E00E67305 /* ecocarat_so_city_shanghai_detail.png in Resources */,
 				B7B9048D190F88F800A02258 /* LixlGroup_Guide.png in Resources */,
 				B7F0625E18FD22B500701469 /* lixil_us_bg.png in Resources */,
@@ -9737,6 +9784,7 @@
 				0484F67818DA8A8100CA2CC9 /* lx_group_hidebutton.png in Resources */,
 				86A3141F192B9AFB00C718FB /* room_children1.png in Resources */,
 				E9715FB118C8881000600393 /* lt_taocifaxin_intro2.png in Resources */,
+				86B4B84B1989210A0033C615 /* InaxVideoViewController.xib in Resources */,
 				E9715E2F18C8873000600393 /* sb_guanxipen.png in Resources */,
 				046CBC8418EBB10C001C4FA7 /* wooden_so_lanzhou.png in Resources */,
 				8623D1F719336E4500CAEDD6 /* inax_lt_page22.png in Resources */,
@@ -10209,6 +10257,7 @@
 				B7F0629518FD343D00701469 /* lixil_cv_cheng.png in Resources */,
 				EB2B6A0018EAA7B80035D647 /* wooden_lt_shinei_heyie_des.png in Resources */,
 				86B22F6E194096C8005E2BD0 /* kangfeiliSuitesCollection8.png in Resources */,
+				86B4B84619891A360033C615 /* lixiwoodlen.mp4 in Resources */,
 				046CBCD718EBEFF4001C4FA7 /* EcocaratMainMenuModuleViewController.xib in Resources */,
 				EBE0F0BD18E0009D0018F186 /* inax_sp_publicitemgray.png in Resources */,
 				E9715F6B18C8881000600393 /* lt_ganyingjishu_intro1_detail.png in Resources */,
@@ -10333,6 +10382,7 @@
 				0484F6D918DA8A8700CA2CC9 /* hp_inax_bg.png in Resources */,
 				B7DFB0231901264300D97305 /* inax_diy_folder.png in Resources */,
 				EBF280A1191A057400561A9D /* inax_home_3droom.png in Resources */,
+				86B4B856198921CC0033C615 /* InaxShumoyugang.mp4 in Resources */,
 				047BCF4118F3C34D0094BE28 /* Sash3DRoomViewController.xib in Resources */,
 				E9715E3B18C8873000600393 /* sb_shangyong.png in Resources */,
 				E9715ED218C887D700600393 /* sp_expo_intro.png in Resources */,
@@ -10577,6 +10627,7 @@
 				EB186FD2190E61EE00C258FC /* inax_lt_page66.png in Resources */,
 				0484F69118DA8A8100CA2CC9 /* 17yizhanshi.png in Resources */,
 				86B22F67194096C8005E2BD0 /* kangfeiliSuitesCollection12.png in Resources */,
+				86B4B855198921CC0033C615 /* Inaxairpush-tech.mp4 in Resources */,
 				0484F6AB18DA8A8100CA2CC9 /* osscenter.png in Resources */,
 				E9715F7918C8881000600393 /* lt_gaoxiaochongshui_intro3_detail.png in Resources */,
 				E9715F8C18C8881000600393 /* lt_linyufang_intro3_detail.png in Resources */,
@@ -10898,6 +10949,7 @@
 				04A5844818C5D5CC007290EA /* GenericDao.m in Sources */,
 				047BCF0318F3AC250094BE28 /* CartViewCell.m in Sources */,
 				8F5A190D192340EA00DB3F7B /* LixilBigDetailScrollView.m in Sources */,
+				86B4B84A1989210A0033C615 /* InaxVideoViewController.m in Sources */,
 				EB054FE5191B4C7700D03084 /* ASProductListViewController.m in Sources */,
 				EB054FF2191B9EB600D03084 /* MainMenuViewController.m in Sources */,
 				B7DFAFE51900F66D00D97305 /* InaxSearchViewController.m in Sources */,
@@ -10934,6 +10986,7 @@
 				8459715B185AEF03001421E7 /* DatabaseOption+Tvideo.m in Sources */,
 				B7F062B318FD3DE100701469 /* LixilErWeiMaViewController.m in Sources */,
 				0484F57018DA8A7800CA2CC9 /* InaxSalesOutletsViewController.m in Sources */,
+				86B4B8431989192C0033C615 /* LiXilWoodlenVideoViewController.m in Sources */,
 				E9715EEF18C887D700600393 /* ProjectImages.m in Sources */,
 				04A585AA18C5E249007290EA /* Tmodulepages.m in Sources */,
 				04A5843F18C5C05F007290EA /* ASUserSetting.m in Sources */,

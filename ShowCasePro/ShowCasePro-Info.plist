@@ -10,7 +10,13 @@
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.lixil.${PRODUCT_NAME:rfc1034identifier}</string>
+	<key>CFBundleIdentifier_dev</key>
+	<string>com.lixil.${PRODUCT_NAME:rfc1034identifier}</string>
+	<key>CFBundleIdentifier_disfortest</key>
+	<string>com.irnovation.books</string>
 	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleInfoDictionaryVersion - 2</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
 	<string>骊住集团</string>
@@ -22,8 +28,6 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>0.1</string>
-	<key>LSApplicationCategoryType</key>
-	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIRequiredDeviceCapabilities</key>

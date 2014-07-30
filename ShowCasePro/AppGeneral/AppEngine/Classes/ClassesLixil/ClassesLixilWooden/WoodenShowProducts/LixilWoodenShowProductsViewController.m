@@ -170,6 +170,7 @@ typedef enum
     
     LixilProductDetailView *pdv = [LixilProductDetailView new];
     pdv.productid = product.productid;
+    pdv.isLixiWoodlen = YES;
     
     [self.navigationController pushViewController:pdv animated:NO];
 }
@@ -990,7 +991,7 @@ typedef enum
     
     LixilProductDetailView *pdv = [LixilProductDetailView new];
     pdv.productid = product.productid;
-    
+     pdv.isLixiWoodlen = YES;
     [self.navigationController pushViewController:pdv animated:NO];
     
     return;
@@ -1005,6 +1006,7 @@ typedef enum
         
         LixilProductDetailView *pdv = [LixilProductDetailView new];
         pdv.productid = product.productid;
+         pdv.isLixiWoodlen = YES;
         
         [self.navigationController pushViewController:pdv animated:NO];
         debugLog(@"count:%d",arrayCode.count);

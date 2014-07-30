@@ -22,6 +22,8 @@
 
 @property(nonatomic)BOOL    isShowCer;
 
+@property(nonatomic)BOOL    isLixiWoodlen;
+
 - (void) reloadData;
 
 @end
