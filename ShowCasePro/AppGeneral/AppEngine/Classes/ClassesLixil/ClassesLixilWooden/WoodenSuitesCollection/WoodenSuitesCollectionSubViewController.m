@@ -131,6 +131,7 @@
     
     LixilProductDetailView *pdv = [LixilProductDetailView new];
     pdv.productid = product.productid;
+    pdv.isLixiWoodlen = YES;
     
     [self.navigationController pushViewController:pdv animated:NO];
 }

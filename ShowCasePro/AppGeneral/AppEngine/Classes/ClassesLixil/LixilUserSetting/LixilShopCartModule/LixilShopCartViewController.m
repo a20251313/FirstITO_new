@@ -45,6 +45,7 @@
     CartItem *item = [self cartItemAtIndexPath:indexPath];
     LixilProductDetailView *detailView = [[LixilProductDetailView alloc]init];
     detailView.productid = item.good.productid;
+    detailView.isLixiWoodlen = YES;
     [self.navigationController pushViewController:detailView animated:NO];
 }
 

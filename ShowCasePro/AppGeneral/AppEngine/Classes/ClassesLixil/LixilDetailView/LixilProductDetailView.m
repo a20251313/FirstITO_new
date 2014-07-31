@@ -1281,6 +1281,8 @@ typedef NS_ENUM(NSInteger, ProductImageViewKind){
 {
     LixilProductDetailView *pdv = [[LixilProductDetailView alloc] init];
     pdv.productid = productIntroView.productid;
+    pdv.isLixiWoodlen = self.isLixiWoodlen;
+    pdv.isShowCer = self.isShowCer;
     
     UINavigationController *nvc = self.navigationController;
     [nvc pushViewController:pdv animated:NO];
