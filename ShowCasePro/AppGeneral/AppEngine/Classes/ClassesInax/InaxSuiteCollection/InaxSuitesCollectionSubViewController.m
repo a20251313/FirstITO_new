@@ -176,7 +176,16 @@
 {
     if (suiteID)
     {
-        NSString *sql = [NSString stringWithFormat:@"select * from tproduct where type2 = %@ and param31 = 1",suiteID];
+        NSString *sql;
+        if([suiteID isEqualToString:@"19"])
+        {
+              sql = [NSString stringWithFormat:@"select * from tproduct where type2 = %@  or id = 298 or id = 299  or id = 300 or id = 301 or id = 302 and param31 = 1",suiteID];
+        }
+        else
+        {
+             sql = [NSString stringWithFormat:@"select * from tproduct where type2 = %@   and param31 = 1",suiteID];
+        }
+     
         self.productsArray = [self.dbo productArrayByConditionSQL:sql];
         [productsCollectionView reloadData];
     }

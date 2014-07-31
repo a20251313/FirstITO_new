@@ -46,7 +46,7 @@ typedef void(^endBlock)(void);
     
     //
     __weak IBOutlet UIView *masterView;
-
+    
     //
     __weak IBOutlet UIView *listView;
 }
@@ -101,7 +101,7 @@ typedef void(^endBlock)(void);
     [UIView animateWithDuration:Animation_Duration_lxgroup animations:^{
         masterView.alpha = alpha;
     }];
-
+    
 }
 
 

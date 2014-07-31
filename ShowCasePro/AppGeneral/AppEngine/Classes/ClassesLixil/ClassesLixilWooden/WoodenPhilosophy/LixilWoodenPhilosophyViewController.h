@@ -8,6 +8,5 @@
 
 #import "LixilBaseViewController.h"
 
-@interface LixilWoodenPhilosophyViewController : LixilBaseViewController<UIScrollViewDelegate>
-
+@interface LixilWoodenPhilosophyViewController : LixilBaseViewController<UIScrollViewDelegate,UIAlertViewDelegate>
 @end

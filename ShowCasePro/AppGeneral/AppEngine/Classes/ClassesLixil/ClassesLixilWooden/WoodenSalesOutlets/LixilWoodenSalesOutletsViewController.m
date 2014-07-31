@@ -51,7 +51,7 @@ typedef void(^endBlock)(void);
     __weak IBOutlet UIImageView *point17;
     __weak IBOutlet UIImageView *point18;
     __weak IBOutlet UIImageView *point19;
-
+    
     
     
     //
@@ -161,7 +161,7 @@ typedef void(^endBlock)(void);
     scrollView.contentSize = CGSizeMake(363, imageView.frame.size.height+30);
     scrollView.backgroundColor = [UIColor clearColor];
     scrollView.showsVerticalScrollIndicator = NO;
-
+    
     [scrollView addSubview:imageView];
     [masterView addSubview:scrollView];
     
@@ -629,7 +629,7 @@ typedef void(^endBlock)(void);
     detailImageName = @"wooden_so_liaoning_detail";
     [self showArea:hightLightImageView];
     [self changeListContent:detailImageName];
-
+    
 }
 
 - (IBAction)tapBeiJing:(UIButton *)sender
