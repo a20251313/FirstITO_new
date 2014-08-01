@@ -8,6 +8,6 @@
 
 #import "LixilBaseViewController.h"
 
-@interface SashPhilosophyViewController : LixilBaseViewController
+@interface SashPhilosophyViewController : LixilBaseViewController<UIAlertViewDelegate>
 
 @end
